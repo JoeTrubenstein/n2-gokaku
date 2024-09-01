@@ -9,7 +9,8 @@ export interface Props {
 }
 
 export default function Card({ href, frontmatter, secHeading = true }: Props) {
-  const { title, pubDatetime, modDatetime, description } = frontmatter;
+  const { title, pubDatetime, modDatetime, description, reg, fob, ogImage } =
+    frontmatter;
 
   const headerProps = {
     style: { viewTransitionName: slugifyStr(title) },
@@ -17,19 +18,25 @@ export default function Card({ href, frontmatter, secHeading = true }: Props) {
   };
 
   return (
-    <li className="my-6">
+    <div className="group relative">
       <a
         href={href}
         className="inline-block text-lg font-medium text-skin-accent decoration-dashed underline-offset-4 focus-visible:no-underline focus-visible:underline-offset-0"
       >
-        {secHeading ? (
-          <h2 {...headerProps}>{title}</h2>
-        ) : (
-          <h3 {...headerProps}>{title}</h3>
-        )}
+        <div className="aspect-h-1 aspect-w-1 lg:aspect-none w-full overflow-hidden rounded-md bg-gray-200 group-hover:opacity-75">
+          <img
+            src={ogImage?.toString()}
+            alt="Front of men's Basic Tee in black."
+            className="lg:h-full lg:w-full h-full w-full object-cover object-center"
+          />
+        </div>
+        <h2 {...headerProps}>{title}</h2>
       </a>
-      <Datetime pubDatetime={pubDatetime} modDatetime={modDatetime} />
-      <p>{description}</p>
-    </li>
+      <p>First Registered: <b>{reg}</b></p>
+      <p>FOB: {fob}</p>
+
+      {/* <Datetime pubDatetime={pubDatetime} modDatetime={modDatetime} /> */}
+      {/* <p>{description}</p> */}
+    </div>
   );
 }
