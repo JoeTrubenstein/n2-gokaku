@@ -1,6 +1,6 @@
 ---
 author: default
-pubDatetime: 2024-9-3T04:59:04.866Z
+pubDatetime: 2024-08-31T04:59:04.866Z
 title: Toyota Celsior
 slug: celsior-001
 featured: false
