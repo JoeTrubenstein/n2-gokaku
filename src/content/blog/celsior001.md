@@ -2,7 +2,7 @@
 author: default
 pubDatetime: 2022-12-28T04:59:04.866Z
 title: Toyota Celsior
-slug: land-cruiser-001
+slug: celsior-001
 featured: false
 draft: false
 tags:
