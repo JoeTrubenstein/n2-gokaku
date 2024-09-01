@@ -18,13 +18,7 @@ import LinkButton from "@components/LinkButton.astro";
         <h2 class="text-3xl font-bold tracking-tight sm:text-4xl">Contact sales</h2>
         <p class="mt-2 text-lg leading-8">Get CIF quotes, translations, and more information.</p>
       </div>
-      <form
-      action="https://api.web3forms.com/submit"
-      id="form"
-      data-astro-reload
-      novalidate
-      method="POST" class="needs-validation mx-auto mt-12 max-w-xl sm:mt-16">
-        <input type="hidden" name="access_key" value={import.meta.env.FORM_KEY}>
+      <form name="contact" netlify>
         <input type="checkbox" class="hidden" style="display:none" name="botcheck" />
         <div class="grid grid-cols-1 gap-x-8 gap-y-6 sm:grid-cols-2">
           <div>
