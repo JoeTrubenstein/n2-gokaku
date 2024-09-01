@@ -9,7 +9,7 @@ export interface Props {
 }
 
 export default function Card({ href, frontmatter, secHeading = true }: Props) {
-  const { title, pubDatetime, modDatetime, description, reg, fob, ogImage } =
+  const { title, pubDatetime, modDatetime, description, reg, fob, ogImage, miles } =
     frontmatter;
 
   const headerProps = {
@@ -32,8 +32,9 @@ export default function Card({ href, frontmatter, secHeading = true }: Props) {
         </div>
         <h2 {...headerProps}>{title}</h2>
       </a>
-      <p>First Registered: <b>{reg}</b></p>
-      <p>FOB: {fob}</p>
+      <p>First Registered: {reg}</p>
+      <p>Odometer: {miles} kms</p>
+      <p>FOB: <b>{fob}</b> USD</p>
 
       {/* <Datetime pubDatetime={pubDatetime} modDatetime={modDatetime} /> */}
       {/* <p>{description}</p> */}

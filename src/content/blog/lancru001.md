@@ -12,6 +12,7 @@ description: New feature in AstroPaper v1.4.0, introducing dynamic OG image gene
 ogImage: "https://www.jpctrade.com/vehicle_image/172516951166d3ff6708e5f_6059_a.jpeg"
 reg: "1994"
 fob: "14,800"
+miles: "301,000"
 ---
 ![JDM Vehicle Stock](https://www.jpctrade.com/vehicle_image/172516951166d3ff6708e5f_6059_a.jpeg)
 

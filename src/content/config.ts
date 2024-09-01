@@ -10,6 +10,7 @@ const blog = defineCollection({
       author: z.string().default(SITE.author).optional().nullable(),
       reg: z.string().optional().nullable(),
       fob: z.string().optional().nullable(),
+      miles: z.string().optional().nullable(),
       pubDatetime: z.date().optional().nullable(),
       modDatetime: z.date().optional().nullable(),
       title: z.string().optional().nullable(),
