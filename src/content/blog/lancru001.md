@@ -6,8 +6,8 @@ slug: land-cruiser-001
 featured: false
 draft: false
 tags:
-  - docs
-  - release
+  - Toyota
+  - Land Cruiser
 description: New feature in AstroPaper v1.4.0, introducing dynamic OG image generation for blog posts.
 ogImage: "https://www.jpctrade.com/vehicle_image/172516951166d3ff6708e5f_6059_a.jpeg"
 reg: "1994"
