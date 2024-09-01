@@ -1,20 +1,25 @@
 ---
 author: Sat Naing
-pubDatetime: 2024-09-1T15:20:35Z
-title: Toyota Land Cruiser Prado
-ogImage: "https://www.jpctrade.com/vehicle_image/172516951166d3ff6708e5f_6059_a.jpeg"
-reg: "1994"
-fob: 14,800 USD
+pubDatetime: 2022-12-28T04:59:04.866Z
+title: Toyota Land Cruiser
+slug: land-cruiser-001
 featured: false
 draft: false
 tags:
-  - Toyota
-  - Land Cruiser
-description:
-  How you can enable/disable light & dark mode; and customize color schemes
-  of AstroPaper theme.
+  - docs
+  - release
+description: New feature in AstroPaper v1.4.0, introducing dynamic OG image generation for blog posts.
+ogImage: "https://www.jpctrade.com/vehicle_image/172516951166d3ff6708e5f_6059_a.jpeg"
+reg: "1994"
+fob: "14,800"
 ---
 ![JDM Vehicle Stock](https://www.jpctrade.com/vehicle_image/172516951166d3ff6708e5f_6059_a.jpeg)
+
+| Tables   |      Are      |  Cool |
+|----------|:-------------:|------:|
+| col 1 is |  left-aligned | $1600 |
+| col 2 is |    centered   |   $12 |
+| col 3 is | right-aligned |    $1 |
 
 <ul class="stock_specification">
 				<li>
