@@ -18,7 +18,12 @@ import LinkButton from "@components/LinkButton.astro";
         <h2 class="text-3xl font-bold tracking-tight sm:text-4xl">Contact sales</h2>
         <p class="mt-2 text-lg leading-8">Get CIF quotes, translations, and more information.</p>
       </div>
-      <form method="POST" class="mx-auto mt-12 max-w-xl sm:mt-16">
+      <form
+      action="https://api.web3forms.com/submit"
+      id="form"
+      data-astro-reload
+      novalidate
+      method="POST" class="needs-validation mx-auto mt-12 max-w-xl sm:mt-16">
         <input type="hidden" name="access_key" value={import.meta.env.FORM_KEY}>
         <div class="grid grid-cols-1 gap-x-8 gap-y-6 sm:grid-cols-2">
           <div>
@@ -71,9 +76,55 @@ import LinkButton from "@components/LinkButton.astro";
 
         </div>
         <div class="mt-10">
-          <button type="submit" class="block w-full rounded-md bg-skin-accent px-3.5 py-2.5 text-center text-sm font-semibold text-white shadow-sm hover:brightness-125 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">Let's talk!</button>
+          <button type="submit" class="block w-full rounded-md bg-skin-accent px-3.5 py-2.5 text-center text-sm font-semibold text-white shadow-sm hover:brightness-125 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 ">Let's talk!</button>
         </div>
       </form>
+
+      <script is:inline>
+        const form = document.getElementById('form');
+        const result = document.getElementById('result');
+        
+        form.addEventListener('submit', function(e) {
+            const formData = new FormData(form);
+            e.preventDefault();
+        
+            const object = Object.fromEntries(formData);
+            const json = JSON.stringify(object);
+        
+            result.innerHTML = "Please wait..."
+        
+            fetch('https://api.web3forms.com/submit', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                        'Accept': 'application/json'
+                    },
+                    body: json
+                })
+                .then(async (response) => {
+                    let json = await response.json();
+                    if (response.status == 200) {
+                        result.innerHTML = json.message;
+                    } else {
+                        console.log(response);
+                        result.innerHTML = json.message;
+                    }
+                })
+                .catch(error => {
+                    console.log(error);
+                    result.innerHTML = "Something went wrong!";
+                })
+                .then(function() {
+                    form.reset();
+                    setTimeout(() => {
+                        result.style.display = "none";
+                    }, 3000);
+                });
+        });
+        </script>
+
+
+
     </div>
     </section>
   </main>
@@ -95,46 +146,3 @@ import LinkButton from "@components/LinkButton.astro";
     @apply mt-4 text-2xl sm:text-3xl;
   }
 </style>
-
-<script is:inline>
-  const form = document.getElementById('form');
-  const result = document.getElementById('result');
-  
-  form.addEventListener('submit', function(e) {
-      const formData = new FormData(form);
-      e.preventDefault();
-  
-      const object = Object.fromEntries(formData);
-      const json = JSON.stringify(object);
-  
-      result.innerHTML = "Please wait..."
-  
-      fetch('https://api.web3forms.com/submit', {
-              method: 'POST',
-              headers: {
-                  'Content-Type': 'application/json',
-                  'Accept': 'application/json'
-              },
-              body: json
-          })
-          .then(async (response) => {
-              let json = await response.json();
-              if (response.status == 200) {
-                  result.innerHTML = json.message;
-              } else {
-                  console.log(response);
-                  result.innerHTML = json.message;
-              }
-          })
-          .catch(error => {
-              console.log(error);
-              result.innerHTML = "Something went wrong!";
-          })
-          .then(function() {
-              form.reset();
-              setTimeout(() => {
-                  result.style.display = "none";
-              }, 3000);
-          });
-  });
-  </script>
