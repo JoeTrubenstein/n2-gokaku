@@ -8,8 +8,8 @@ export const SITE: Site = {
   title: "JDM Enjoyer",
   ogImage: "astropaper-og.jpg",
   lightAndDarkMode: true,
-  postPerIndex: 4,
-  postPerPage: 3,
+  postPerIndex: 6,
+  postPerPage: 9,
   scheduledPostMargin: 15 * 60 * 1000, // 15 minutes
 };
 
