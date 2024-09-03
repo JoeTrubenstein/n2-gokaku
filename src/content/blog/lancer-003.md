@@ -42,7 +42,7 @@ miles: "100,000"
     <td>2.0 GSR VI 4WD</td>
 </table>
                           
-![JDM Vehicle Stock](https://www.jpctrade.com/vehicle_image/172526618666d5790aa425d_6099_b.jpeg)
+![JDM Vehicle Stock](https://www.jpctrade.com/vehicle_image/172526617666d5790003045_6098_b.jpeg)
 
 <img src="https://res.cloudinary.com/indridcold/image/upload/v1725367816/JDM/ksozjv4txfckpiejnhj9.png" alt="Alt text" style="filter: blur(7px);">
 
