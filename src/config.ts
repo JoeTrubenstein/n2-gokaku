@@ -6,7 +6,7 @@ export const SITE: Site = {
   profile: "https://satnaing.dev/",
   desc: "A minimal, responsive and SEO-friendly Astro blog theme.",
   title: "JDM Enjoyer",
-  ogImage: "astropaper-og.jpg",
+  ogImage: "https://res.cloudinary.com/indridcold/image/upload/v1560271049/kpdncj0s7qryjchvmv6q.jpg",
   lightAndDarkMode: true,
   postPerIndex: 6,
   postPerPage: 9,
