@@ -43,4 +43,7 @@ miles: "110,000"
 </table>
                           
 ![JDM Vehicle Stock](https://www.jpctrade.com/vehicle_image/172526041666d5628041fd4_6077_b.jpeg)
-![JDM Vehicle Stock](https://www.jpctrade.com/vehicle_image/172526041966d5628309794_6077_c.jpeg)
+
+<img src="https://res.cloudinary.com/indridcold/image/upload/v1725367816/JDM/ksozjv4txfckpiejnhj9.png" alt="Alt text" style="filter: blur(7px);">
+
+To unlock inspection sheets and more photos - [contact us](../../contact) today!
