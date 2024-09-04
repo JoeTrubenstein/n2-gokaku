@@ -3,7 +3,7 @@ layout: ../layouts/AboutLayout.astro
 title: "About"
 ---
 
-JDM Enjoyer partners with [JPC TRADE](https://jpctrade.com) to provide end-to-end export solutions in English and Japanese:
+JDM Cafe partners with [JPC TRADE](https://jpctrade.com) to provide end-to-end export solutions in English and Japanese:
 
 - Access to Japanese auction houses and dealers
 - On-site vehicle inspections

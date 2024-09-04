@@ -5,26 +5,26 @@ import Main from "@layouts/Main.astro";
 import Header from "@components/Header.astro";
 import Footer from "@components/Footer.astro";
 import Pagination from "@components/Pagination.astro";
-import Card from "@components/Card";
+import Card from "../components/articleCard";
 import { SITE } from "@config";
 
 export interface Props {
   currentPage: number;
   totalPages: number;
-  paginatedPosts: CollectionEntry<"blog">[];
+  paginatedPosts: CollectionEntry<"articles">[];
 }
 
 const { currentPage, totalPages, paginatedPosts } = Astro.props;
 ---
 
-<Layout title={`Cars | ${SITE.title}`}>
-  <Header activeNav="cars" />
-  <Main pageTitle="Cars" pageDesc="Wholesale (No Auction Cars)">
+<Layout title={`Blog | ${SITE.title}`}>
+  <Header activeNav="blog" />
+  <Main pageTitle="Blog" pageDesc="JDM Cafe Blog">
       <div class="lg:max-w-7xl mx-auto">
-        <div class="xl:gap-x-8 mt-6 grid sm:grid-cols-3 grid-cols-1 gap-x-6 gap-y-10">
+        <div class="xl:gap-x-8 mt-6 grid sm:grid-cols-2 grid-cols-1 gap-x-6 gap-y-10">
             {
               paginatedPosts.map(({ data, slug }) => (
-                <Card href={`/cars/${slug}/`} frontmatter={data} />
+                <Card href={`/blog/${slug}/`} frontmatter={data} />
               ))
             }
         </div>
