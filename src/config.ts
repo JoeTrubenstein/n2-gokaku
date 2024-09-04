@@ -1,11 +1,11 @@
 import type { Site, SocialObjects } from "./types";
 
 export const SITE: Site = {
-  website: "https://astro-paper.pages.dev/", // replace this with your deployed domain
+  website: "https://jdmcafe.com/", // replace this with your deployed domain
   author: "Sat Naing",
   profile: "https://satnaing.dev/",
   desc: "Curated vehicles from the Japanese Domestic Market",
-  title: "JDM Enjoyer",
+  title: "JDM Cafe",
   ogImage: "https://res.cloudinary.com/indridcold/image/upload/v1560271049/kpdncj0s7qryjchvmv6q.jpg",
   lightAndDarkMode: true,
   postPerIndex: 6,
