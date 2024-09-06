@@ -1,25 +1,25 @@
 ---
 author: default
 pubDatetime: 2024-08-31T04:59:04.866Z
-title: Toyota Altezza
-slug: altezza-002
-featured: true
+title: Toyota Celsior
+slug: celsior-001
+featured: false
 draft: false
 tags:
   - Toyota
-  - Altezza
-description: Toyota Altezza 1998
-ogImage: "https://www.jpctrade.com/vehicle_image/172526040666d562761d06c_6076_a.jpeg"
-reg: "1998"
-fob: "3,800"
-miles: "200,000"
+  - Celsior
+description: Toyota Celsior 1993
+ogImage: "https://res.cloudinary.com/indridcold/image/upload/v1725665122/JDM/vcavhvhz9b8sujklbhcn.png"
+reg: "1993"
+fob: "3,460"
+miles: "25,000"
 ---
-![JDM Vehicle Stock](https://www.jpctrade.com/vehicle_image/172526040666d562761d06c_6076_a.jpeg)
+![JDM Vehicle Stock](https://res.cloudinary.com/indridcold/image/upload/v1725665122/JDM/vcavhvhz9b8sujklbhcn.png)
 
 <table>
   <tr>
     <th>Year</th>
-    <td>1998</td>
+    <td>1993</td>
   </tr>
   <tr>
     <th>Transmission</th>
@@ -27,22 +27,20 @@ miles: "200,000"
   </tr>
   <tr>
     <th>CC</th>
-    <td>2000</td>
+    <td>4000</td>
   </tr>
     <tr>
     <th>Odometer</th>
-    <td>200,000 kms</td>
+    <td>25000 kms</td>
   </tr>
       <tr>
     <th>Color</th>
-    <td>Blue</td>
+    <td>Black</td>
   </tr>
       <tr>
     <th>Grade</th>
-    <td>2.0 RS200</td>
+    <td>C SPECIFICATION</td>
 </table>
-                          
-![JDM Vehicle Stock](https://www.jpctrade.com/vehicle_image/172526040866d56278a0165_6076_b.jpeg)
 
 <img src="https://res.cloudinary.com/indridcold/image/upload/v1725367816/JDM/ksozjv4txfckpiejnhj9.png" alt="Alt text" style="filter: blur(7px);">
 

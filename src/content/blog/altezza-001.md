@@ -3,27 +3,27 @@ author: default
 pubDatetime: 2024-08-31T04:59:04.866Z
 title: Toyota Altezza
 slug: altezza-001
-featured: false
+featured: true
 draft: false
 tags:
   - Toyota
   - Altezza
-description: Toyota Altezza 1999
-ogImage: "https://www.jpctrade.com/vehicle_image/172526041366d5627de5c8d_6077_a.jpeg"
-reg: "1999"
-fob: "10,300"
-miles: "110,000"
+description: Toyota Altezza 1998
+ogImage: "https://res.cloudinary.com/indridcold/image/upload/v1725616447/JDM/jfdbayvjd3lfq2tlgddl.png"
+reg: "1998"
+fob: "3,800"
+miles: "200,000"
 ---
-![JDM Vehicle Stock](https://www.jpctrade.com/vehicle_image/172526041366d5627de5c8d_6077_a.jpeg)
+![JDM Vehicle Stock](https://res.cloudinary.com/indridcold/image/upload/v1725616447/JDM/jfdbayvjd3lfq2tlgddl.png)
 
 <table>
   <tr>
     <th>Year</th>
-    <td>1999</td>
+    <td>1998</td>
   </tr>
   <tr>
     <th>Transmission</th>
-    <td>Manual</td>
+    <td>Automatic</td>
   </tr>
   <tr>
     <th>CC</th>
@@ -31,19 +31,17 @@ miles: "110,000"
   </tr>
     <tr>
     <th>Odometer</th>
-    <td>110,000 kms</td>
+    <td>200,000 kms</td>
   </tr>
       <tr>
     <th>Color</th>
-    <td>Silver</td>
+    <td>Blue</td>
   </tr>
       <tr>
     <th>Grade</th>
-    <td>2.0 RS200 Z EDITION</td>
+    <td>2.0 RS200</td>
 </table>
                           
-![JDM Vehicle Stock](https://www.jpctrade.com/vehicle_image/172526041666d5628041fd4_6077_b.jpeg)
-
 <img src="https://res.cloudinary.com/indridcold/image/upload/v1725367816/JDM/ksozjv4txfckpiejnhj9.png" alt="Alt text" style="filter: blur(7px);">
 
 To unlock inspection sheets and more photos - [contact us](../../contact) today!

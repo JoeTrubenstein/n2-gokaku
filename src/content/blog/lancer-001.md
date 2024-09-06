@@ -8,18 +8,18 @@ draft: false
 tags:
   - Mitsubishi
   - Lancer
-description: Mitsubishi Lancer 1998
-ogImage: "https://www.jpctrade.com/vehicle_image/172526868466d582cc80733_6100_a.jpeg"
-reg: "1998"
-fob: "16,530"
-miles: "156,000"
+description: Mitsubishi Lancer 1996
+ogImage: "https://res.cloudinary.com/indridcold/image/upload/v1725664149/JDM/dtvdq29jzmclogsi64qn.png"
+reg: "1996"
+fob: "9,900"
+miles: "132,000"
 ---
-![JDM Vehicle Stock](https://www.jpctrade.com/vehicle_image/172526868466d582cc80733_6100_a.jpeg)
+![JDM Vehicle Stock](https://res.cloudinary.com/indridcold/image/upload/v1725664149/JDM/dtvdq29jzmclogsi64qn.png)
 
 <table>
   <tr>
     <th>Year</th>
-    <td>1993</td>
+    <td>1996</td>
   </tr>
   <tr>
     <th>Transmission</th>
@@ -31,7 +31,7 @@ miles: "156,000"
   </tr>
     <tr>
     <th>Odometer</th>
-    <td>156000 kms</td>
+    <td>132000 kms</td>
   </tr>
       <tr>
     <th>Color</th>
@@ -39,11 +39,9 @@ miles: "156,000"
   </tr>
       <tr>
     <th>Grade</th>
-    <td>4WD GSR EVOLUTION 5</td>
+    <td>GSR EVOLUTION 4 4WD</td>
 </table>
                           
-![JDM Vehicle Stock](https://www.jpctrade.com/vehicle_image/172526868766d582cf20664_6100_b.jpeg)
-
 <img src="https://res.cloudinary.com/indridcold/image/upload/v1725367816/JDM/ksozjv4txfckpiejnhj9.png" alt="Alt text" style="filter: blur(7px);">
 
 To unlock inspection sheets and more photos - [contact us](../../contact) today!

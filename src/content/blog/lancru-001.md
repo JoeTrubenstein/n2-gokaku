@@ -9,12 +9,12 @@ tags:
   - Toyota
   - Land Cruiser
 description: New feature in AstroPaper v1.4.0, introducing dynamic OG image generation for blog posts.
-ogImage: "https://www.jpctrade.com/vehicle_image/172516951166d3ff6708e5f_6059_a.jpeg"
+ogImage: "https://res.cloudinary.com/indridcold/image/upload/v1725664873/JDM/k7osrenr2t6ean3dzkex.png"
 reg: "1994"
 fob: "14,800"
 miles: "301,000"
 ---
-![JDM Vehicle Stock](https://www.jpctrade.com/vehicle_image/172516951166d3ff6708e5f_6059_a.jpeg)
+![JDM Vehicle Stock](https://res.cloudinary.com/indridcold/image/upload/v1725664873/JDM/k7osrenr2t6ean3dzkex.png)
 
 <table>
   <tr>
@@ -42,8 +42,6 @@ miles: "301,000"
     <td>3.0 SX DIESEL TURBO 4</td>
 </table>
                           
-![JDM Vehicle Stock](https://www.jpctrade.com/vehicle_image/172516951366d3ff69556c8_6059_b.jpeg)
-
 <img src="https://res.cloudinary.com/indridcold/image/upload/v1725367816/JDM/ksozjv4txfckpiejnhj9.png" alt="Alt text" style="filter: blur(7px);">
 
 To unlock inspection sheets and more photos - [contact us](../../contact) today!

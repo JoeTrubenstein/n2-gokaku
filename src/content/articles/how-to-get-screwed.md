@@ -2,7 +2,7 @@
 author: default
 pubDatetime: 2024-08-31T04:59:04.866Z
 title: How to get Screwed by Shady JDM Importers
-slug: altezza-001
+slug: how-to-get-screwed-by-shady-jdm-importers
 featured: false
 draft: false
 tags:
