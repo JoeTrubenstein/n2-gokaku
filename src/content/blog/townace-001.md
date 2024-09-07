@@ -3,7 +3,7 @@ author: default
 pubDatetime: 2024-08-31T04:59:04.866Z
 title: Toyota Town Ace
 slug: townace-001
-featured: true
+featured: false
 draft: false
 tags:
   - Toyota

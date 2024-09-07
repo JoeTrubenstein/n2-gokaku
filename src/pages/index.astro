@@ -6,15 +6,23 @@ import Footer from "@components/Footer.astro";
 import LinkButton from "@components/LinkButton.astro";
 import Hr from "@components/Hr.astro";
 import Card from "@components/Card";
+import ArticleCard from "../components/articleCard"
 import Socials from "@components/Socials.astro";
 import getSortedPosts from "@utils/getSortedPosts";
 import { SITE, SOCIALS } from "@config";
 
 const posts = await getCollection("blog");
+const articles = await getCollection("articles");
 
 const sortedPosts = getSortedPosts(posts);
+const sortedArticles = getSortedPosts(articles);
+
 const featuredPosts = sortedPosts.filter(({ data }) => data.featured);
 const recentPosts = sortedPosts.filter(({ data }) => !data.featured);
+
+const featuredArticles = sortedArticles.filter(({ data }) => data.featured);
+const recentArticles = sortedArticles.filter(({ data }) => !data.featured);
+
 
 const socialCount = SOCIALS.filter(social => social.active).length;
 ---
@@ -69,6 +77,25 @@ const socialCount = SOCIALS.filter(social => social.active).length;
     </section>
 
     <Hr />
+
+    {
+      recentArticles.length > 0 && (
+        <>
+          <section id="featured">
+            <h2>Recent Posts</h2>
+            <div class="xl:gap-x-8 mt-6 grid sm:grid-cols-2 grid-cols-1 gap-x-6 gap-y-10">
+              {recentArticles.map(({ data, slug }) => (
+                <ArticleCard
+                  href={`/blog/${slug}/`}
+                  frontmatter={data}
+                />
+              ))}
+            </div>
+          </section>
+          {recentArticles.length > 0 && <Hr />}
+        </>
+      )
+    }
 
     {
       featuredPosts.length > 0 && (

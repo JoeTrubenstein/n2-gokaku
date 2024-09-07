@@ -1,6 +1,6 @@
 ---
 author: default
-pubDatetime: 2024-08-31T04:59:04.866Z
+pubDatetime: 2024-07-23T04:59:04.866Z
 title: How to get Screwed by Shady JDM Importers
 slug: how-to-get-screwed-by-shady-jdm-importers
 featured: false
@@ -9,19 +9,16 @@ tags:
   - blog
   - how-to
 description: To infiltrate a community, and exploit the trust and naivety of those inside, feels much more evil than petty theft.
-ogImage: "https://baldmansvan.com/content/images/size/w2000/2024/07/burned_skyline_importers.webp"
-reg: "1999"
-fob: "10,300"
-miles: "110,000"
+ogImage: "https://res.cloudinary.com/indridcold/image/upload/v1725670595/JDM/mjrmmf93tru9vkgjib1q.webp"
 ---
 How to get Screwed by Shady JDM Importers
 =========================================
 
 To infiltrate a community, and exploit the trust and naivety of those inside, feels much more evil than petty theft.
 
-![How to get Screwed by Shady JDM Importers](https://baldmansvan.com/content/images/size/w2000/2024/07/burned_skyline_importers.webp)
+![How to get Screwed by Shady JDM Importers](https://res.cloudinary.com/indridcold/image/upload/v1725670595/JDM/mjrmmf93tru9vkgjib1q.webp)
 
-"May have a faint smell of smoke."
+<small>"May have a faint smell of smoke."</small>
 
 When preparing to invest a small fortune in a vehicle almost as old as yourself - getting screwed on the purchase is something best avoided.
 
@@ -34,9 +31,9 @@ The industry comes with everything needed to attract the shadiest among us; high
 
 It was only a matter of time before _"I Got Screwed by Shady JDM Importers"_ became an all-too-common admission.
 
-![](https://baldmansvan.com/content/images/2024/07/slaps_roof_abandoned_jdm.webp)
+![slaps roof meme](https://res.cloudinary.com/indridcold/image/upload/v1725670594/JDM/dus9azl0ukkpvo4hji6g.webp)
 
-"You kid fit some poor kid's Bar Mitzvah money into this piece of crap."
+<small>"You kid fit some poor kid's Bar Mitzvah money into this piece of crap."</small>
 
 It also became a 40,000 member [Facebook group](https://www.facebook.com/groups/1557167494478023) with the same name.
 
@@ -67,7 +64,7 @@ The most common horror stories can often be placed into one of three categories:
 
 The Bait and Switch is perhaps the most commonly reported shady JDM screwing of them all. This simply means being promised one thing - and delivered another.
 
-![](https://baldmansvan.com/content/images/2024/07/strut_towers.webp)
+![strut tower meme](https://res.cloudinary.com/indridcold/image/upload/v1725670594/JDM/pazrdqgywa5il6sjjeza.webp)
 
 In the case of 25-year-old Japanese cars headed for The United States, this generally means a gross understatement of the bad stuff.
 
@@ -105,9 +102,9 @@ Struggling or refusing to answer these kinds of questions can be taken as a sign
 
 The Markup occurs when you've received exactly what you've been promised - but you've overpaid dearly for it.
 
-![](https://baldmansvan.com/content/images/2024/07/flex_seal_jdm.webp)
+![flex seal meme](https://res.cloudinary.com/indridcold/image/upload/v1725670593/JDM/znfv4q6gf67kqsky2ata.webp)
 
-"You want to be the only kid at your school with a Skyline, right?"
+<small>"You want to be the only kid at your school with a Skyline, right?"</small>
 
 Victims of the markup tend to be customers of domestic JDM importers who've already gone through the hassle of getting the car into The United States.
 
@@ -115,13 +112,13 @@ By the time a JDM vehicle has been sourced, shipped, made it through customs, ti
 
 However, unless you've got a solid foundation of market price knowledge - what might seem like a great deal, could easily turn out to be a fleecing.
 
-![](https://baldmansvan.com/content/images/2024/07/overpriced_skyline.webp)
+![overpriced skyline meme](https://res.cloudinary.com/indridcold/image/upload/v1725670594/JDM/hyjvy33iyahztukctmya.webp)
 
 Keeping a close eye on prices, both in Japan and at home, can help you spot when an overconfident seller is attempting the "I know what I have" tactic on you.
 
 If you suspect an importer is preparing The Markup - the best strategy to avoid overpaying may be to simply cut the importer out of the deal altogether.
 
-There are plenty of guys like me on the Japan side, who are ready to help you just [import a JDM car yourself.](https://baldmansvan.com/how-to-import-a-jdm-car-to-the-united-states/)
+There are plenty of guys like me on the Japan side, who are ready to help you just [import a JDM car yourself.](../blog/how-to-import-a-jdm-car-to-the-united-states/)
 
 ### The Nasty Surprise
 
@@ -138,7 +135,7 @@ They assume that simply because someone calls themself a JDM importer - they mus
 
 The latter often appears in the form of a middleman's middleman - someone who's only real function is to insert themselves in a transaction between yourself and an actual importer / exporter.
 
-![](https://baldmansvan.com/content/images/2024/07/melted_supra.webp)
+![melted Toyota Supra meme](https://res.cloudinary.com/indridcold/image/upload/v1725670593/JDM/ayoasybc1upsc05okqci.webp)
 
 Depending at what point in the import process your JDM dream machine is in - your options for quality control may be limited.
 

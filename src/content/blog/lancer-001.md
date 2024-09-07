@@ -3,7 +3,7 @@ author: default
 pubDatetime: 2024-09-01T04:59:04.866Z
 title: Mitsubishi Lancer
 slug: lancer-001
-featured: false
+featured: true
 draft: false
 tags:
   - Mitsubishi
