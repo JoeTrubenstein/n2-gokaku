@@ -14,7 +14,11 @@ reg: "1996"
 fob: "9,900"
 miles: "132,000"
 ---
+Available in 3rd party stock.
+
 ![JDM Vehicle Stock](https://res.cloudinary.com/indridcold/image/upload/v1725783981/JDM/t0lqh7xdyne4xcsjemgq.webp)
+
+The 1996 Mitsubishi Lancer Evo GSR Evolution 4 is a true JDM icon, representing everything that made 90s Japanese cars legendary. With its 2.0-liter turbocharged engine and manual transmission, it delivers raw, exhilarating power that every enthusiast craves. The advanced 4WD system, derived from Mitsubishi's rally heritage, provides unmatched grip and control, making every drive a thrilling experience.
 
 <table>
   <tr>
@@ -41,6 +45,10 @@ miles: "132,000"
     <th>Grade</th>
     <td>GSR EVOLUTION 4 4WD</td>
 </table>
+
+Visually, the Evo 4 stands out with its aggressive styling and wide stance. The white exterior and functional aero give it that unmistakable JDM flair, a design that commands attention at any car meet. This car isn’t just about looks — it was built to dominate on the road and track.
+
+With 132,000 kilometers on the clock, this Evo 4 has been driven and enjoyed, embodying the spirit of JDM culture. It’s a car that tells a story, offering the pure driving experience that only a manual transmission can provide. For any JDM enthusiast, the Evo 4 is more than just a car—it’s a piece of automotive history.
                           
 <img src="https://res.cloudinary.com/indridcold/image/upload/v1725784389/JDM/mol3ngb4ma2yy1rxgwj8.webp" alt="Alt text" style="filter: blur(7px);">
 
