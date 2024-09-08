@@ -6,7 +6,7 @@ export const SITE: Site = {
   profile: "https://jdmcafe,com/",
   desc: "Enjoying vehicles from the Japanese Domestic Market",
   title: "JDM Cafe",
-  ogImage: "https://res.cloudinary.com/indridcold/image/upload/v1560271049/kpdncj0s7qryjchvmv6q.jpg",
+  ogImage: "https://res.cloudinary.com/indridcold/image/upload/v1725798081/JDM/cs2z5qoza036hoprnxht.png",
   lightAndDarkMode: true,
   postPerIndex: 6,
   postPerPage: 9,
@@ -28,25 +28,25 @@ export const LOGO_IMAGE = {
 export const SOCIALS: SocialObjects = [
   {
     name: "Github",
-    href: "https://github.com/satnaing/astro-paper",
+    href: "https://github.com/joeTrubenstein",
     linkTitle: ` ${SITE.title} on Github`,
     active: true,
   },
   {
     name: "Facebook",
-    href: "https://github.com/satnaing/astro-paper",
+    href: "https://www.facebook.com/profile.php?id=61565177264385",
     linkTitle: `${SITE.title} on Facebook`,
     active: true,
   },
   {
     name: "Instagram",
-    href: "https://github.com/satnaing/astro-paper",
+    href: "https://www.instagram.com/jdm.cafe/",
     linkTitle: `${SITE.title} on Instagram`,
     active: true,
   },
   {
     name: "LinkedIn",
-    href: "https://github.com/satnaing/astro-paper",
+    href: "https://www.linkedin.com/in/joe-trubenstein-506189b3/",
     linkTitle: `${SITE.title} on LinkedIn`,
     active: true,
   },
