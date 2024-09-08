@@ -9,12 +9,12 @@ tags:
   - Mitsubishi
   - Lancer
 description: Mitsubishi Lancer 1996
-ogImage: "https://res.cloudinary.com/indridcold/image/upload/v1725783982/JDM/xz6etrqcq2fumogfo0ee.webp"
+ogImage: "https://res.cloudinary.com/indridcold/image/upload/v1725783981/JDM/t0lqh7xdyne4xcsjemgq.webp"
 reg: "1996"
 fob: "9,900"
 miles: "132,000"
 ---
-![JDM Vehicle Stock](https://res.cloudinary.com/indridcold/image/upload/v1725783982/JDM/xz6etrqcq2fumogfo0ee.webp)
+![JDM Vehicle Stock](https://res.cloudinary.com/indridcold/image/upload/v1725783981/JDM/t0lqh7xdyne4xcsjemgq.webp)
 
 <table>
   <tr>
