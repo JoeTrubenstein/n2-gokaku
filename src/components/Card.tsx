@@ -32,9 +32,12 @@ export default function Card({ href, frontmatter, secHeading = true }: Props) {
         </div>
         <h2 {...headerProps}>{title}</h2>
       </a>
-      <p>First Registered: {reg}</p>
+      {reg ? (<div>      <p>First Registered: {reg}</p>
       <p>Odometer: {miles} kms</p>
-      <p>FOB: <b>{fob}</b> USD</p>
+      <p>FOB: <b>{fob}</b> USD</p></div>):(<div><p>{description}</p></div>)}
+      {/* <p>First Registered: {reg}</p>
+      <p>Odometer: {miles} kms</p>
+      <p>FOB: <b>{fob}</b> USD</p> */}
 
       {/* <Datetime pubDatetime={pubDatetime} modDatetime={modDatetime} /> */}
       {/* <p>{description}</p> */}

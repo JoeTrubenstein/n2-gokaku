@@ -7,17 +7,28 @@ import Main from "@layouts/Main.astro";
 import Tag from "@components/Tag.astro";
 import getUniqueTags from "@utils/getUniqueTags";
 import { SITE } from "@config";
+import getArticleTags from "@utils/getArticleTags";
 
 const posts = await getCollection("blog");
+const articles = await getCollection("articles");
 
-let tags = getUniqueTags(posts);
+let tags = getUniqueTags(posts)
+let artTags = getArticleTags(articles);
+let alltags =tags.concat(artTags)
+
+// This is kind of silly - I'm combining two sets of tags, and then filtering the duplicates
+
+const newtags = alltags.filter((obj, index) => {
+    return index === alltags.findIndex(o => obj.tag === o.tag);
+});
+
 ---
 
 <Layout title={`Tags | ${SITE.title}`}>
   <Header activeNav="tags" />
   <Main pageTitle="Tags" pageDesc="All the tags used in posts.">
     <ul>
-      {tags.map(({ tag }) => <Tag {tag} size="lg" />)}
+      {newtags.map(({ tag }) => <Tag {tag} size="lg" />)}
     </ul>
   </Main>
   <Footer />

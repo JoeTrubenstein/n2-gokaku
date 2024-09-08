@@ -8,7 +8,7 @@ export interface Props {
   secHeading?: boolean;
 }
 
-export default function Card({ href, frontmatter, secHeading = true }: Props) {
+export default function articleCard({ href, frontmatter, secHeading = true }: Props) {
   const { title, pubDatetime, modDatetime, description, reg, fob, ogImage, miles } =
     frontmatter;
 
@@ -26,7 +26,7 @@ export default function Card({ href, frontmatter, secHeading = true }: Props) {
         <div className="aspect-h-1 aspect-w-1 lg:aspect-none w-full overflow-hidden rounded-md bg-gray-200 group-hover:opacity-75">
           <img
             src={ogImage?.toString()}
-            alt="Front of men's Basic Tee in black."
+            alt="decorative cover image"
             className="lg:h-full lg:w-full h-full w-full object-cover object-center"
           />
         </div>

@@ -24,16 +24,30 @@ const { currentPage, totalPages, paginatedPosts, tag, tagName } = Astro.props;
   <Main
     pageTitle={[`Tag:`, `${tagName}`]}
     titleTransition={tag}
-    pageDesc={`All the articles with the tag "${tagName}".`}
+    pageDesc={`All posts with the tag "${tagName}".`}
   >
     <h1 slot="title" transition:name={tag}>{`Tag:${tag}`}</h1>
-    <ul>
+    <div
+      class="xl:gap-x-8 mt-6 grid grid-cols-1 gap-x-6 gap-y-10 sm:grid-cols-2"
+    >
+
+ <!-- This was driving me nuts - I can't beleive I forgot one of my favorite syntaxes -->
       {
-        paginatedPosts.map(({ data, slug }) => (
-          <Card href={`/posts/${slug}/`} frontmatter={data} />
-        ))
+        paginatedPosts.map(({ data, slug, collection }) =>
+          collection === "blog" ? (
+            <div>
+              <Card href={`/cars/${slug}/`} frontmatter={data} />
+            </div>
+          ) : (
+            <div>
+            <Card href={`/blog/${slug}/`} frontmatter={data} />
+          </div>
+          )
+        )
       }
-    </ul>
+<!--  -->
+
+    </div>
   </Main>
 
   <Pagination

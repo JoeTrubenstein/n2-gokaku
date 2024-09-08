@@ -21,6 +21,7 @@ const { currentPage, totalPages, paginatedPosts } = Astro.props;
   <Header activeNav="cars" />
   <Main pageTitle="Cars" pageDesc="Wholesale (Non-Auction Cars)">
       <div class="lg:max-w-7xl mx-auto">
+        <p>These cars are third-party stock at local dealers in Japan. I can broker the sale and export of any one of them.</p>
         <div class="xl:gap-x-8 mt-6 grid sm:grid-cols-3 grid-cols-1 gap-x-6 gap-y-10">
             {
               paginatedPosts.map(({ data, slug }) => (

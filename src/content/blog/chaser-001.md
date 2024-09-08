@@ -9,12 +9,12 @@ tags:
   - Toyota
   - Chaser
 description: Toyota Chaser 1997
-ogImage: "https://res.cloudinary.com/indridcold/image/upload/v1725617611/JDM/cq2mbcvj6uxt9exnx10e.png"
+ogImage: "https://res.cloudinary.com/indridcold/image/upload/v1725783982/JDM/g5parrxkcnhvj4jyo5aj.webp"
 reg: "1997"
 fob: "28,730"
 miles: "79,000"
 ---
-![JDM Vehicle Stock](https://res.cloudinary.com/indridcold/image/upload/v1725617611/JDM/cq2mbcvj6uxt9exnx10e.png)
+![JDM Vehicle Stock](https://res.cloudinary.com/indridcold/image/upload/v1725783982/JDM/g5parrxkcnhvj4jyo5aj.webp)
 
 <table>
   <tr>
@@ -42,6 +42,6 @@ miles: "79,000"
     <td>1JZ TURBO 5 SPEED</td>
 </table>
                           
-<img src="https://res.cloudinary.com/indridcold/image/upload/v1725367816/JDM/ksozjv4txfckpiejnhj9.png" alt="Alt text" style="filter: blur(7px);">
+<img src="https://res.cloudinary.com/indridcold/image/upload/v1725784389/JDM/mol3ngb4ma2yy1rxgwj8.webp" alt="Alt text" style="filter: blur(7px);">
 
 To unlock inspection sheets and more photos - [contact us](../../contact) today!

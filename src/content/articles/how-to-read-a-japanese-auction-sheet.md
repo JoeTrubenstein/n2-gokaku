@@ -8,6 +8,7 @@ draft: false
 tags:
   - blog
   - how-to
+  - lancer
 description: Japanese car auctions are a game of both luck and skill. Do everything you can to tip the odds in your favor.
 ogImage: "https://res.cloudinary.com/indridcold/image/upload/v1725675272/JDM/a0yzyjfjvig06ui3qojr.webp"
 ---

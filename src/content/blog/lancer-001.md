@@ -9,12 +9,12 @@ tags:
   - Mitsubishi
   - Lancer
 description: Mitsubishi Lancer 1996
-ogImage: "https://res.cloudinary.com/indridcold/image/upload/v1725664149/JDM/dtvdq29jzmclogsi64qn.png"
+ogImage: "https://res.cloudinary.com/indridcold/image/upload/v1725783982/JDM/xz6etrqcq2fumogfo0ee.webp"
 reg: "1996"
 fob: "9,900"
 miles: "132,000"
 ---
-![JDM Vehicle Stock](https://res.cloudinary.com/indridcold/image/upload/v1725664149/JDM/dtvdq29jzmclogsi64qn.png)
+![JDM Vehicle Stock](https://res.cloudinary.com/indridcold/image/upload/v1725783982/JDM/xz6etrqcq2fumogfo0ee.webp)
 
 <table>
   <tr>
@@ -42,6 +42,6 @@ miles: "132,000"
     <td>GSR EVOLUTION 4 4WD</td>
 </table>
                           
-<img src="https://res.cloudinary.com/indridcold/image/upload/v1725367816/JDM/ksozjv4txfckpiejnhj9.png" alt="Alt text" style="filter: blur(7px);">
+<img src="https://res.cloudinary.com/indridcold/image/upload/v1725784389/JDM/mol3ngb4ma2yy1rxgwj8.webp" alt="Alt text" style="filter: blur(7px);">
 
 To unlock inspection sheets and more photos - [contact us](../../contact) today!

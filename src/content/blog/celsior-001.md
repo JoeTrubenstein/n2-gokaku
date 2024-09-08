@@ -9,12 +9,12 @@ tags:
   - Toyota
   - Celsior
 description: Toyota Celsior 1993
-ogImage: "https://res.cloudinary.com/indridcold/image/upload/v1725665122/JDM/vcavhvhz9b8sujklbhcn.png"
+ogImage: "https://res.cloudinary.com/indridcold/image/upload/v1725783982/JDM/mds7eiira1axfcqvmvwl.webp"
 reg: "1993"
 fob: "3,460"
 miles: "25,000"
 ---
-![JDM Vehicle Stock](https://res.cloudinary.com/indridcold/image/upload/v1725665122/JDM/vcavhvhz9b8sujklbhcn.png)
+![JDM Vehicle Stock](https://res.cloudinary.com/indridcold/image/upload/v1725783982/JDM/mds7eiira1axfcqvmvwl.webp)
 
 <table>
   <tr>
@@ -42,6 +42,6 @@ miles: "25,000"
     <td>C SPECIFICATION</td>
 </table>
 
-<img src="https://res.cloudinary.com/indridcold/image/upload/v1725367816/JDM/ksozjv4txfckpiejnhj9.png" alt="Alt text" style="filter: blur(7px);">
+<img src="https://res.cloudinary.com/indridcold/image/upload/v1725784389/JDM/mol3ngb4ma2yy1rxgwj8.webp" alt="Alt text" style="filter: blur(7px);">
 
 To unlock inspection sheets and more photos - [contact us](../../contact) today!
