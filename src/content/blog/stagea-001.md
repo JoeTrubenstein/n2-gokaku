@@ -1,7 +1,7 @@
 ---
 author: default
 pubDatetime: 2024-09-09T04:59:04.866Z
-title: Nissan Stagea Autech
+title: Nissan Stagea
 slug: stagea-001
 featured: true
 draft: false
@@ -9,7 +9,7 @@ tags:
   - Nissan
   - Stagea
   - Autech
-description: Nissan Skyline 1998
+description: Nissan Stagea 1998
 ogImage: "https://res.cloudinary.com/indridcold/image/upload/v1725961391/JDM/djvqqgbx4myhjl892kjr.webp"
 reg: "1998"
 fob: "37,300"

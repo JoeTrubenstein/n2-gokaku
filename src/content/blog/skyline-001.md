@@ -17,7 +17,7 @@ miles: "81,000"
 ---
 These cars are third-party stock at local dealers in Japan. I can broker the sale and export of any one of them.
 
-![JDM Vehicle Stock](https://res.cloudinary.com/indridcold/image/upload/v1725960413/ivjdixe1zx71muii44f1.webp)
+![JDM Vehicle Stock](https://res.cloudinary.com/indridcold/image/upload/v1725960413/JDM/ivjdixe1zx71muii44f1.webp)
 
 The R32 Nissan Skyline GT-R is an absolute icon in the JDM world, revered for its thrilling performance and timeless design. Powered by the legendary 2.6-liter RB26DETT twin-turbo engine, this GT-R delivers heart-pounding power and precision. Paired with a manual transmission, the driving experience is pure and immersive, allowing enthusiasts to fully engage with the car’s impressive capabilities on the road or track.
 
