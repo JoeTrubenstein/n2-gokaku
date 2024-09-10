@@ -118,7 +118,7 @@ Keeping a close eye on prices, both in Japan and at home, can help you spot when
 
 If you suspect an importer is preparing The Markup - the best strategy to avoid overpaying may be to simply cut the importer out of the deal altogether.
 
-There are plenty of guys like me on the Japan side, who are ready to help you just [import a JDM car yourself.](../blog/how-to-import-a-jdm-car-to-the-united-states/)
+There are plenty of guys like me on the Japan side, who are ready to help you just [import a JDM car yourself.](https://jdmcafe.com/blog/how-to-import-a-jdm-car-into-the-united%20states/)
 
 ### The Nasty Surprise
 
