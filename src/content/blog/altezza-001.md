@@ -3,7 +3,7 @@ author: default
 pubDatetime: 2024-08-31T04:59:04.866Z
 title: Toyota Altezza
 slug: altezza-001
-featured: true
+featured: false
 draft: false
 tags:
   - Toyota
@@ -14,7 +14,7 @@ reg: "1998"
 fob: "3,800"
 miles: "200,000"
 ---
-Available in 3rd party stock.
+These cars are third-party stock at local dealers in Japan. I can broker the sale and export of any one of them.
 
 ![JDM Vehicle Stock](https://res.cloudinary.com/indridcold/image/upload/v1725783982/JDM/xz6etrqcq2fumogfo0ee.webp)
 

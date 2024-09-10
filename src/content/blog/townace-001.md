@@ -14,7 +14,7 @@ reg: "1994"
 fob: "6,100"
 miles: "103,000"
 ---
-Available in 3rd party stock.
+These cars are third-party stock at local dealers in Japan. I can broker the sale and export of any one of them.
 
 ![JDM Vehicle Stock](https://res.cloudinary.com/indridcold/image/upload/v1725783984/JDM/inovwghcfxx8ououqqws.webp)
 

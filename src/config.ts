@@ -8,7 +8,7 @@ export const SITE: Site = {
   title: "JDM Cafe",
   ogImage: "https://res.cloudinary.com/indridcold/image/upload/v1725798081/JDM/cs2z5qoza036hoprnxht.png",
   lightAndDarkMode: true,
-  postPerIndex: 6,
+  postPerIndex: 3,
   postPerPage: 9,
   scheduledPostMargin: 15 * 60 * 1000, // 15 minutes
 };
