@@ -26,7 +26,7 @@ export default function articleCard({ href, frontmatter, secHeading = true }: Pr
         <div className="aspect-h-1 aspect-w-1 lg:aspect-none w-full overflow-hidden rounded-md bg-gray-200 group-hover:opacity-75">
           <img
             src={ogImage?.toString()}
-            alt="decorative cover image"
+            alt={title}
             className="lg:h-full lg:w-full h-full w-full object-cover object-center"
           />
         </div>

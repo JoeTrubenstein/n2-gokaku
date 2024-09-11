@@ -9,7 +9,7 @@ tags:
   - Nissan
   - Stagea
   - Autech
-description: Nissan Stagea 1998
+description: 1998 Nissan Stagea For Sale
 ogImage: "https://res.cloudinary.com/indridcold/image/upload/v1725961391/JDM/djvqqgbx4myhjl892kjr.webp"
 reg: "1998"
 fob: "37,300"

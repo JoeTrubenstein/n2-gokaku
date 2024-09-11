@@ -8,7 +8,7 @@ draft: false
 tags:
   - Mitsubishi
   - Lancer
-description: Mitsubishi Lancer 1996
+description: 1996 Mitsubishi Lancer For Sale
 ogImage: "https://res.cloudinary.com/indridcold/image/upload/v1725783981/JDM/t0lqh7xdyne4xcsjemgq.webp"
 reg: "1996"
 fob: "9,900"

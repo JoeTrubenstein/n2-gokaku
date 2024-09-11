@@ -8,7 +8,7 @@ draft: false
 tags:
   - Toyota
   - Altezza
-description: Toyota Altezza 1998
+description: 1998 Toyota Altezza For Sale
 ogImage: "https://res.cloudinary.com/indridcold/image/upload/v1725783982/JDM/xz6etrqcq2fumogfo0ee.webp"
 reg: "1998"
 fob: "3,800"

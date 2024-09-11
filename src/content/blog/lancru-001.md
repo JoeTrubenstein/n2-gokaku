@@ -8,7 +8,7 @@ draft: false
 tags:
   - Toyota
   - Land Cruiser
-description: 1994 Land Cruiser
+description: 1994 Land Cruiser For Sale
 ogImage: "https://res.cloudinary.com/indridcold/image/upload/v1725783983/JDM/wisw9q4qtljkuakov36q.webp"
 reg: "1994"
 fob: "14,800"

@@ -8,7 +8,7 @@ draft: false
 tags:
   - Toyota
   - Chaser
-description: Toyota Chaser 1997
+description: 1987 Toyota Chaser For Sale
 ogImage: "https://res.cloudinary.com/indridcold/image/upload/v1725783982/JDM/g5parrxkcnhvj4jyo5aj.webp"
 reg: "1997"
 fob: "28,730"

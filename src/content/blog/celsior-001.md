@@ -8,7 +8,7 @@ draft: false
 tags:
   - Toyota
   - Celsior
-description: Toyota Celsior 1993
+description: 1993 Toyota Celsior For Sale
 ogImage: "https://res.cloudinary.com/indridcold/image/upload/v1725783982/JDM/mds7eiira1axfcqvmvwl.webp"
 reg: "1993"
 fob: "3,460"

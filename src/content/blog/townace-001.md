@@ -8,7 +8,7 @@ draft: false
 tags:
   - Toyota
   - Town Ace
-description: Toyota Town Ace 1994
+description: 1994 Toyota Town Ace For Sale
 ogImage: "https://res.cloudinary.com/indridcold/image/upload/v1725783984/JDM/inovwghcfxx8ououqqws.webp"
 reg: "1994"
 fob: "6,100"

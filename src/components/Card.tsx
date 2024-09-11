@@ -26,7 +26,7 @@ export default function Card({ href, frontmatter, secHeading = true }: Props) {
         <div className="aspect-h-1 aspect-w-1 lg:aspect-none w-full overflow-hidden rounded-md bg-gray-200 group-hover:opacity-75">
           <img
             src={ogImage?.toString()}
-            alt="Front of men's Basic Tee in black."
+            alt={description}
             className="lg:h-full lg:w-full h-full w-full object-cover object-center"
           />
         </div>

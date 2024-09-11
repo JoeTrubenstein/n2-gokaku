@@ -9,7 +9,7 @@ tags:
   - Nissan
   - Skyline
   - GT-R
-description: Nissan Skyline 1993
+description: 1993 Nissan Skyline For Sale
 ogImage: "https://res.cloudinary.com/indridcold/image/upload/v1725960413/JDM/ivjdixe1zx71muii44f1.webp"
 reg: "1993"
 fob: "40,500"
