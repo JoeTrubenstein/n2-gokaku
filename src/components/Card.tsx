@@ -9,8 +9,16 @@ export interface Props {
 }
 
 export default function Card({ href, frontmatter, secHeading = true }: Props) {
-  const { title, pubDatetime, modDatetime, description, reg, fob, ogImage, miles } =
-    frontmatter;
+  const {
+    title,
+    pubDatetime,
+    modDatetime,
+    description,
+    reg,
+    fob,
+    ogImage,
+    miles,
+  } = frontmatter;
 
   const headerProps = {
     style: { viewTransitionName: slugifyStr(title) },
@@ -27,14 +35,25 @@ export default function Card({ href, frontmatter, secHeading = true }: Props) {
           <img
             src={ogImage?.toString()}
             alt={description}
-            className="lg:h-full lg:w-full h-full w-full object-cover object-cente max-w-lg"
+            className="lg:h-full lg:w-full object-cente h-full w-full max-w-lg object-cover"
           />
         </div>
         <h2 {...headerProps}>{title}</h2>
       </a>
-      {reg ? (<div>      <p>First Registered: {reg}</p>
-      <p>Odometer: {miles} kms</p>
-      <p>FOB: <b>{fob}</b> USD</p></div>):(<div><p>{description}</p></div>)}
+      {reg ? (
+        <div>
+          {" "}
+          <p>First Registered: {reg}</p>
+          <p>Odometer: {miles} kms</p>
+          <p>
+            FOB: <b>{fob}</b> USD
+          </p>
+        </div>
+      ) : (
+        <div>
+          <p>{description}</p>
+        </div>
+      )}
       {/* <p>First Registered: {reg}</p>
       <p>Odometer: {miles} kms</p>
       <p>FOB: <b>{fob}</b> USD</p> */}
