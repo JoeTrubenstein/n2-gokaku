@@ -24,10 +24,11 @@ export default function articleCard({ href, frontmatter, secHeading = true }: Pr
         className="inline-block text-lg font-medium text-skin-accent decoration-dashed underline-offset-4 focus-visible:no-underline focus-visible:underline-offset-0"
       >
         <div className="aspect-h-1 aspect-w-1 lg:aspect-none w-full overflow-hidden rounded-md bg-gray-200 group-hover:opacity-75">
+          {/* trying to properly size images */}
           <img
             src={ogImage?.toString()}
             alt={title}
-            className="lg:h-full lg:w-full h-full w-full object-cover object-center"
+            className="lg:h-full lg:w-full h-full w-full object-cover object-center max-w-lg"
           />
         </div>
         <h2 {...headerProps}>{title}</h2>

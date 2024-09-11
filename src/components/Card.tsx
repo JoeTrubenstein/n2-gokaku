@@ -27,7 +27,7 @@ export default function Card({ href, frontmatter, secHeading = true }: Props) {
           <img
             src={ogImage?.toString()}
             alt={description}
-            className="lg:h-full lg:w-full h-full w-full object-cover object-center"
+            className="lg:h-full lg:w-full h-full w-full object-cover object-cente max-w-lg"
           />
         </div>
         <h2 {...headerProps}>{title}</h2>
