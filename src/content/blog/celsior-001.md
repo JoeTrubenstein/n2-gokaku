@@ -8,15 +8,16 @@ draft: false
 tags:
   - Toyota
   - Celsior
+  - Sold
 description: 1993 Toyota Celsior For Sale
-ogImage: "https://res.cloudinary.com/indridcold/image/upload/v1725783982/JDM/mds7eiira1axfcqvmvwl.webp"
+ogImage: "https://res.cloudinary.com/indridcold/image/upload//l_image:upload:JDM:o5inuuqfjece8ikfbejd/c_scale,fl_relative,w_0.80/o_100/fl_layer_apply,g_center,x_0.03,y_0.04/v1725783982/JDM/mds7eiira1axfcqvmvwl.webp"
 reg: "1993"
 fob: "3,460"
 miles: "25,000"
 ---
 These cars are third-party stock at local dealers in Japan. I can broker the sale and export of any one of them.
 
-![JDM Vehicle Stock](https://res.cloudinary.com/indridcold/image/upload/v1725783982/JDM/mds7eiira1axfcqvmvwl.webp)
+![JDM Vehicle Stock](https://res.cloudinary.com/indridcold/image/upload//l_image:upload:JDM:o5inuuqfjece8ikfbejd/c_scale,fl_relative,w_0.80/o_100/fl_layer_apply,g_center,x_0.03,y_0.04/v1725783982/JDM/mds7eiira1axfcqvmvwl.webp)
 
 The Toyota Celsior is the epitome of luxury and performance in the JDM world. Powered by a 4.0-liter V8 engine, this car offers a smooth and effortless driving experience, with the automatic transmission ensuring a refined ride. The Celsior is renowned for its impeccable build quality and comfort, making it a favorite among those who value both power and luxury.
 

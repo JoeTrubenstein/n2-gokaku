@@ -8,15 +8,16 @@ draft: false
 tags:
   - Toyota
   - Town Ace
+  - Sold
 description: 1994 Toyota Town Ace For Sale
-ogImage: "https://res.cloudinary.com/indridcold/image/upload/v1725783984/JDM/inovwghcfxx8ououqqws.webp"
+ogImage: "https://res.cloudinary.com/indridcold/image/upload//l_image:upload:JDM:o5inuuqfjece8ikfbejd/c_scale,fl_relative,w_0.80/o_100/fl_layer_apply,g_center,x_0.03,y_0.04/v1725783984/JDM/inovwghcfxx8ououqqws.webp"
 reg: "1994"
 fob: "6,100"
 miles: "103,000"
 ---
 These cars are third-party stock at local dealers in Japan. I can broker the sale and export of any one of them.
 
-![JDM Vehicle Stock](https://res.cloudinary.com/indridcold/image/upload/v1725783984/JDM/inovwghcfxx8ououqqws.webp)
+![JDM Vehicle Stock](https://res.cloudinary.com/indridcold/image/upload//l_image:upload:JDM:o5inuuqfjece8ikfbejd/c_scale,fl_relative,w_0.80/o_100/fl_layer_apply,g_center,x_0.03,y_0.04/v1725783984/JDM/inovwghcfxx8ououqqws.webp)
 
 The Toyota TownAce is a versatile and practical gem in the JDM lineup, offering the perfect blend of functionality and reliability. Powered by a 2.0-liter engine and paired with a 5-speed manual transmission, this TownAce provides a hands-on, engaging driving experience. It’s the ideal vehicle for those who appreciate both efficiency and control, making it a great choice for urban commutes and family trips alike.
 

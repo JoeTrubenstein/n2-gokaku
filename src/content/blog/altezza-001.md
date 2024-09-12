@@ -8,15 +8,16 @@ draft: false
 tags:
   - Toyota
   - Altezza
+  - Sold
 description: 1998 Toyota Altezza For Sale
-ogImage: "https://res.cloudinary.com/indridcold/image/upload/v1725783982/JDM/xz6etrqcq2fumogfo0ee.webp"
+ogImage: "https://res.cloudinary.com/indridcold/image/upload//l_image:upload:JDM:o5inuuqfjece8ikfbejd/c_scale,fl_relative,w_0.80/o_100/fl_layer_apply,g_center,x_0.03,y_0.04/v1725783982/JDM/xz6etrqcq2fumogfo0ee.webp"
 reg: "1998"
 fob: "3,800"
 miles: "200,000"
 ---
 These cars are third-party stock at local dealers in Japan. I can broker the sale and export of any one of them.
 
-![JDM Vehicle Stock](https://res.cloudinary.com/indridcold/image/upload/v1725783982/JDM/xz6etrqcq2fumogfo0ee.webp)
+![JDM Vehicle Stock](https://res.cloudinary.com/indridcold/image/upload//l_image:upload:JDM:o5inuuqfjece8ikfbejd/c_scale,fl_relative,w_0.80/o_100/fl_layer_apply,g_center,x_0.03,y_0.04/v1725783982/JDM/xz6etrqcq2fumogfo0ee.webp)
 
 The RS200 is a standout in the JDM world, known for its sleek design and balanced performance. Powered by a 2.0-liter inline-four engine, it delivers a smooth yet responsive driving experience. Even with an automatic transmission, the Altezza offers a lively ride that JDM enthusiasts appreciate, blending performance with practicality.
 
