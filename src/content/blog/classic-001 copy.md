@@ -9,14 +9,14 @@ tags:
   - Toyota
   - Classic
 description: 1997 Toyota Classic For Sale
-ogImage: "https://res.cloudinary.com/indridcold/image/upload/v1726049576/arjmfqbzwkrm7amq3gst.webp"
+ogImage: "https://res.cloudinary.com/indridcold/image/upload//l_image:upload:JDM:o5inuuqfjece8ikfbejd/c_scale,fl_relative,w_0.80/o_100/fl_layer_apply,g_center,x_0.03,y_0.04/v1726049576/arjmfqbzwkrm7amq3gst.webp"
 reg: "1997"
 fob: "17,000"
 miles: "96,000"
 ---
 These cars are third-party stock at local dealers in Japan. I can broker the sale and export of any one of them.
 
-![JDM Vehicle Stock](https://res.cloudinary.com/indridcold/image/upload/v1726049576/arjmfqbzwkrm7amq3gst.webp)
+![JDM Vehicle Stock](https://res.cloudinary.com/indridcold/image/upload//l_image:upload:JDM:o5inuuqfjece8ikfbejd/c_scale,fl_relative,w_0.80/o_100/fl_layer_apply,g_center,x_0.03,y_0.04/v1726049576/arjmfqbzwkrm7amq3gst.webp)
 
 The Toyota Classic is a unique tribute to Toyota’s heritage, blending retro styling with modern reliability. Inspired by the classic Toyota AA from the 1930s, this limited-edition model is powered by a 2.0-liter engine and features an automatic transmission, offering smooth and easy driving. Despite its vintage-inspired design, it delivers the dependable performance you’d expect from a Toyota, making it a charming yet practical choice for enthusiasts who appreciate both history and drivability.
 

@@ -9,14 +9,14 @@ tags:
   - Mitsubishi
   - Lancer
 description: 1996 Mitsubishi Lancer For Sale
-ogImage: "https://res.cloudinary.com/indridcold/image/upload/v1725783981/JDM/t0lqh7xdyne4xcsjemgq.webp"
+ogImage: "https://res.cloudinary.com/indridcold/image/upload//l_image:upload:JDM:o5inuuqfjece8ikfbejd/c_scale,fl_relative,w_0.80/o_100/fl_layer_apply,g_center,x_0.03,y_0.04/v1725783981/JDM/t0lqh7xdyne4xcsjemgq.webp"
 reg: "1996"
 fob: "9,900"
 miles: "132,000"
 ---
 These cars are third-party stock at local dealers in Japan. I can broker the sale and export of any one of them.
 
-![JDM Vehicle Stock](https://res.cloudinary.com/indridcold/image/upload/v1725783981/JDM/t0lqh7xdyne4xcsjemgq.webp)
+![JDM Vehicle Stock](https://res.cloudinary.com/indridcold/image/upload//l_image:upload:JDM:o5inuuqfjece8ikfbejd/c_scale,fl_relative,w_0.80/o_100/fl_layer_apply,g_center,x_0.03,y_0.04/v1725783981/JDM/t0lqh7xdyne4xcsjemgq.webp)
 
 The 1996 Mitsubishi Lancer Evo GSR Evolution 4 is a true JDM icon, representing everything that made 90s Japanese cars legendary. With its 2.0-liter turbocharged engine and manual transmission, it delivers raw, exhilarating power that every enthusiast craves. The advanced 4WD system, derived from Mitsubishi's rally heritage, provides unmatched grip and control, making every drive a thrilling experience.
 

@@ -9,14 +9,14 @@ tags:
   - Toyota
   - Land Cruiser
 description: 1994 Land Cruiser For Sale
-ogImage: "https://res.cloudinary.com/indridcold/image/upload/v1725783983/JDM/wisw9q4qtljkuakov36q.webp"
+ogImage: "https://res.cloudinary.com/indridcold/image/upload//l_image:upload:JDM:o5inuuqfjece8ikfbejd/c_scale,fl_relative,w_0.80/o_100/fl_layer_apply,g_center,x_0.03,y_0.04/v1725783983/JDM/wisw9q4qtljkuakov36q.webp"
 reg: "1994"
 fob: "14,800"
 miles: "301,000"
 ---
 These cars are third-party stock at local dealers in Japan. I can broker the sale and export of any one of them.
 
-![JDM Vehicle Stock](https://res.cloudinary.com/indridcold/image/upload/v1725783983/JDM/wisw9q4qtljkuakov36q.webp)
+![JDM Vehicle Stock](https://res.cloudinary.com/indridcold/image/upload//l_image:upload:JDM:o5inuuqfjece8ikfbejd/c_scale,fl_relative,w_0.80/o_100/fl_layer_apply,g_center,x_0.03,y_0.04/v1725783983/JDM/wisw9q4qtljkuakov36q.webp)
 
 The Toyota Land Cruiser 3.0 SX Diesel Turbo 4 is a rugged legend in the world of off-road vehicles. Powered by a 3.0-liter diesel turbo engine, this Land Cruiser is built for durability and adventure. Its automatic transmission makes for easy driving, whether you’re navigating city streets or tackling challenging terrain. This Land Cruiser is all about reliability, making it a trusted companion for both daily drives and off-road escapades.
 
