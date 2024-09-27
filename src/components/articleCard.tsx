@@ -25,9 +25,12 @@ export default function articleCard({ href, frontmatter, secHeading = true }: Pr
       >
         <div className="aspect-h-1 aspect-w-1 lg:aspect-none w-full overflow-hidden rounded-md bg-gray-200 group-hover:opacity-75">
           {/* trying to properly size images */}
+
           <img
             src={ogImage?.toString()}
             alt={title}
+            decoding="async"
+            loading="lazy"
             className="lg:h-full lg:w-full h-full w-full object-cover object-center max-w-lg"
           />
         </div>
