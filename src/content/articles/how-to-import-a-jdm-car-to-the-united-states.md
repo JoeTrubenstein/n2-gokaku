@@ -9,14 +9,14 @@ tags:
   - blog
   - how-to
 description: These days, it's becoming more common to see cars from the Japanese domestic market on American roadways. So where are people getting these JDM cars from?
-ogImage: "https://res.cloudinary.com/indridcold/image/upload/v1725780736/JDM/vtr3spc3yxbwfauivyux.webp"
+ogImage: "./sil.webp"
 ---
 How to import a JDM Car into the United States
 ==============================================
 
 These days, it's becoming more common to see cars from the Japanese domestic market on American roadways. So where are people getting these JDM cars from?
 
-![How to import a JDM Car into the United States](https://res.cloudinary.com/indridcold/image/upload/v1725780736/JDM/vtr3spc3yxbwfauivyux.webp)
+![How to import a JDM Car into the United States](./sil.webp)
 
 Sourcing a JDM car from Japan
 -----------------------------

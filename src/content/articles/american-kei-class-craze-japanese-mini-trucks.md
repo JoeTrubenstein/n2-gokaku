@@ -10,14 +10,14 @@ tags:
   - how-to
   - kei
 description: The enthusiasm long held for the cars of “Tokyo Drift” - is now spilling over into more eccentric corners of the JDM fandom.
-ogImage: "https://res.cloudinary.com/indridcold/image/upload/v1725782468/JDM/qusjiokmd22ltkxxu84f.webp"
+ogImage: "./kei.webp"
 ---
 American Kei Class Craze: Japanese Mini Trucks in The US
 ========================================================
 
 The enthusiasm long held for the cars of “Tokyo Drift” - is now spilling over into more eccentric corners of the JDM fandom.
 
-![Bald Man Posing Next to a Suzuki Carry kei truck](https://res.cloudinary.com/indridcold/image/upload/v1725782468/JDM/qusjiokmd22ltkxxu84f.webp)
+![Bald Man Posing Next to a Suzuki Carry kei truck](./kei.webp)
 
 If you searched for this, you probably saw one or more Japanese mini trucks on American streets and wondered why.
 

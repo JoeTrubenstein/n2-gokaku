@@ -17,6 +17,8 @@ export default function articleCard({ href, frontmatter, secHeading = true }: Pr
     className: "text-lg font-medium decoration-dashed hover:underline",
   };
 
+  console.log(ogImage)
+
   return (
     <div className="group relative">
       <a
@@ -27,7 +29,7 @@ export default function articleCard({ href, frontmatter, secHeading = true }: Pr
           {/* trying to properly size images */}
 
           <img
-            src={ogImage?.toString()}
+            src={ogImage.src}
             alt={title}
             decoding="async"
             loading="lazy"
@@ -41,3 +43,4 @@ export default function articleCard({ href, frontmatter, secHeading = true }: Pr
     </div>
   );
 }
+

@@ -9,14 +9,14 @@ tags:
   - blog
   - how-to
 description: To infiltrate a community, and exploit the trust and naivety of those inside, feels much more evil than petty theft.
-ogImage: "https://res.cloudinary.com/indridcold/image/upload/v1725670595/JDM/mjrmmf93tru9vkgjib1q.webp"
+ogImage: "./shady.webp"
 ---
 How to get Screwed by Shady JDM Importers
 =========================================
 
 To infiltrate a community, and exploit the trust and naivety of those inside, feels much more evil than petty theft.
 
-![How to get Screwed by Shady JDM Importers](https://res.cloudinary.com/indridcold/image/upload/v1725670595/JDM/mjrmmf93tru9vkgjib1q.webp)
+![How to get Screwed by Shady JDM Importers](./shady.webp)
 
 <small>"May have a faint smell of smoke."</small>
 

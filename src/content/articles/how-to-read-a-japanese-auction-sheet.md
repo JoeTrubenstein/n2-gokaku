@@ -10,14 +10,14 @@ tags:
   - how-to
   - lancer
 description: Japanese car auctions are a game of both luck and skill. Do everything you can to tip the odds in your favor.
-ogImage: "https://res.cloudinary.com/indridcold/image/upload/v1725675272/JDM/a0yzyjfjvig06ui3qojr.webp"
+ogImage: "raku.webp"
 ---
 How to Read a Japanese Auction Sheet
 ====================================
 
 Japanese car auctions are a game of both luck and skill. Do everything you can to tip the odds in your favor.
 
-![How to Read a Japanese Auction Sheet](https://res.cloudinary.com/indridcold/image/upload/v1725675272/JDM/a0yzyjfjvig06ui3qojr.webp)
+![How to Read a Japanese Auction Sheet](./raku.webp)
 
 When bidding on the JDM car of your dreams, knowing how to read a Japanese auction sheet is by far the most important skill to master.
 
