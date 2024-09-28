@@ -36,7 +36,6 @@ export default function Card({ href, frontmatter, secHeading = true }: Props) {
             src={ogImage?.toString()}
             alt={description}
             decoding="async"
-            loading="lazy"
             className="lg:h-full lg:w-full object-cente h-full w-full max-w-lg object-cover"
           />
         </div>

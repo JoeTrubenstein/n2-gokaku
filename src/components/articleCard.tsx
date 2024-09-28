@@ -32,7 +32,6 @@ export default function articleCard({ href, frontmatter, secHeading = true }: Pr
             src={ogImage.src}
             alt={title}
             decoding="async"
-            loading="lazy"
             className="lg:h-full lg:w-full h-full w-full object-cover object-center max-w-lg"
           />
         </div>
