@@ -33,7 +33,7 @@ export default function Card({ href, frontmatter, secHeading = true }: Props) {
       >
         <div className="aspect-h-1 aspect-w-1 lg:aspect-none w-full overflow-hidden rounded-md bg-gray-200 group-hover:opacity-75">
           <img
-            src={ogImage?.toString()}
+            src={ogImage.src || ogImage}
             alt={description}
             decoding="async"
             className="lg:h-full lg:w-full object-cente h-full w-full max-w-lg object-cover"
