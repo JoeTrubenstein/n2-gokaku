@@ -15,7 +15,7 @@ allGrammar.sort((a, b) =>
 );
 
 // 3) Pagination settings
-const perPage = 10;
+const perPage = 2;
 const pageGrammar = allGrammar.slice(0, perPage);
 const pageCount   = Math.ceil(allGrammar.length / perPage);
 ---
@@ -90,7 +90,7 @@ const pageCount   = Math.ceil(allGrammar.length / perPage);
 
       {pageCount > 1 && (
         <nav class="mt-6 flex justify-end space-x-4 text-skin-accent">
-          <a href="/grammar/2/" class="hover:underline">
+          <a href="/grammar/2" class="hover:underline">
             Next →
           </a>
         </nav>
