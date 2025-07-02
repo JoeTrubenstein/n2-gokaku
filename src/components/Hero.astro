@@ -1,0 +1,80 @@
+---
+import Socials from "@components/Socials.astro";
+import LinkButton from "@components/LinkButton.astro";
+import { SOCIALS } from "@config";
+const socialCount = SOCIALS.filter(social => social.active).length;
+---
+
+<section
+  id="hero"
+  class="flex flex-col sm:flex-row items-center gap-8 pb-6 pt-8"
+>
+  <!-- Text column: second on mobile, first on sm+ -->
+  <div class="w-full sm:w-1/2 order-2 sm:order-1">
+    <h1 class="my-4 inline-block text-3xl font-bold sm:my-8 sm:text-5xl">N2 Gokaku</h1>
+
+    <a
+      target="_blank"
+      href="/rss.xml"
+      class="rss-link mb-6"
+      aria-label="rss feed"
+      title="RSS Feed"
+    >
+      <span class="sr-only">RSS Feed</span>
+    </a>
+
+    <p class="my-2">
+Master JLPT N2 with confidence. Study kanji, grammar, vocabulary, and reading using structured tools and resources designed to help you pass faster.    </p>
+
+    <!-- Call to action button -->
+    <a
+      href="/tools"
+      class="inline-block mt-4 bg-skin-accent text-white px-6 py-3 rounded hover:opacity-90 transition focus:outline-none focus:ring-2 focus:ring-skin-accent/50"
+    >
+      Get started for free
+    </a>
+
+    {
+      // only display if at least one social link is enabled
+      socialCount > 0 && (
+        <div class="social-wrapper mt-4 flex flex-col sm:flex-row sm:items-center">
+          <div class="social-links mb-1 mr-2 whitespace-nowrap sm:mb-0">Social Links:</div>
+          <Socials />
+        </div>
+      )
+    }
+  </div>
+
+  <!-- Image column: first on mobile, second on sm+ -->
+  <div class="w-full sm:w-1/2 order-1 sm:order-2 pt-4 sm:pt-0">
+    <div class="w-full h-64 bg-skin-card-muted rounded shadow"></div>
+  </div>
+</section>
+
+
+
+
+<style>
+  /* ===== Hero Section ===== */
+  #hero {
+    @apply pb-6 pt-2;
+  }
+  #hero h1 {
+    @apply my-4 inline-block text-3xl font-bold sm:my-8 sm:text-5xl;
+  }
+  #hero .rss-link {
+    @apply mb-6;
+  }
+  #hero .rss-icon {
+    @apply mb-2 h-6 w-6 scale-110 fill-skin-accent sm:mb-3 sm:scale-125;
+  }
+  #hero p {
+    @apply my-2;
+  }
+  .social-wrapper {
+    @apply mt-4 flex flex-col sm:flex-row sm:items-center;
+  }
+  .social-links {
+    @apply mb-1 mr-2 whitespace-nowrap sm:mb-0;
+  }
+</style>

@@ -1,0 +1,93 @@
+---
+import { SITE } from "@config";
+import Layout from "@layouts/Layout.astro";
+import Header from "@components/Header.astro";
+import Footer from "@components/Footer.astro";
+import Breadcrumbs from "@components/Breadcrumbs.astro";
+import { getCollection, type CollectionEntry } from "astro:content";
+
+// load all vocabulary entries
+const allVocab = await getCollection("vocabulary", (e) => !e.data.draft);
+// sort by the vocabulary term
+allVocab.sort((a, b) => a.data.term.localeCompare(b.data.term));
+
+const perPage = 10;
+const pageVocab = allVocab.slice(0, perPage);
+const pageCount = Math.ceil(allVocab.length / perPage);
+---
+
+<Layout title={`Vocabulary | ${SITE.title}`}>
+  <Header activeNav="vocabulary" />
+
+  <Breadcrumbs
+    items={[
+      { text: "Home", href: "/" },
+      { text: "Vocabulary", href: "/vocabulary/" },
+    ]}
+  />
+
+  <main id="main-content" class="py-12">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+      <h1 class="text-4xl font-bold mb-6">N2 Vocabulary List</h1>
+
+      <img
+        src="/assets/vocabulary-hero.png"
+        alt="N2 Vocabulary study illustration"
+        class="w-full mb-8"
+      />
+
+      <div class="text-lg mb-8">
+        <p>
+          <strong>How to use this list:</strong>
+          This table shows all JLPT N2 vocabulary in one place. Each entry includes the word, pronunciation, and English meaning. Click any term to explore example sentences, collocations, and audio!
+        </p>
+      </div>
+
+      <div class="overflow-x-auto">
+        <table class="min-w-full table-auto bg-skin-background divide-y divide-skin-muted">
+          <thead class="bg-skin-card-muted">
+            <tr>
+              <th class="px-6 py-3 text-left text-sm font-semibold text-skin-base">
+                Vocabulary
+              </th>
+              <th class="px-6 py-3 text-left text-sm font-semibold text-skin-base">
+                Reading
+              </th>
+              <th class="px-6 py-3 text-left text-sm font-semibold text-skin-base">
+                Meaning
+              </th>
+            </tr>
+          </thead>
+          <tbody class="divide-y divide-skin-muted">
+            {pageVocab.map((entry: CollectionEntry<"vocabulary">) => (
+              <tr class="hover:bg-skin-card-muted">
+                <td class="px-6 py-4">
+                  <a
+                    href={`/vocabulary/${entry.slug}/`}
+                    class="text-lg font-medium text-skin-accent hover:underline"
+                  >
+                    {entry.data.term}
+                  </a>
+                </td>
+                <td class="px-6 py-4 text-skin-base">
+                  {entry.data.reading}
+                </td>
+                <td class="px-6 py-4 text-skin-base">
+                  {entry.data.meaning}
+                </td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
+
+      {pageCount > 1 && (
+        <nav class="mt-6 flex justify-end space-x-4 text-skin-accent">
+          <a href="/vocabulary/2/" class="hover:underline">Next →</a>
+        </nav>
+      )}
+    </div>
+  </main>
+
+  <Footer />
+</Layout>

@@ -1,164 +1,218 @@
 ---
 import { getCollection } from "astro:content";
 import Layout from "@layouts/Layout.astro";
+import Hero from "@components/Hero.astro"
 import Header from "@components/Header.astro";
 import Footer from "@components/Footer.astro";
 import LinkButton from "@components/LinkButton.astro";
 import Hr from "@components/Hr.astro";
-import Card from "@components/Card";
-import ArticleCard from "../components/articleCard";
-import Socials from "@components/Socials.astro";
+
+import Card from "../components/Card";
+
 import getSortedPosts from "@utils/getSortedPosts";
-import { SITE, SOCIALS } from "@config";
 
 const posts = await getCollection("blog");
-const articles = await getCollection("articles");
 
 const sortedPosts = getSortedPosts(posts);
-const sortedArticles = getSortedPosts(articles);
-
-const featuredPosts = sortedPosts.filter(({ data }) => data.featured);
 const recentPosts = sortedPosts.filter(({ data }) => !data.featured);
-
-const featuredArticles = sortedArticles.filter(({ data }) => data.featured);
-const recentArticles = sortedArticles.filter(({ data }) => !data.featured);
-
-const socialCount = SOCIALS.filter(social => social.active).length;
 ---
 
 <Layout>
   <Header />
   <main id="main-content">
-    <section id="hero">
-      <h1>JDM Cafe</h1>
-      <a
-        target="_blank"
-        href="/rss.xml"
-        class="rss-link"
-        aria-label="rss feed"
-        title="RSS Feed"
-      >
-        <svg
-          class="rss-icon"
-          xmlns="http://www.w3.org/2000/svg"
-          height="24px"
-          viewBox="0 -960 960 960"
-          width="24px"
-        >
-          <path
-            d="M160-120v-80h640v80H160Zm160-160q-66 0-113-47t-47-113v-400h640q33 0 56.5 23.5T880-760v120q0 33-23.5 56.5T800-560h-80v120q0 66-47 113t-113 47H320Zm0-80h240q33 0 56.5-23.5T640-440v-320H240v320q0 33 23.5 56.5T320-360Zm400-280h80v-120h-80v120ZM320-360h-80 400-320Z"
-          ></path>
-        </svg>
-        <span class="sr-only">RSS Feed</span>
-      </a>
 
-      <p>
-        Learn about buying cars from the Japanese Domestic Market. Access dealers, auction houses, and private sellers with concierge-style export assitance.
-      </p>
-      <p>
-        <LinkButton
-          className="underline decoration-dashed underline-offset-4 hover:text-skin-accent"
-          href="../../contact"
-        >
-          Contact me
-        </LinkButton> or check my
-        <LinkButton
-          className="underline decoration-dashed underline-offset-4 hover:text-skin-accent"
-          href="../../about"
-        >
-          about page
-        </LinkButton> for more info.
-      </p>
-      {
-        // only display if at least one social link is enabled
-        socialCount > 0 && (
-          <div class="social-wrapper">
-            <div class="social-links">Social Links:</div>
-            <Socials />
-          </div>
-        )
-      }
-    </section>
+<Hero/>
 
     <Hr />
 
-    {
-      recentArticles.length > 0 && (
-        <>
-          <section id="featured">
-            <h2>Recent Posts</h2>
-            <div class="xl:gap-x-8 mt-6 grid grid-cols-1 gap-x-6 gap-y-10 sm:grid-cols-2">
-              {recentArticles.map(
-                ({ data, slug }, index) =>
-                  index < 2 && (
-                    <ArticleCard href={`/blog/${slug}/`} frontmatter={data} />
-                  )
-              )}
-            </div>
-          </section>
-          <div class="all-posts-btn-wrapper">
-            <LinkButton href="/blog/">
-              all posts
-              <svg xmlns="http://www.w3.org/2000/svg">
-                <path d="m11.293 17.293 1.414 1.414L19.414 12l-6.707-6.707-1.414 1.414L15.586 11H6v2h9.586z" />
-              </svg>
-            </LinkButton>
-          </div>
-          {recentArticles.length > 0 && <Hr />}
-        </>
-      )
-    }
-    {
-      featuredPosts.length > 0 && (
-        <>
-          <section id="featured">
-            <h2>Featured Cars</h2>
-            <div class="xl:gap-x-8 mt-6 grid grid-cols-1 gap-x-6 gap-y-10 sm:grid-cols-3">
-              {featuredPosts.map(({ data, slug }) => (
-                <Card
-                  href={`/cars/${slug}/`}
-                  frontmatter={data}
-                  secHeading={false}
-                />
-              ))}
-            </div>
-          </section>
-          {recentPosts.length > 0 && <Hr />}
-        </>
-      )
-    }
+  
 
-    {
-      recentPosts.length > 0 && (
-        <section id="recent-posts">
-          <h2>Recent Cars</h2>
-          <div class="xl:gap-x-8 mt-6 grid grid-cols-1 gap-x-6 gap-y-10 sm:grid-cols-3">
-            {recentPosts.map(
-              ({ data, slug }, index) =>
-                index < SITE.postPerIndex && (
-                  <Card
-                    href={`/cars/${slug}/`}
-                    frontmatter={data}
-                    secHeading={false}
-                  />
-                )
-            )}
-          </div>
-        </section>
-      )
-    }
 
-    <div class="all-posts-btn-wrapper">
-      <LinkButton href="/cars/">
-        all cars
-        <svg xmlns="http://www.w3.org/2000/svg"
-          ><path
-            d="m11.293 17.293 1.414 1.414L19.414 12l-6.707-6.707-1.414 1.414L15.586 11H6v2h9.586z"
-          ></path>
-        </svg>
-      </LinkButton>
+
+<section id="quick-start" class="py-12">
+  <div class="max-w-7xl mx-auto">
+    <h2 class="text-3xl font-bold">Quick Start</h2>
+<ruby>合格<rt>ごうかく</rt></ruby>
+
+    <!-- First row: 3 cards on desktop -->
+    <div class="mt-6 grid grid-cols-1 gap-x-6 gap-y-10 sm:grid-cols-3 xl:gap-x-8">
+      <!-- Kanji -->
+      <div class="bg-skin-card-muted rounded shadow p-6 flex flex-col">
+        <div class="w-12 h-12 bg-skin-card-muted-alt rounded shadow mb-4"></div>
+        <h3 class="text-xl font-semibold mb-2">Kanji</h3>
+        <p class="flex-grow text-gray-700 mb-4">
+          Master the 200 most challenging N2 kanji for business-level fluency.
+        </p>
+        <a href="/kanji/" class="text-skin-accent font-medium hover:underline">
+          Explore Kanji →
+        </a>
+      </div>
+
+      <!-- Vocabulary -->
+      <div class="bg-skin-card-muted rounded shadow p-6 flex flex-col">
+        <div class="w-12 h-12 bg-skin-card-muted-alt rounded shadow mb-4"></div>
+        <h3 class="text-xl font-semibold mb-2">Vocabulary</h3>
+        <p class="flex-grow text-gray-700 mb-4">
+          Build your business Japanese word bank with the essential N2 vocabulary.
+        </p>
+        <a href="/vocabulary/" class="text-skin-accent font-medium hover:underline">
+          Explore Vocabulary →
+        </a>
+      </div>
+
+      <!-- Grammar -->
+      <div class="bg-skin-card-muted rounded shadow p-6 flex flex-col">
+        <div class="w-12 h-12 bg-skin-card-muted-alt rounded shadow mb-4"></div>
+        <h3 class="text-xl font-semibold mb-2">Grammar</h3>
+        <p class="flex-grow text-gray-700 mb-4">
+          Conquer the 50 must-know N2 grammar structures for confident communication.
+        </p>
+        <a href="/grammar/" class="text-skin-accent font-medium hover:underline">
+          Explore Grammar →
+        </a>
+      </div>
     </div>
+
+    <!-- Second row: 2 cards on desktop -->
+    <div class="mt-8 grid grid-cols-1 gap-x-6 gap-y-10 sm:grid-cols-2 xl:gap-x-8">
+      <!-- Reading -->
+      <div class="bg-skin-card-muted rounded shadow p-6 flex flex-col">
+        <div class="w-12 h-12 bg-skin-card-muted-alt rounded shadow mb-4"></div>
+        <h3 class="text-xl font-semibold mb-2">Reading</h3>
+        <p class="flex-grow text-gray-700 mb-4">
+          Practice with authentic N2 passages to boost your comprehension speed.
+        </p>
+        <a href="/reading/" class="text-skin-accent font-medium hover:underline">
+          Explore Reading →
+        </a>
+      </div>
+
+      <!-- Listening -->
+      <div class="bg-skin-card-muted rounded shadow p-6 flex flex-col">
+        <div class="w-12 h-12 bg-skin-card-muted-alt rounded shadow mb-4"></div>
+        <h3 class="text-xl font-semibold mb-2">Listening</h3>
+        <p class="flex-grow text-gray-700 mb-4">
+          Train your ears on authentic N2 audio for real-world understanding.
+        </p>
+        <a href="/listening/" class="text-skin-accent font-medium hover:underline">
+          Explore Listening →
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<Hr/>
+
+
+<!--  -->
+
+
+
+<section id="products" class="py-12 bg-skin-background-alt">
+  <div class="max-w-7xl mx-auto">
+    <h2 class="text-3xl font-bold">Featured Prep Packs</h2>
+
+    <div class="mt-6 grid grid-cols-1 gap-x-6 gap-y-10 sm:grid-cols-3 xl:gap-x-8">
+      <!-- Reading Prep Pack -->
+      <div class="bg-white rounded shadow p-6 flex flex-col">
+        <!-- simulated image gradient -->
+        <div class="w-full h-32 rounded mb-4 bg-skin-accent"></div>
+        <h3 class="text-xl font-semibold mb-2">Reading Prep Pack</h3>
+        <p class="flex-grow text-gray-700 mb-4">
+          Everything you need to master N2 reading comprehension, including target passages, vocab lists, and answer keys.
+        </p>
+        <LinkButton href="/products/reading-prep-pack" className="mt-auto self-start">
+          Get Reading Pack
+        </LinkButton>
+      </div>
+
+      <!-- Kanji Mastery Pack -->
+      <div class="bg-white rounded shadow p-6 flex flex-col">
+        <!-- simulated image gradient -->
+        <div class="w-full h-32 rounded mb-4 bg-skin-accent"></div>
+        <h3 class="text-xl font-semibold mb-2">Kanji Mastery Pack</h3>
+        <p class="flex-grow text-gray-700 mb-4">
+          Drill the most challenging N2 kanji with stroke order guides, mnemonic hints, and quiz sheets.
+        </p>
+        <LinkButton href="/products/kanji-mastery-pack" className="mt-auto self-start">
+          Get Kanji Pack
+        </LinkButton>
+      </div>
+
+      <!-- Grammar Essentials Pack -->
+      <div class="bg-white rounded shadow p-6 flex flex-col">
+        <!-- simulated image gradient -->
+        <div class="w-full h-32 rounded mb-4 bg-skin-accent"></div>
+        <h3 class="text-xl font-semibold mb-2">Grammar Essentials Pack</h3>
+        <p class="flex-grow text-gray-700 mb-4">
+          Quick-reference guide to the top 50 N2 grammar points, with example sentences and practice exercises.
+        </p>
+        <LinkButton href="/products/grammar-essentials-pack" className="mt-auto self-start">
+          Get Grammar Pack
+        </LinkButton>
+      </div>
+    </div>
+  </div>
+</section>
+
+    <Hr />
+{recentPosts.length > 0 && (
+  <>
+    <section id="recent-posts" class="py-12">
+      <div class="max-w-7xl mx-auto">
+        <h2 class="text-3xl font-bold">Recent Blog Posts</h2>
+        <div class="mt-6 grid grid-cols-1 gap-x-6 gap-y-10 sm:grid-cols-2 lg:grid-cols-3 xl:gap-x-8">
+          {recentPosts.map(
+            ({ data, slug }, index) =>
+              index < 2 && (
+                <Card href={`/blog/${slug}/`} frontmatter={data} />
+              )
+          )}
+        </div>
+        <div class="all-posts-btn-wrapper mt-8">
+          <LinkButton href="/blog/">
+            all posts
+            <svg xmlns="http://www.w3.org/2000/svg">
+              <path d="m11.293 17.293 1.414 1.414L19.414 12l-6.707-6.707-1.414 1.414L15.586 11H6v2h9.586z" />
+            </svg>
+          </LinkButton>
+        </div>
+      </div>
+        <Hr />
+    </section>
+  
+  </>
+)}
+
+    <!-- Newsletter Signup -->
+    <section id="newsletter" class="py-12 bg-skin-accent mb-8">
+      <div class="max-w-7xl mx-auto text-center">
+        <h2 class="text-3xl font-bold text-white mb-4">Join the N2 Gokaku Newsletter</h2>
+        <p class="text-lg text-skin-inverted mb-6">
+          Weekly N2 tips, study memes, and Tokyo salaryman survival hacks.
+        </p>
+        <form class="flex flex-col sm:flex-row items-center justify-center gap-4">
+          <input
+            type="email"
+            placeholder="Enter your email"
+            class="w-full sm:w-auto px-4 py-3 rounded shadow focus:outline-none"
+          />
+          <button
+            type="submit"
+            class="px-6 py-3 bg-white text-skin-accent font-semibold rounded shadow hover:opacity-90"
+          >
+            Let’s Gokaku!
+          </button>
+        </form>
+      </div>
+ 
+    </section>
+
+
   </main>
+
+         <Hr />
   <Footer />
 </Layout>
 

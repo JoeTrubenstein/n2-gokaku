@@ -1,0 +1,120 @@
+---
+import { SITE } from "@config";
+import Layout from "@layouts/Layout.astro";
+import Header from "@components/Header.astro";
+import Footer from "@components/Footer.astro";
+import Breadcrumbs from "@components/Breadcrumbs.astro";
+import { getCollection, type CollectionEntry } from "astro:content";
+
+export async function getStaticPaths() {
+  const all = await getCollection("vocabulary", (e) => !e.data.draft);
+  const perPage = 10;
+  const pageCount = Math.ceil(all.length / perPage);
+  // generate pages 2…pageCount
+  return Array.from({ length: pageCount - 1 }, (_, i) => ({
+    params: { page: String(i + 2) },
+  }));
+}
+
+const page = Number(Astro.params.page);
+const allVocab = await getCollection("vocabulary", (e) => !e.data.draft);
+allVocab.sort((a, b) => a.data.term.localeCompare(b.data.term));
+
+const perPage = 10;
+const start = (page - 1) * perPage;
+const pageVocab = allVocab.slice(start, start + perPage);
+const pageCount = Math.ceil(allVocab.length / perPage);
+---
+
+<Layout title={`Vocabulary — Page ${page} | ${SITE.title}`}>
+  <Header activeNav="vocabulary" />
+
+  <Breadcrumbs
+    items={[
+      { text: "Home", href: "/" },
+      { text: "Vocabulary", href: "/vocabulary/" },
+    ]}
+  />
+
+  <main id="main-content" class="py-12">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+      <h1 class="text-4xl font-bold mb-6">N2 Vocabulary List — Page {page}</h1>
+
+      <div class="overflow-x-auto">
+        <table class="min-w-full table-auto bg-skin-background divide-y divide-skin-muted">
+          <thead class="bg-skin-card-muted">
+            <tr>
+              <th class="px-6 py-3 text-left text-sm font-semibold text-skin-base">
+                Vocabulary
+              </th>
+              <th class="px-6 py-3 text-left text-sm font-semibold text-skin-base">
+                Reading
+              </th>
+              <th class="px-6 py-3 text-left text-sm font-semibold text-skin-base">
+                Meaning
+              </th>
+            </tr>
+          </thead>
+          <tbody class="divide-y divide-skin-muted">
+            {pageVocab.map((entry: CollectionEntry<"vocabulary">) => (
+              <tr class="hover:bg-skin-card-muted">
+                <td class="px-6 py-4">
+                  <a
+                    href={`/vocabulary/${entry.slug}/`}
+                    class="text-lg font-medium text-skin-accent hover:underline"
+                  >
+                    {entry.data.term}
+                  </a>
+                </td>
+                <td class="px-6 py-4 text-skin-base">
+                  {entry.data.reading}
+                </td>
+                <td class="px-6 py-4 text-skin-base">
+                  {entry.data.definition}
+                </td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
+
+      <nav class="mt-6 flex justify-between text-skin-accent">
+        {page > 1 ? (
+          <a
+            href={
+              page === 2
+                ? `/vocabulary/`
+                : `/vocabulary/page/${page - 1}/`
+            }
+            class="hover:underline"
+          >
+            ← Page {page - 1}
+          </a>
+        ) : (
+          <span />
+        )}
+        {page < pageCount && (
+          <a
+            href={`/vocabulary/page/${page + 1}/`}
+            class="hover:underline"
+          >
+            Page {page + 1} →
+          </a>
+        )}
+      </nav>
+    </div>
+  </main>
+
+  <Footer />
+</Layout>
+
+<style>
+  /* match section padding for consistency */
+  #main-content {
+    @apply bg-transparent;
+  }
+  /* style the ruby furigana (if you ever add it here) */
+  ruby rt {
+    @apply text-gray-500 text-sm;
+  }
+</style>

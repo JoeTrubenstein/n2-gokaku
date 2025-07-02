@@ -1,0 +1,41 @@
+---
+import type { CollectionEntry } from "astro:content";
+import Layout from "@layouts/Layout.astro";
+import Main from "@layouts/Main.astro";
+import Header from "@components/Header.astro";
+import Footer from "@components/Footer.astro";
+import Pagination from "@components/Pagination.astro";
+import Card from "@components/Card";
+import { SITE } from "@config";
+
+export interface Props {
+  currentPage: number;
+  totalPages: number;
+  posts: CollectionEntry<"blog">[];
+}
+
+const { currentPage, totalPages, posts } = Astro.props as Props;
+---
+
+<Layout title={`Blog | ${SITE.title}`}>
+  <Header />
+
+  <Main pageTitle="Blog" pageDesc="N2 Gokaku Blog">
+    <div class="lg:max-w-7xl mx-auto">
+      <div class="grid grid-cols-1 sm:grid-cols-2 gap-x-6 gap-y-10 xl:gap-x-8 mt-6">
+        {posts.map(({ data, slug }) => (
+          <Card href={`/blog/${slug}/`} frontmatter={data} />
+        ))}
+      </div>
+    </div>
+  </Main>
+
+  <Pagination
+    currentPage={currentPage}
+    totalPages={totalPages}
+    prevUrl={`/blog${currentPage - 1 !== 1 ? `/${currentPage - 1}` : ""}/`}
+    nextUrl={`/blog/${currentPage + 1}/`}
+  />
+
+  <Footer noMarginTop={totalPages > 1} />
+</Layout>

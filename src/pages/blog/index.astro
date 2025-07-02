@@ -1,18 +1,26 @@
 ---
 import { getCollection } from "astro:content";
-import Posts from "../../layouts/articles.astro";
 import getSortedPosts from "../../utils/getSortedPosts";
 import getPagination from "../../utils/getPagination";
+import BlogLayout from "@layouts/Blog.astro";
 
-const posts = await getCollection("articles");
+// 1) Fetch & sort your blog collection
+const allPosts = await getCollection("blog");
+const sortedPosts = getSortedPosts(allPosts);
 
-const sortedPosts = getSortedPosts(posts);
-
-const pagination = getPagination({
+// 2) Generate pagination (page 1)
+const { totalPages, currentPage, paginatedPosts } = getPagination({
   posts: sortedPosts,
   page: 1,
   isIndex: true,
 });
+
+// 3) Rename paginatedPosts → posts to match BlogLayout’s Props
+const blogListProps = {
+  currentPage,
+  totalPages,
+  posts: paginatedPosts,
+};
 ---
 
-<Posts {...pagination} />
+<BlogLayout {...blogListProps} />

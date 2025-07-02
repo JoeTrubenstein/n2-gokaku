@@ -6,8 +6,6 @@ export type Site = {
   profile: string;
   desc: string;
   title: string;
-  reg: number;
-  fob: string;
   ogImage?: string;
   lightAndDarkMode: boolean;
   postPerIndex: number;
@@ -21,3 +19,5 @@ export type SocialObjects = {
   active: boolean;
   linkTitle: string;
 }[];
+
+

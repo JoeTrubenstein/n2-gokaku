@@ -8,6 +8,7 @@ import { SITE } from "./src/config";
 
 // https://astro.build/config
 export default defineConfig({
+  
   site: SITE.website,
   image: {
     remotePatterns: [{ protocol: "https" }],
@@ -45,3 +46,4 @@ export default defineConfig({
     contentLayer: true,
   },
 });
+

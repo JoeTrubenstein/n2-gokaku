@@ -1,0 +1,110 @@
+---
+import { SITE } from "@config";
+import Layout from "@layouts/Layout.astro";
+import Header from "@components/Header.astro";
+import Footer from "@components/Footer.astro";
+import Breadcrumbs from "@components/Breadcrumbs.astro";
+import { getCollection, type CollectionEntry } from "astro:content";
+
+export async function getStaticPaths() {
+  const all = await getCollection("grammar", (e) => !e.data.draft);
+  const perPage = 10;
+  const pageCount = Math.ceil(all.length / perPage);
+
+  return Array.from({ length: pageCount - 1 }, (_, i) => ({
+    params: { page: String(i + 2) },
+  }));
+}
+
+const page = Number(Astro.params.page);
+const allGrammar = await getCollection("grammar", (e) => !e.data.draft);
+allGrammar.sort((a, b) => a.data.title.localeCompare(b.data.title));
+
+const perPage = 10;
+const start = (page - 1) * perPage;
+const pageGrammar = allGrammar.slice(start, start + perPage);
+const pageCount = Math.ceil(allGrammar.length / perPage);
+---
+
+<Layout title={`Grammar — Page ${page} | ${SITE.title}`}>  
+  <Header activeNav="grammar" />
+
+  <Breadcrumbs
+    items={[
+      { text: "Home",    href: "/"         },
+      { text: "Grammar", href: "/grammar/" },
+    ]}
+  />
+
+  <main id="main-content" class="py-12">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+      <h1 class="text-4xl font-bold mb-6">
+        JLPT N2 Grammar Points — Page {page}
+      </h1>
+
+      <div class="overflow-x-auto">
+        <table class="min-w-full table-auto bg-skin-background divide-y divide-skin-muted">
+          <thead class="bg-skin-card-muted">
+            <tr>
+              <th class="px-6 py-3 text-left text-sm font-semibold text-skin-base">
+                Point
+              </th>
+              <th class="px-6 py-3 text-left text-sm font-semibold text-skin-base">
+                Description
+              </th>
+            </tr>
+          </thead>
+          <tbody class="divide-y divide-skin-muted">
+            {pageGrammar.map((entry: CollectionEntry<"grammar">) => (
+              <tr class="hover:bg-skin-card-muted">
+                <td class="px-6 py-4">
+                  <a
+                    href={`/grammar/${entry.slug}/`}
+                    class="text-lg font-medium text-skin-accent hover:underline"
+                  >
+                    {entry.data.title}
+                  </a>
+                </td>
+                <td class="px-6 py-4 text-skin-base">
+                  {entry.data.description}
+                </td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
+
+      <nav class="mt-6 flex justify-between text-skin-accent">
+        {page > 1 ? (
+          <a
+            href={page === 2 ? "/grammar/" : `/grammar/${page - 1}/`}
+            class="hover:underline"
+          >
+            ← Page {page - 1}
+          </a>
+        ) : (
+          <span />
+        )}
+
+        {page < pageCount && (
+          <a href={`/grammar/${page + 1}/`} class="hover:underline">
+            Page {page + 1} →
+          </a>
+        )}
+      </nav>
+    </div>
+  </main>
+
+  <Footer />
+</Layout>
+
+<style>
+  /* match section padding for consistency */
+  #main-content {
+    @apply bg-transparent;
+  }
+  /* style the ruby furigana if added */
+  ruby rt {
+    @apply text-gray-500 text-sm;
+  }
+</style>

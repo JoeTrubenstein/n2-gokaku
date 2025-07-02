@@ -1,0 +1,102 @@
+---
+import { SITE } from "@config";
+import Layout from "@layouts/Layout.astro";
+import Header from "@components/Header.astro";
+import Footer from "@components/Footer.astro";
+import Breadcrumbs from "@components/Breadcrumbs.astro";
+import { getCollection, type CollectionEntry } from "astro:content";
+
+// 1) Fetch and filter out drafts
+const allGrammar = await getCollection("grammar", (e) => !e.data.draft);
+
+// 2) Sort alphabetically by title
+allGrammar.sort((a, b) =>
+  a.data.term.localeCompare(b.data.term)
+);
+
+// 3) Pagination settings
+const perPage = 10;
+const pageGrammar = allGrammar.slice(0, perPage);
+const pageCount   = Math.ceil(allGrammar.length / perPage);
+---
+
+<Layout title={`Grammar | ${SITE.title}`}>
+  <Header activeNav="grammar" />
+
+  <Breadcrumbs
+    items={[
+      { text: "Home",    href: "/"          },
+      { text: "Grammar", href: "/grammar/"  },
+    ]}
+  />
+
+  <main id="main-content" class="py-12">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <h1 class="text-4xl font-bold mb-6">
+        N2 Grammar Points
+      </h1>
+
+      <img
+        src="/assets/images/grammar-hero.png"
+        alt="N2 Grammar study illustration"
+        class="w-full mb-8"
+      />
+
+      <div class="text-lg mb-8">
+        <p>
+          <strong>How to use this list:</strong>
+          Click any grammar point to see explanations, example sentences, and usage tips!
+        </p>
+      </div>
+
+
+<div class="overflow-x-auto">
+  <table class="table-fixed w-full bg-skin-background divide-y divide-skin-muted">
+    <colgroup>
+      <col style="width:30%" />
+      <col style="width:70%" />
+    </colgroup>
+    <thead class="bg-skin-card-muted">
+      <tr>
+        <th class="px-6 py-3 text-left text-sm font-semibold text-skin-base">
+          Point
+        </th>
+        <th class="px-6 py-3 text-left text-sm font-semibold text-skin-base">
+          Meaning
+        </th>
+      </tr>
+    </thead>
+    <tbody class="divide-y divide-skin-muted">
+      {pageGrammar.map((entry: CollectionEntry<"grammar">) => (
+        <tr class="hover:bg-skin-card-muted">
+          <td class="px-6 py-4">
+            <a
+              href={`/grammar/${entry.slug}/`}
+              class="text-lg font-medium text-skin-accent hover:underline"
+            >
+              {entry.data.term}
+            </a>
+          </td>
+          <td class="px-6 py-4 text-skin-base truncate">
+            {entry.data.meaning}
+          </td>
+        </tr>
+      ))}
+    </tbody>
+  </table>
+</div>
+
+
+      {pageCount > 1 && (
+        <nav class="mt-6 flex justify-end space-x-4 text-skin-accent">
+          <a href="/grammar/2/" class="hover:underline">
+            Next →
+          </a>
+        </nav>
+      )}
+    </div>
+  </main>
+
+  <Footer />
+</Layout>
