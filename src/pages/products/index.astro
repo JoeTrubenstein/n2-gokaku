@@ -1,0 +1,54 @@
+---
+import { SITE } from "@config";
+import Layout from "@layouts/Layout.astro";
+import Header from "@components/Header.astro";
+import Footer from "@components/Footer.astro";
+import Breadcrumbs from "@components/Breadcrumbs.astro";
+---
+
+<Layout title={`Products | ${SITE.title}`}>
+  <Header activeNav="products" />
+
+  <Breadcrumbs
+    items={[
+      { text: "Home",     href: "/"           },
+      { text: "Products", href: "/products/" },
+    ]}
+  />
+
+  <main id="main-content" class="py-12">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <h1 class="text-4xl font-bold mb-6">Products</h1>
+
+      <img
+        src="/assets/images/products-hero.png"
+        alt="N2 Study Products"
+        class="w-full mb-8"
+      />
+
+      <div class="text-lg mb-8">
+        <p>
+          <strong>Coming soon:</strong>
+          A suite of premium JLPT N2 study tools and N2-inspired merch to supercharge both your learning - and your outfit.
+        </p>
+      </div>
+
+      <div class="flex items-center justify-center h-48 rounded">
+        <span class="text-2xl font-semibold">
+          Coming Soon…
+        </span>
+      </div>
+
+    </div>
+  </main>
+
+  <Footer />
+</Layout>
+
+<style>
+  /* keep background transparent */
+  #main-content {
+    @apply bg-transparent;
+  }
+</style>

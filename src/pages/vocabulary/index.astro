@@ -11,7 +11,7 @@ const allVocab = await getCollection("vocabulary", (e) => !e.data.draft);
 // sort by the vocabulary term
 allVocab.sort((a, b) => a.data.term.localeCompare(b.data.term));
 
-const perPage = 10;
+const perPage = 5;
 const pageVocab = allVocab.slice(0, perPage);
 const pageCount = Math.ceil(allVocab.length / perPage);
 ---
@@ -28,26 +28,31 @@ const pageCount = Math.ceil(allVocab.length / perPage);
 
   <main id="main-content" class="py-12">
     <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-      <h1 class="text-4xl font-bold mb-6">N2 Vocabulary List</h1>
+      <h1 class="text-4xl font-bold mb-6">JLPT N2 Vocabulary List</h1>
 
       <img
-        src="/assets/vocabulary-hero.png"
+        src="/assets/images/vocab-hero.png"
         alt="N2 Vocabulary study illustration"
         class="w-full mb-8"
       />
-
       <div class="text-lg mb-8">
         <p>
           <strong>How to use this list:</strong>
-          This table shows all JLPT N2 vocabulary in one place. Each entry includes the word, pronunciation, and English meaning. Click any term to explore example sentences, collocations, and audio!
+          This table shows 100 commonly enountered JLPT N2 vocabulary words in one place. Each entry includes
+          the word, its reading, and English meanings. Click any term to see detailed breakdowns,
+          example sentences, kanji analysis, and usage notes to deepen your understanding.
         </p>
       </div>
-
       <div class="overflow-x-auto">
-        <table class="min-w-full table-auto bg-skin-background divide-y divide-skin-muted">
+        <table class="min-w-full table-fixed bg-skin-background divide-y divide-skin-muted">
+          <colgroup>
+            <col />                <!-- Vocabulary: auto -->
+            <col />   <!-- Reading: fixed 12rem (192px) -->
+            <col />                <!-- Meaning: auto -->
+          </colgroup>
           <thead class="bg-skin-card-muted">
             <tr>
-              <th class="px-6 py-3 text-left text-sm font-semibold text-skin-base">
+              <th class="px-2 py-3 text-left text-sm font-semibold text-skin-base">
                 Vocabulary
               </th>
               <th class="px-6 py-3 text-left text-sm font-semibold text-skin-base">
@@ -61,7 +66,7 @@ const pageCount = Math.ceil(allVocab.length / perPage);
           <tbody class="divide-y divide-skin-muted">
             {pageVocab.map((entry: CollectionEntry<"vocabulary">) => (
               <tr class="hover:bg-skin-card-muted">
-                <td class="px-6 py-4">
+                <td class="px-6 py-4 text-left">
                   <a
                     href={`/vocabulary/${entry.slug}/`}
                     class="text-lg font-medium text-skin-accent hover:underline"
@@ -69,11 +74,11 @@ const pageCount = Math.ceil(allVocab.length / perPage);
                     {entry.data.term}
                   </a>
                 </td>
-                <td class="px-6 py-4 text-skin-base">
+                <td class="px-6 py-4 text-skin-base text-left whitespace-nowrap">
                   {entry.data.reading}
                 </td>
-                <td class="px-6 py-4 text-skin-base">
-                  {entry.data.meaning}
+                <td class="px-6 py-4 text-skin-base text-left truncate">
+                  {entry.data.meaning.join(', ')}
                 </td>
               </tr>
             ))}

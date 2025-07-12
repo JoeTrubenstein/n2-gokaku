@@ -1,0 +1,89 @@
+---
+import { SITE } from "@config";
+import Layout from "@layouts/Layout.astro";
+import Header from "@components/Header.astro";
+import Footer from "@components/Footer.astro";
+import Breadcrumbs from "@components/Breadcrumbs.astro";
+---
+
+<Layout title={`About | ${SITE.title}`}>
+  <Header />
+
+  <Breadcrumbs
+    items={[
+      { text: "Home", href: "/" },
+      { text: "About", href: "/about/" },
+    ]}
+  />
+
+  <main id="main-content" class="py-12">
+    <div class="lg:px-8 mx-auto max-w-4xl px-4 sm:px-6">
+      <h1 class="mb-6 text-4xl font-bold">About {SITE.title}</h1>
+
+      <img
+        src="/assets/images/about-hero.png"
+        alt="Study Japanese illustration"
+        class="mb-8 w-full"
+      />
+
+      <div class="mb-8 space-y-4 text-lg">
+        <p>
+          <strong>{SITE.title}</strong> is a no-nonsense companion
+          for conquering the JLPT N2 exam.
+        </p>
+        <p>
+          I’m Joe – an American living in Tokyo, working at an especially traditional Japanese company. Like you, I’m on the N2 journey,
+          balancing study with everyday life in Japan.
+        </p>
+        <p>
+          I built this site for learners who want to cut through the fluff and
+          get straight to what matters: clear explanations, targeted example
+          sentences, and practical tools to make real progress.
+        </p>
+        <p>Here you’ll find:</p>
+        <ul class="list-inside list-disc space-y-12">
+          <li class="py-4">
+            <strong>Grammar Guides:</strong> Straightforward breakdowns of each N2
+            grammar point with concise usage notes and example sentences checked
+            for naturalness.
+          </li>
+          <li class="py-4">
+            <strong>Vocabulary Lists:</strong> Focused N2 vocabulary with readings,
+            core meanings, and examples that show how each word is actually used.
+          </li>
+          <li class="py-4">
+            <strong>Interactive Tools:</strong> Notion templates for kanji drills,
+            vocab flashcards, and a customizable study planner to keep your learning
+            organized.
+          </li>
+          <li class="py-4">
+            <strong>Engaging Content:</strong> Bite-sized Instagram Reel scripts,
+            manga-inspired dialogues, and cultural tidbits to keep your studies enjoyable
+            and memorable.
+          </li>
+        </ul>
+        <p>
+          Whether you’re tackling tricky grammar like <em>どころか</em>,
+          drilling kanji between meetings, or building reading speed for the
+          exam, <strong>{SITE.title}</strong> gives you what you need – without wasting
+          your time.
+        </p>
+        <p>
+          Ready to dive in? Return to <a
+            href="/"
+            class="text-skin-accent hover:underline">Home</a
+          > or explore our <a
+            href="/grammar/"
+            class="text-skin-accent hover:underline">Grammar</a
+          >, <a href="/vocabulary/" class="text-skin-accent hover:underline"
+            >Vocabulary</a
+          >, and <a href="/reading/" class="text-skin-accent hover:underline"
+            >Reading</a
+          > sections now.
+        </p>
+      </div>
+    </div>
+  </main>
+
+  <Footer />
+</Layout>

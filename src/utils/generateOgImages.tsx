@@ -4,6 +4,10 @@ import postOgImage from "./og-templates/post";
 import siteOgImage from "./og-templates/site";
 import kanjiOgImage from "./og-templates/kanji"; 
 
+
+// to do
+
+
 function svgBufferToPngBuffer(svg: string) {
   const resvg = new Resvg(svg);
   const pngData = resvg.render();
@@ -28,6 +32,12 @@ export async function generateOgImageForVocabulary(post: CollectionEntry<"vocabu
 }
 
 export async function generateOgImageForGrammar(post: CollectionEntry<"grammar">) {
+  // use the kanji template, not the blog one:
+  const svg = await kanjiOgImage(post);
+  return svgBufferToPngBuffer(svg);
+}
+
+export async function generateOgImageForReading(post: CollectionEntry<"reading">) {
   // use the kanji template, not the blog one:
   const svg = await kanjiOgImage(post);
   return svgBufferToPngBuffer(svg);

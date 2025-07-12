@@ -5,7 +5,6 @@ import LinkButton from "./LinkButton.astro";
 
 export interface Props {
   activeNav?:
-    | "kanji"
     | "vocabulary"
     | "grammar"
     | "reading"
@@ -58,11 +57,6 @@ const { activeNav } = Astro.props;
           </svg>
         </button>
         <ul id="menu-items" class="display-none sm:flex">
-          <li>
-            <a href="/kanji/" class={activeNav === "kanji" ? "active" : ""}>
-              Kanji
-            </a>
-          </li>
           <li>
             <a href="/vocabulary/" class={activeNav === "vocabulary" ? "active" : ""}>
               Vocabulary

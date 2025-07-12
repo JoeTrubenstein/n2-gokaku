@@ -23,14 +23,14 @@ const { title, term } = entry.data;
 const { Content } = await entry.render();
 ---
 
-<Layout title={`${title} | ${SITE.title}`}>  
+<Layout title={`${term} | ${SITE.title}`}>  
   <Header activeNav="grammar" />
 
   <Breadcrumbs
     items={[
-      { text: "Home",    href: "/"             },
+      { text: "Home", href: "/"             },
       { text: "Grammar", href: "/grammar/"     },
-      { text: title,      href: `/grammar/${entry.slug}/` },
+      { text: term, href: `/grammar/${entry.slug}/` },
     ]}
   />
 

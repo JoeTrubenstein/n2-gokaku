@@ -40,10 +40,10 @@ const { Content } = await entry.render();
       <div class="mb-6 text-lg">
         <p>
           <strong>Reading:</strong> {reading} &nbsp;|&nbsp;
-          <strong>Meaning:</strong> {meaning}
+          <strong>Meaning:</strong> {meaning.join(', ')}
         </p>
       </div>
-      <article class="prose prose-skin text-lg">
+      <article class="prose prose-skin text-xl max-w-4xl leading-relaxed prose-td:text-[20px] prose-td:leading-[28px]">
         <Content />
       </article>
     </div>
@@ -61,4 +61,8 @@ const { Content } = await entry.render();
   ruby rt {
     @apply text-gray-500 text-sm;
   }
+  .prose img {
+  width: 100%;
+  height: auto;
+}
 </style>

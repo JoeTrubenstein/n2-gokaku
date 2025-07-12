@@ -7,11 +7,13 @@ const socialCount = SOCIALS.filter(social => social.active).length;
 
 <section
   id="hero"
-  class="flex flex-col sm:flex-row items-center gap-8 pb-6 pt-8"
+  class="flex flex-col items-center gap-8 pb-6 pt-8 sm:flex-row"
 >
   <!-- Text column: second on mobile, first on sm+ -->
-  <div class="w-full sm:w-1/2 order-2 sm:order-1">
-    <h1 class="my-4 inline-block text-3xl font-bold sm:my-8 sm:text-5xl">N2 Gokaku</h1>
+  <div class="order-2 w-full sm:order-1 sm:w-1/2">
+    <h1 class="my-4 inline-block text-3xl font-bold sm:my-8 sm:text-5xl">
+      N2 Gokaku
+    </h1>
 
     <a
       target="_blank"
@@ -23,13 +25,16 @@ const socialCount = SOCIALS.filter(social => social.active).length;
       <span class="sr-only">RSS Feed</span>
     </a>
 
-    <p class="my-2">
-Master JLPT N2 with confidence. Study kanji, grammar, vocabulary, and reading using structured tools and resources designed to help you pass faster.    </p>
+    <p class="my-2 text-lg">
+      Master The JLPT N2 level with confidence. Study kanji, grammar, vocabulary, and
+      reading using structured tools and resources designed to help you pass
+      faster.
+    </p>
 
     <!-- Call to action button -->
     <a
-      href="/tools"
-      class="inline-block mt-4 bg-skin-accent text-white px-6 py-3 rounded hover:opacity-90 transition focus:outline-none focus:ring-2 focus:ring-skin-accent/50"
+       href="/vocabulary/"
+      class="focus:ring-skin-accent/50 mt-4 inline-block rounded bg-skin-accent px-6 py-3 text-white transition hover:opacity-90 focus:outline-none focus:ring-2"
     >
       Get started for free
     </a>
@@ -38,7 +43,9 @@ Master JLPT N2 with confidence. Study kanji, grammar, vocabulary, and reading us
       // only display if at least one social link is enabled
       socialCount > 0 && (
         <div class="social-wrapper mt-4 flex flex-col sm:flex-row sm:items-center">
-          <div class="social-links mb-1 mr-2 whitespace-nowrap sm:mb-0">Social Links:</div>
+          <div class="social-links mb-1 mr-2 whitespace-nowrap sm:mb-0">
+            Social Links:
+          </div>
           <Socials />
         </div>
       )
@@ -46,13 +53,15 @@ Master JLPT N2 with confidence. Study kanji, grammar, vocabulary, and reading us
   </div>
 
   <!-- Image column: first on mobile, second on sm+ -->
-  <div class="w-full sm:w-1/2 order-1 sm:order-2 pt-4 sm:pt-0">
-    <div class="w-full h-64 bg-skin-card-muted rounded shadow"></div>
-  </div>
+<div class="order-1 w-full pt-4 sm:order-2 sm:w-1/2 sm:pt-0">
+  <!-- Light‐mode image: visible by default, hidden in dark -->
+  <img
+    src="assets/images/gokaku-hero.png"
+    alt="Kanji Study"
+    class="w-full rounded-md object-cover"
+  />
+</div>
 </section>
-
-
-
 
 <style>
   /* ===== Hero Section ===== */

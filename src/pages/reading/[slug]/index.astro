@@ -1,0 +1,59 @@
+---
+import { SITE } from "@config";
+import Layout from "@layouts/Layout.astro";
+import Header from "@components/Header.astro";
+import Footer from "@components/Footer.astro";
+import Breadcrumbs from "@components/Breadcrumbs.astro";
+import { getCollection, type CollectionEntry } from "astro:content";
+
+export interface Props {
+  entry: CollectionEntry<"reading">;
+}
+
+export async function getStaticPaths() {
+  const allReadings = await getCollection("reading", (e) => !e.data.draft);
+  return allReadings.map((entry) => ({
+    params: { slug: entry.slug },
+    props: { entry },
+  }));
+}
+
+const { entry } = Astro.props as Props;
+const { title, description } = entry.data;
+const { Content } = await entry.render();
+---
+
+<Layout title={`${title} | Reading | ${SITE.title}`}>  
+  <Header activeNav="reading" />
+
+  <Breadcrumbs
+    items={[
+      { text: "Home",    href: "/"             },
+      { text: "Reading", href: "/reading/"     },
+      { text: title,     href: `/reading/${entry.slug}/` },
+    ]}
+  />
+
+  <main id="main-content" class="py-12">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+      <h1 class="text-4xl font-bold mb-4">{title}</h1>
+      {description && (
+        <p class="text-lg text-gray-700 mb-8">{description}</p>
+      )}
+      <article class="prose prose-skin text-lg">
+        <Content />
+      </article>
+    </div>
+  </main>
+
+  <Footer />
+</Layout>
+
+<style>
+  #main-content {
+    @apply bg-transparent;
+  }
+  ruby rt {
+    @apply text-gray-500 text-sm;
+  }
+</style>

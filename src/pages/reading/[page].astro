@@ -1,0 +1,110 @@
+---
+import { SITE } from "@config";
+import Layout from "@layouts/Layout.astro";
+import Header from "@components/Header.astro";
+import Footer from "@components/Footer.astro";
+import Breadcrumbs from "@components/Breadcrumbs.astro";
+import { getCollection, type CollectionEntry } from "astro:content";
+
+export async function getStaticPaths() {
+  const allReadings = await getCollection("reading", (e) => !e.data.draft);
+  const perPage = 10;
+  const pageCount = Math.ceil(allReadings.length / perPage);
+  return Array.from({ length: pageCount - 1 }, (_, i) => ({
+    params: { page: String(i + 2) },
+  }));
+}
+
+const page = Number(Astro.params.page);
+const allReadings = await getCollection("reading", (e) => !e.data.draft);
+allReadings.sort((a, b) => (a.data.title ?? "").localeCompare(b.data.title ?? ""));
+
+const perPage = 10;
+const start = (page - 1) * perPage;
+const pageReadings = allReadings.slice(start, start + perPage);
+const pageCount = Math.ceil(allReadings.length / perPage);
+---
+
+<Layout title={`Reading — Page ${page} | ${SITE.title}`}>
+  <Header activeNav="reading" />
+
+  <Breadcrumbs
+    items={[
+      { text: "Home",    href: "/"           },
+      { text: "Reading", href: "/reading/"   },
+    ]}
+  />
+
+  <main id="main-content" class="py-12">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+      <h1 class="text-4xl font-bold mb-6">
+        JLPT N2 Reading — Page {page}
+      </h1>
+
+      <div class="overflow-x-auto">
+        <table class="table-fixed w-full bg-skin-background divide-y divide-skin-muted">
+          <colgroup>
+            <col style="width:30%" />
+            <col style="width:70%" />
+          </colgroup>
+          <thead class="bg-skin-card-muted">
+            <tr>
+              <th class="px-6 py-3 text-left text-sm font-semibold text-skin-base">
+                Title
+              </th>
+              <th class="px-6 py-3 text-left text-sm font-semibold text-skin-base">
+                Description
+              </th>
+            </tr>
+          </thead>
+          <tbody class="divide-y divide-skin-muted">
+            {pageReadings.map((entry: CollectionEntry<"reading">) => (
+              <tr class="hover:bg-skin-card-muted">
+                <td class="px-6 py-4">
+                  <a
+                    href={`/reading/${entry.slug}/`}
+                    class="text-lg font-medium text-skin-accent hover:underline"
+                  >
+                    {entry.data.title}
+                  </a>
+                </td>
+                <td class="px-6 py-4 text-skin-base truncate">
+                  {entry.data.description}
+                </td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
+
+      <nav class="mt-6 flex justify-between text-skin-accent">
+        {page > 1 ? (
+          <a
+            href={page === 2 ? "/reading/" : `/reading/${page - 1}`}
+            class="hover:underline"
+          >
+            ← Page {page - 1}
+          </a>
+        ) : (
+          <span />
+        )}
+        {page < pageCount && (
+          <a href={`/reading/${page + 1}`} class="hover:underline">
+            Page {page + 1} →
+          </a>
+        )}
+      </nav>
+    </div>
+  </main>
+
+  <Footer />
+</Layout>
+
+<style>
+  #main-content {
+    @apply bg-transparent;
+  }
+  ruby rt {
+    @apply text-gray-500 text-sm;
+  }
+</style>

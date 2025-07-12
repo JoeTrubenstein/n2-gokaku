@@ -20,7 +20,7 @@ const page = Number(Astro.params.page);
 const allGrammar = await getCollection("grammar", (e) => !e.data.draft);
 allGrammar.sort((a, b) => a.data.term.localeCompare(b.data.term));
 
-const perPage = 10;
+const perPage = 5;
 const start = (page - 1) * perPage;
 const pageGrammar = allGrammar.slice(start, start + perPage);
 const pageCount = Math.ceil(allGrammar.length / perPage);
@@ -40,7 +40,7 @@ const pageCount = Math.ceil(allGrammar.length / perPage);
     <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
       
       <h1 class="text-4xl font-bold mb-6">
-        N2 Grammar Points
+        JLPT N2 Grammar Points
       </h1>
 
       <img
@@ -84,7 +84,7 @@ const pageCount = Math.ceil(allGrammar.length / perPage);
             </a>
           </td>
           <td class="px-6 py-4 text-skin-base truncate">
-            {entry.data.meaning}
+            {entry.data.meaning.join(', ')}
           </td>
         </tr>
       ))}

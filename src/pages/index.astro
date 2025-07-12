@@ -1,7 +1,7 @@
 ---
 import { getCollection } from "astro:content";
 import Layout from "@layouts/Layout.astro";
-import Hero from "@components/Hero.astro"
+import Hero from "@components/Hero.astro";
 import Header from "@components/Header.astro";
 import Footer from "@components/Footer.astro";
 import LinkButton from "@components/LinkButton.astro";
@@ -20,199 +20,262 @@ const recentPosts = sortedPosts.filter(({ data }) => !data.featured);
 <Layout>
   <Header />
   <main id="main-content">
-
-<Hero/>
-
-    <Hr />
-
-  
-
-
-
-<section id="quick-start" class="py-12">
-  <div class="max-w-7xl mx-auto">
-    <h2 class="text-3xl font-bold">Quick Start</h2>
-<ruby>合格<rt>ごうかく</rt></ruby>
-
-    <!-- First row: 3 cards on desktop -->
-    <div class="mt-6 grid grid-cols-1 gap-x-6 gap-y-10 sm:grid-cols-3 xl:gap-x-8">
-      <!-- Kanji -->
-      <div class="bg-skin-card-muted rounded shadow p-6 flex flex-col">
-        <div class="w-12 h-12 bg-skin-card-muted-alt rounded shadow mb-4"></div>
-        <h3 class="text-xl font-semibold mb-2">Kanji</h3>
-        <p class="flex-grow text-gray-700 mb-4">
-          Master the 200 most challenging N2 kanji for business-level fluency.
-        </p>
-        <a href="/kanji/" class="text-skin-accent font-medium hover:underline">
-          Explore Kanji →
-        </a>
-      </div>
-
-      <!-- Vocabulary -->
-      <div class="bg-skin-card-muted rounded shadow p-6 flex flex-col">
-        <div class="w-12 h-12 bg-skin-card-muted-alt rounded shadow mb-4"></div>
-        <h3 class="text-xl font-semibold mb-2">Vocabulary</h3>
-        <p class="flex-grow text-gray-700 mb-4">
-          Build your business Japanese word bank with the essential N2 vocabulary.
-        </p>
-        <a href="/vocabulary/" class="text-skin-accent font-medium hover:underline">
-          Explore Vocabulary →
-        </a>
-      </div>
-
-      <!-- Grammar -->
-      <div class="bg-skin-card-muted rounded shadow p-6 flex flex-col">
-        <div class="w-12 h-12 bg-skin-card-muted-alt rounded shadow mb-4"></div>
-        <h3 class="text-xl font-semibold mb-2">Grammar</h3>
-        <p class="flex-grow text-gray-700 mb-4">
-          Conquer the 50 must-know N2 grammar structures for confident communication.
-        </p>
-        <a href="/grammar/" class="text-skin-accent font-medium hover:underline">
-          Explore Grammar →
-        </a>
-      </div>
-    </div>
-
-    <!-- Second row: 2 cards on desktop -->
-    <div class="mt-8 grid grid-cols-1 gap-x-6 gap-y-10 sm:grid-cols-2 xl:gap-x-8">
-      <!-- Reading -->
-      <div class="bg-skin-card-muted rounded shadow p-6 flex flex-col">
-        <div class="w-12 h-12 bg-skin-card-muted-alt rounded shadow mb-4"></div>
-        <h3 class="text-xl font-semibold mb-2">Reading</h3>
-        <p class="flex-grow text-gray-700 mb-4">
-          Practice with authentic N2 passages to boost your comprehension speed.
-        </p>
-        <a href="/reading/" class="text-skin-accent font-medium hover:underline">
-          Explore Reading →
-        </a>
-      </div>
-
-      <!-- Listening -->
-      <div class="bg-skin-card-muted rounded shadow p-6 flex flex-col">
-        <div class="w-12 h-12 bg-skin-card-muted-alt rounded shadow mb-4"></div>
-        <h3 class="text-xl font-semibold mb-2">Listening</h3>
-        <p class="flex-grow text-gray-700 mb-4">
-          Train your ears on authentic N2 audio for real-world understanding.
-        </p>
-        <a href="/listening/" class="text-skin-accent font-medium hover:underline">
-          Explore Listening →
-        </a>
-      </div>
-    </div>
-  </div>
-</section>
-
-<Hr/>
-
-
-<!--  -->
-
-
-
-<section id="products" class="py-12 bg-skin-background-alt">
-  <div class="max-w-7xl mx-auto">
-    <h2 class="text-3xl font-bold">Featured Prep Packs</h2>
-
-    <div class="mt-6 grid grid-cols-1 gap-x-6 gap-y-10 sm:grid-cols-3 xl:gap-x-8">
-      <!-- Reading Prep Pack -->
-      <div class="bg-white rounded shadow p-6 flex flex-col">
-        <!-- simulated image gradient -->
-        <div class="w-full h-32 rounded mb-4 bg-skin-accent"></div>
-        <h3 class="text-xl font-semibold mb-2">Reading Prep Pack</h3>
-        <p class="flex-grow text-gray-700 mb-4">
-          Everything you need to master N2 reading comprehension, including target passages, vocab lists, and answer keys.
-        </p>
-        <LinkButton href="/products/reading-prep-pack" className="mt-auto self-start">
-          Get Reading Pack
-        </LinkButton>
-      </div>
-
-      <!-- Kanji Mastery Pack -->
-      <div class="bg-white rounded shadow p-6 flex flex-col">
-        <!-- simulated image gradient -->
-        <div class="w-full h-32 rounded mb-4 bg-skin-accent"></div>
-        <h3 class="text-xl font-semibold mb-2">Kanji Mastery Pack</h3>
-        <p class="flex-grow text-gray-700 mb-4">
-          Drill the most challenging N2 kanji with stroke order guides, mnemonic hints, and quiz sheets.
-        </p>
-        <LinkButton href="/products/kanji-mastery-pack" className="mt-auto self-start">
-          Get Kanji Pack
-        </LinkButton>
-      </div>
-
-      <!-- Grammar Essentials Pack -->
-      <div class="bg-white rounded shadow p-6 flex flex-col">
-        <!-- simulated image gradient -->
-        <div class="w-full h-32 rounded mb-4 bg-skin-accent"></div>
-        <h3 class="text-xl font-semibold mb-2">Grammar Essentials Pack</h3>
-        <p class="flex-grow text-gray-700 mb-4">
-          Quick-reference guide to the top 50 N2 grammar points, with example sentences and practice exercises.
-        </p>
-        <LinkButton href="/products/grammar-essentials-pack" className="mt-auto self-start">
-          Get Grammar Pack
-        </LinkButton>
-      </div>
-    </div>
-  </div>
-</section>
+    <Hero />
 
     <Hr />
-{recentPosts.length > 0 && (
-  <>
-    <section id="recent-posts" class="py-12">
-      <div class="max-w-7xl mx-auto">
-        <h2 class="text-3xl font-bold">Recent Blog Posts</h2>
-        <div class="mt-6 grid grid-cols-1 gap-x-6 gap-y-10 sm:grid-cols-2 lg:grid-cols-3 xl:gap-x-8">
-          {recentPosts.map(
-            ({ data, slug }, index) =>
-              index < 2 && (
-                <Card href={`/blog/${slug}/`} frontmatter={data} />
-              )
-          )}
+    <section id="quick-start" class="py-12">
+      <div class="mx-auto max-w-7xl">
+        <h2 class="mb-4 text-3xl font-bold">Quick Start</h2>
+
+        <!-- First row: Vocabulary, Grammar, Reading -->
+        <div
+          class="xl:gap-x-8 mt-6 grid grid-cols-1 gap-x-6 gap-y-6 sm:grid-cols-3"
+        >
+          <!-- Vocabulary -->
+          <div class="flex flex-col overflow-hidden rounded">
+            <div class="mb-2 flex h-12 w-12 items-center justify-center">
+              <h3 class="text-2xl font-semibold">語彙</h3>
+            </div>
+            <h3 class="mb-2 text-xl font-semibold">Vocabulary</h3>
+            <img
+              src="assets/images/vocab-hero.png"
+              alt="Vocabulary Study"
+              class="mb-2 h-60 w-full rounded object-cover"
+            />
+
+            <p class="mb-2 flex-grow text-lg">
+              Build your business-level word bank with essential N2
+              vocabulary.
+            </p>
+            <a
+              href="/vocabulary/"
+              class="mt-auto font-medium text-skin-accent hover:underline"
+            >
+              Explore Vocabulary →
+            </a>
+          </div>
+
+          <!-- Grammar -->
+          <div class="flex flex-col overflow-hidden rounded">
+            <div class="mb-2 flex h-12 w-12 items-center justify-center">
+              <h3 class="text-2xl font-semibold">文法</h3>
+            </div>
+        
+              <h3 class="mb-2 text-xl font-semibold">Grammar</h3>
+            
+            <img
+              src="/assets/images/grammar-hero.png"
+              alt="Grammar Study"
+              class="mb-2 h-60 w-full rounded object-cover"
+            />
+            <p class="mb-2 flex-grow text-lg">
+              Conquer the must-know N2 grammar structures for confident
+              communication.
+            </p>
+            <a
+              href="/grammar/"
+              class="mt-auto font-medium text-skin-accent hover:underline"
+            >
+              Explore Grammar →
+            </a>
+          </div>
+
+          <!-- Reading -->
+          <div class="flex flex-col overflow-hidden rounded">
+            <div class="mb-2 flex h-12 w-12 items-center justify-center">
+              <h3 class="text-2xl font-semibold">読解</h3>
+            </div>
+            <h3 class="mb-2 text-xl font-semibold">Reading</h3>
+            <img
+              src="/assets/images/reading-hero.png"
+              alt="Reading Practice"
+              class="mb-2 h-60 w-full rounded object-cover"
+            />
+            <p class="mb-2 flex-grow text-lg">
+              Practice with authentic N2 passages to boost your comprehension
+              speed.
+            </p>
+            <a
+              href="/reading/"
+              class="mt-auto font-medium text-skin-accent hover:underline"
+            >
+              Explore Reading →
+            </a>
+          </div>
         </div>
-        <div class="all-posts-btn-wrapper mt-8">
-          <LinkButton href="/blog/">
-            all posts
-            <svg xmlns="http://www.w3.org/2000/svg">
-              <path d="m11.293 17.293 1.414 1.414L19.414 12l-6.707-6.707-1.414 1.414L15.586 11H6v2h9.586z" />
-            </svg>
-          </LinkButton>
+
+        <!-- Second row: Listening, Products -->
+        <div
+          class="xl:gap-x-8 mt-8 grid grid-cols-1 gap-x-6 gap-y-6 sm:grid-cols-2"
+        >
+          <!-- Listening -->
+          <div class="flex flex-col overflow-hidden rounded">
+            <div class="mb-2 flex h-12 w-12 items-center justify-center">
+              <h3 class="text-2xl font-semibold">聴解</h3>
+            </div>
+            <h3 class="mb-2 text-xl font-semibold">Listening</h3>
+            <img
+              src="/assets/images/listening-hero.png"
+              alt="Listening Practice"
+              class="mb-2 h-60 w-full rounded object-cover object-top"
+            />
+            <p class="mb-2 flex-grow text-lg">
+              Train your ears on authentic N2 audio for real-world
+              understanding.
+            </p>
+            <a
+              href="/listening/"
+              class="mt-auto font-medium text-skin-accent hover:underline"
+            >
+              Explore Listening →
+            </a>
+          </div>
+
+          <!-- Products -->
+          <div class="flex flex-col overflow-hidden rounded">
+            <div class="mb-2 flex h-12 w-12 items-center justify-center">
+              <h3 class="text-2xl font-semibold">製品</h3>
+            </div>
+            <h3 class="mb-2 text-xl font-semibold">Products</h3>
+            <img
+              src="https://plus.unsplash.com/premium_photo-1661882926003-91a51e3dfe64?q=80&w=2832&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+              alt="JLPT N2 Products"
+              class="mb-2 h-60 w-full rounded object-cover"
+            />
+            <p class="mb-2 flex-grow text-lg">
+              Premium N2 study tools and N2-inspired merch to level-up your learning.
+            </p>
+            <a
+              href="/products/"
+              class="mt-auto font-medium text-skin-accent hover:underline"
+            >
+              Explore Products →
+            </a>
+          </div>
         </div>
       </div>
-        <Hr />
     </section>
-  
-  </>
-)}
+
+    <Hr />
+
+    <!--  -->
+
+    <!-- <section id="products" class="bg-skin-background-alt py-12">
+      <div class="mx-auto max-w-7xl">
+        <h2 class="text-3xl font-bold">Featured Products</h2>
+
+        <div
+          class="xl:gap-x-8 mt-6 grid grid-cols-1 gap-x-6 gap-y-10 sm:grid-cols-3"
+        >
+          <div class="flex flex-col rounded bg-white">
+
+          <div class="mb-4 h-52 w-full rounded bg-skin-accent"></div>
+            <h3 class="mb-2 text-xl font-semibold">Notion Templates</h3>
+            <p class="mb-4 flex-grow text-gray-700">
+              Everything you need to master N2 reading comprehension, including
+              target passages, vocab lists, and answer keys.
+            </p>
+            <a
+              href="/listening/"
+              class="mt-auto font-medium text-skin-accent hover:underline"
+            >
+              Get Notion Templates →
+            </a>
+          </div>
+
+          <div class="flex flex-col rounded bg-white">
+            <div class="mb-4 h-52 w-full rounded bg-skin-accent"></div>
+            <h3 class="mb-2 text-xl font-semibold">Books</h3>
+            <p class="mb-4 flex-grow text-gray-700">
+              Drill the most challenging N2 kanji with stroke order guides,
+              mnemonic hints, and quiz sheets.
+            </p>
+            <a
+              href="/listening/"
+              class="mt-auto font-medium text-skin-accent hover:underline"
+            >
+              Get N2 Books →
+            </a>
+          </div>
+
+          <div class="flex flex-col rounded bg-white">
+
+            <div class="mb-4 h-52 w-full rounded bg-skin-accent"></div>
+            <h3 class="mb-2 text-xl font-semibold">Merch and Swag</h3>
+            <p class="mb-4 flex-grow text-gray-700">
+              Quick-reference guide to the top 50 N2 grammar points, with
+              example sentences and practice exercises.
+            </p>
+            <a
+              href="/listening/"
+              class="mt-auto font-medium text-skin-accent hover:underline"
+            >
+              Get N2 Merch and Swag →
+            </a>
+          </div>
+        </div>
+      </div>
+    </section> -->
+
+    <Hr />
+    {
+      recentPosts.length > 0 && (
+        <>
+          <section id="recent-posts" class="py-12">
+            <div class="mx-auto max-w-7xl">
+              <h2 class="text-3xl font-bold">Recent Blog Posts</h2>
+              <div class="lg:grid-cols-3 xl:gap-x-8 mt-6 grid grid-cols-1 gap-x-6 gap-y-10 sm:grid-cols-2">
+                {recentPosts.map(
+                  ({ data, slug }, index) =>
+                    index < 2 && (
+                      <Card href={`/blog/${slug}/`} frontmatter={data} />
+                    )
+                )}
+              </div>
+              <div class="all-posts-btn-wrapper mt-8">
+                <LinkButton href="/blog/">
+                  all posts
+                  <svg xmlns="http://www.w3.org/2000/svg">
+                    <path d="m11.293 17.293 1.414 1.414L19.414 12l-6.707-6.707-1.414 1.414L15.586 11H6v2h9.586z" />
+                  </svg>
+                </LinkButton>
+              </div>
+            </div>
+            <Hr />
+          </section>
+        </>
+      )
+    }
 
     <!-- Newsletter Signup -->
-    <section id="newsletter" class="py-12 bg-skin-accent mb-8">
-      <div class="max-w-7xl mx-auto text-center">
-        <h2 class="text-3xl font-bold text-white mb-4">Join the N2 Gokaku Newsletter</h2>
-        <p class="text-lg text-skin-inverted mb-6">
+    <section id="newsletter" class="mb-8 bg-skin-accent py-12">
+      <div class="mx-auto max-w-7xl text-center">
+        <h2 class="mb-4 text-3xl font-bold text-white">
+          Join the N2 Gokaku Newsletter
+        </h2>
+        <p class="mb-6 text-lg text-skin-inverted">
           Weekly N2 tips, study memes, and Tokyo salaryman survival hacks.
         </p>
-        <form class="flex flex-col sm:flex-row items-center justify-center gap-4">
+        <form
+          class="flex flex-col items-center justify-center gap-4 sm:flex-row"
+        >
           <input
             type="email"
             placeholder="Enter your email"
-            class="w-full sm:w-auto px-4 py-3 rounded shadow focus:outline-none"
+            class="w-full rounded px-4 py-3 focus:outline-none sm:w-auto"
           />
           <button
             type="submit"
-            class="px-6 py-3 bg-white text-skin-accent font-semibold rounded shadow hover:opacity-90"
+            class="rounded bg-white px-6 py-3 font-semibold text-skin-accent hover:opacity-90"
           >
             Let’s Gokaku!
           </button>
         </form>
       </div>
- 
     </section>
-
-
   </main>
 
-         <Hr />
+  <Hr />
   <Footer />
 </Layout>
 

@@ -15,7 +15,7 @@ allGrammar.sort((a, b) =>
 );
 
 // 3) Pagination settings
-const perPage = 2;
+const perPage = 5;
 const pageGrammar = allGrammar.slice(0, perPage);
 const pageCount   = Math.ceil(allGrammar.length / perPage);
 ---
@@ -34,7 +34,7 @@ const pageCount   = Math.ceil(allGrammar.length / perPage);
     <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
       
       <h1 class="text-4xl font-bold mb-6">
-        N2 Grammar Points
+        JLPT N2 Grammar Points
       </h1>
 
       <img
@@ -79,7 +79,7 @@ const pageCount   = Math.ceil(allGrammar.length / perPage);
             </a>
           </td>
           <td class="px-6 py-4 text-skin-base truncate">
-            {entry.data.meaning}
+            {entry.data.meaning.join(', ')}
           </td>
         </tr>
       ))}

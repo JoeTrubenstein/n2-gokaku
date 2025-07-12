@@ -34,13 +34,13 @@ export const SOCIALS: SocialObjects = [
   },
   {
     name: "Facebook",
-    href: "https://www.facebook.com/profile.php?id=61565177264385",
+    href: "https://www.facebook.com/n2.gokaku/",
     linkTitle: `${SITE.title} on Facebook`,
     active: true,
   },
   {
     name: "Instagram",
-    href: "https://www.instagram.com/jdm.cafe/",
+    href: "https://www.instagram.com/n2.gokaku/",
     linkTitle: `${SITE.title} on Instagram`,
     active: true,
   },
