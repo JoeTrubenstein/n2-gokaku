@@ -46,7 +46,7 @@ export const SOCIALS: SocialObjects = [
   },
   {
     name: "LinkedIn",
-    href: "https://www.linkedin.com/in/joe-trubenstein-506189b3/",
+    href: "https://www.linkedin.com/in/joseph-james-506189b3/",
     linkTitle: `${SITE.title} on LinkedIn`,
     active: true,
   },

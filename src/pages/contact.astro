@@ -17,16 +17,19 @@ import Breadcrumbs from "@components/Breadcrumbs.astro";
   />
 
   <main id="main-content" class="py-12">
-    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-      <h1 class="text-4xl font-bold mb-6">Contact Us</h1>
+    <div class="lg:px-8 mx-auto max-w-4xl px-4 sm:px-6">
+      <h1 class="mb-6 text-4xl font-bold">Contact Us</h1>
 
-      <div class="text-lg mb-8 text-skin-base">
-        <p>
-          Questions, comments, feedback? Just want to say hi?
-        </p>
+      <div class="mb-8 text-lg text-skin-base">
+        <p>Say hi!</p>
       </div>
 
-      <form name="contact" method="POST" netlify class="space-y-6">
+      <form
+        action="https://formspree.io/f/xqalzlkl"
+        method="POST"
+        name="contact"
+        class="space-y-6"
+      >
         <!-- Netlify form name -->
         <input type="hidden" name="form-name" value="contact" />
 
@@ -40,7 +43,7 @@ import Breadcrumbs from "@components/Breadcrumbs.astro";
               name="name"
               id="name"
               required
-              class="mt-2 block w-full rounded-lg border-0 p-3 shadow-sm ring-1 ring-inset ring-skin-muted placeholder:text-skin-muted focus:ring-2 focus:ring-inset focus:ring-skin-accent text-skin-base"
+              class="ring-skin-muted placeholder:text-skin-muted focus:ring-skin-accent mt-2 block w-full rounded-lg border-0 p-3 text-skin-base shadow-sm ring-1 ring-inset focus:ring-2 focus:ring-inset"
             />
           </div>
 
@@ -53,12 +56,15 @@ import Breadcrumbs from "@components/Breadcrumbs.astro";
               name="email"
               id="email"
               required
-              class="mt-2 block w-full rounded-lg border-0 p-3 shadow-sm ring-1 ring-inset ring-skin-muted placeholder:text-skin-muted focus:ring-2 focus:ring-inset focus:ring-skin-accent text-skin-base"
+              class="ring-skin-muted placeholder:text-skin-muted focus:ring-skin-accent mt-2 block w-full rounded-lg border-0 p-3 text-skin-base shadow-sm ring-1 ring-inset focus:ring-2 focus:ring-inset"
             />
           </div>
 
           <div class="sm:col-span-2">
-            <label for="message" class="block text-sm font-medium text-skin-base">
+            <label
+              for="message"
+              class="block text-sm font-medium text-skin-base"
+            >
               Message
             </label>
             <textarea
@@ -66,23 +72,17 @@ import Breadcrumbs from "@components/Breadcrumbs.astro";
               id="message"
               rows="4"
               required
-              class="mt-2 min-h-48 block w-full rounded-lg border-0 p-3 shadow-sm ring-1 ring-inset ring-skin-muted placeholder:text-skin-muted focus:ring-2 focus:ring-inset focus:ring-skin-accent text-skin-base"
+              class="ring-skin-muted placeholder:text-skin-muted focus:ring-skin-accent mt-2 block min-h-48 w-full rounded-lg border-0 p-3 text-skin-base shadow-sm ring-1 ring-inset focus:ring-2 focus:ring-inset"
             ></textarea>
           </div>
         </div>
 
-  <button
-    type="submit"
-    class="w-full inline-flex justify-center 
-           rounded-lg bg-skin-accent 
-           px-6 py-3             /* mobile */
-           md:px-4 md:py-2       /* desktop */
-           text-sm font-semibold text-white 
-           shadow-sm hover:brightness-110 
-           focus:outline-none focus:ring-2 focus:ring-inset focus:ring-skin-accent"
-  >
-    Send Message
-  </button>
+        <button
+          type="submit"
+          class="/* mobile */ md:px-4 md:py-2 /* desktop */ focus:ring-skin-accent inline-flex w-full justify-center rounded-lg bg-skin-accent px-6 py-3 text-sm font-semibold text-white shadow-sm hover:brightness-110 focus:outline-none focus:ring-2 focus:ring-inset"
+        >
+          Send Message
+        </button>
       </form>
     </div>
   </main>
