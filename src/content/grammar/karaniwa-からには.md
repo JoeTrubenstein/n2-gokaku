@@ -15,8 +15,6 @@ description: "How to use からには which means 'now that; since; because' in 
 ogImage: "/assets/images/grammar/karaniwa-からには.png"
 ---
 
-![からには OG Image](/assets/images/vocab/karaniwa-からには.png)
-
 ## Term  
 - <ruby>からには<rt>からには</rt></ruby>
 - karaniwa
@@ -28,6 +26,14 @@ ogImage: "/assets/images/grammar/karaniwa-からには.png"
 
 ## 接続 (Connection)
 - Plain form + からには
+
+---
+
+## Usage Notes
+
+- Expresses a sense of obligation or natural consequence once something is decided.  
+- Often used to imply strong determination or responsibility.  
+- Common in both spoken and written Japanese to strengthen commitment statements.
 
 ---
 
@@ -57,14 +63,6 @@ Koko made kita <span class="text-skin-accent">karaniwa</span>, saigo made yaru s
 「戦う<span class="text-skin-accent">からには</span>、絶対に負けないと誓う！」  
 “Tatakau <span class="text-skin-accent">karaniwa</span>, zettai ni makenai to chikau!”  
 *(“<span class="text-skin-accent">Since</span> I’m fighting, I swear I will never lose!”)*
-
----
-
-## Usage Notes
-
-- Expresses a sense of obligation or natural consequence once something is decided.  
-- Often used to imply strong determination or responsibility.  
-- Common in both spoken and written Japanese to strengthen commitment statements.
 
 ---
 

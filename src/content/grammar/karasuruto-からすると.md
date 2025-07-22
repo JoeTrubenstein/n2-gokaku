@@ -14,8 +14,6 @@ description: "How to use からすると which means 'from the perspective of; j
 ogImage: "/assets/images/grammar/karasuruto-からすると.png"
 ---
 
-![からすると OG Image](/assets/images/vocab/karasuruto-からすると.png)
-
 ## Term  
 - <ruby>からすると<rt>からすると</rt></ruby>
 - karasuruto
@@ -26,6 +24,14 @@ ogImage: "/assets/images/grammar/karasuruto-からすると.png"
 
 ## 接続 (Connection)
 - Noun + からすると
+
+---
+
+## Usage Notes
+
+- Used to express judgment or inference based on observed facts or perspectives.  
+- Often interchangeable with からして in casual conversation, but からすると focuses more on inference rather than cause.  
+- Common in written, spoken, and academic Japanese to analyze situations or data.
 
 ---
 
@@ -55,14 +61,6 @@ Mitame <span class="text-skin-accent">karasuruto</span>, kono keeki oishisou da 
 「お前の動き<span class="text-skin-accent">からすると</span>、まだ本気じゃないな。」  
 “Omae no ugoki <span class="text-skin-accent">karasuruto</span>, mada honki janai na.”  
 *(“<span class="text-skin-accent">Judging from</span> your movements, you’re not serious yet.”)*
-
----
-
-## Usage Notes
-
-- Used to express judgment or inference based on observed facts or perspectives.  
-- Often interchangeable with からして in casual conversation, but からすると focuses more on inference rather than cause.  
-- Common in written, spoken, and academic Japanese to analyze situations or data.
 
 ---
 

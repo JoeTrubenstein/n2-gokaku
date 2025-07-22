@@ -17,8 +17,6 @@ description: "How to use 傾く which means 'to tilt; to lean; to decline' in pr
 ogImage: "/assets/images/vocab/katamuku.png"
 ---
 
-![傾く OG Image](/assets/images/vocab/katamuku.png)
-
 ## Term  
 - <ruby>傾<rt>かたむ</rt></ruby>く
 - katamuku
@@ -33,6 +31,14 @@ ogImage: "/assets/images/vocab/katamuku.png"
 
 ## Kanji Breakdown  
 - <ruby>傾<rt>かたむ</rt></ruby> – lean; incline; tilt
+
+---
+
+## Usage Notes
+
+- Often used for physical tilting or leaning objects (trees, shelves, buildings).  
+- Also used metaphorically for decline, e.g. company performance or national stability.  
+- The te-form 傾いて is used for progressive or explanatory contexts.
 
 ---
 
@@ -74,14 +80,6 @@ Kono tana, chotto <span class="text-skin-accent">katamuite</span> nai?
 「この国が<span class="text-skin-accent">傾く</span>前に、俺が守る！」  
 “Kono kuni ga <span class="text-skin-accent">katamuku</span> mae ni, ore ga mamoru!”  
 *(“I will protect this country before it <span class="text-skin-accent">falls</span>!”)*
-
----
-
-## Usage Notes
-
-- Often used for physical tilting or leaning objects (trees, shelves, buildings).  
-- Also used metaphorically for decline, e.g. company performance or national stability.  
-- The te-form 傾いて is used for progressive or explanatory contexts.
 
 ---
 

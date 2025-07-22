@@ -17,8 +17,6 @@ description: "How to use 次第 which means 'depending on; as soon as; order; ci
 ogImage: "/assets/images/vocab/shidai.png"
 ---
 
-![次第 OG Image](/assets/images/vocab/shidai.png)
-
 ## Term  
 - <ruby>次第<rt>しだい</rt></ruby>
 - shidai
@@ -34,6 +32,14 @@ ogImage: "/assets/images/vocab/shidai.png"
 ## Kanji Breakdown  
 - <ruby>次<rt>し</rt></ruby> – next; order; sequence  
 - <ruby>第<rt>だい</rt></ruby> – ordinal number; order
+
+---
+
+## Usage Notes
+
+- Used to express that an outcome depends on something (noun + 次第).  
+- Also used to express “as soon as ~” in formal speech (verb stem + 次第).  
+- Common in business emails and official announcements for polite immediacy.
 
 ---
 
@@ -63,14 +69,6 @@ Ikeru ka dou ka wa tenki <span class="text-skin-accent">shidai</span> da ne.
 「全てはお前の行動<span class="text-skin-accent">次第</span>だ。」  
 “Subete wa omae no koudou <span class="text-skin-accent">shidai</span> da.”  
 *(“Everything <span class="text-skin-accent">depends</span> on your actions.”)*
-
----
-
-## Usage Notes
-
-- Used to express that an outcome depends on something (noun + 次第).  
-- Also used to express “as soon as ~” in formal speech (verb stem + 次第).  
-- Common in business emails and official announcements for polite immediacy.
 
 ---
 

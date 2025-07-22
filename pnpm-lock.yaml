@@ -20,6 +20,9 @@ importers:
       astro:
         specifier: ^4.14.2
         version: 4.15.1(rollup@4.21.2)(typescript@5.5.4)
+      astro-paper:
+        specifier: 'link:'
+        version: 'link:'
       fuse.js:
         specifier: ^7.0.0
         version: 7.0.0

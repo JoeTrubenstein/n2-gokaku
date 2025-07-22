@@ -14,8 +14,6 @@ description: "How to use からといって which means 'just because; even thou
 ogImage: "/assets/images/grammar/karatoitte-からといって.png"
 ---
 
-![からといって OG Image](/assets/images/vocab/karatoitte-からといって.png)
-
 ## Term  
 - <ruby>からといって<rt>からといって</rt></ruby>
 - karatoitte
@@ -26,6 +24,14 @@ ogImage: "/assets/images/grammar/karatoitte-からといって.png"
 
 ## 接続 (Connection)
 - [Plain form + からといって]
+
+---
+
+## Usage Notes
+
+- Used to refute assumptions or generalizations based on one fact.  
+- Often paired with ～とは限らない (“does not necessarily mean…”) in the second clause.  
+- Common in spoken, formal, and academic contexts to introduce nuanced contrast.
 
 ---
 
@@ -55,14 +61,6 @@ Nihon ni sunderu <span class="text-skin-accent">karatoitte</span>, nihongo ga pe
 「強い<span class="text-skin-accent">からといって</span>、勝てると思うなよ。」  
 “Tsuyoi <span class="text-skin-accent">karatoitte</span>, kateru to omou na yo.”  
 *(“<span class="text-skin-accent">Just because</span> you’re strong doesn’t mean you’ll win.”)*
-
----
-
-## Usage Notes
-
-- Used to refute assumptions or generalizations based on one fact.  
-- Often paired with ～とは限らない (“does not necessarily mean…”) in the second clause.  
-- Common in spoken, formal, and academic contexts to introduce nuanced contrast.
 
 ---
 

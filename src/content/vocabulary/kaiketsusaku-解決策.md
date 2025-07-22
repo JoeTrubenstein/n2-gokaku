@@ -16,8 +16,6 @@ description: "How to use 解決策 which means 'solution; strategy for resolutio
 ogImage: "/assets/images/vocab/kaiketsusaku.png"
 ---
 
-![解決策 OG Image](/assets/images/vocab/kaiketsusaku.png)
-
 ## Term  
 - <ruby>解決策<rt>かいけつさく</rt></ruby>
 - kaiketsusaku
@@ -33,6 +31,13 @@ ogImage: "/assets/images/vocab/kaiketsusaku.png"
 - <ruby>解<rt>かい</rt></ruby> – untie; solve  
 - <ruby>決<rt>けつ</rt></ruby> – decide; settle  
 - <ruby>策<rt>さく</rt></ruby> – plan; scheme; measure  
+
+---
+
+## Usage Notes
+
+- Often used in business, academic, and formal contexts when discussing **practical ways to solve problems**.  
+- Compared to **解決 (かいけつ)** alone (meaning "resolution"), **解決策** emphasizes the **specific strategy or plan** to resolve an issue.
 
 ---
 
@@ -62,13 +67,6 @@ Sono toraburu, nanka <span class="text-skin-accent">kaiketsusaku</span> aru to o
 「この状況を覆す<span class="text-skin-accent">解決策</span>は…俺の中にある！」  
 “Kono joukyou o kutsugaesu <span class="text-skin-accent">kaiketsusaku</span> wa… ore no naka ni aru!”  
 *(The <span class="text-skin-accent">solution</span> to overturn this situation… lies within me!)*
-
----
-
-## Usage Notes
-
-- Often used in business, academic, and formal contexts when discussing **practical ways to solve problems**.  
-- Compared to **解決 (かいけつ)** alone (meaning "resolution"), **解決策** emphasizes the **specific strategy or plan** to resolve an issue.
 
 ---
 

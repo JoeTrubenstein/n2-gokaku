@@ -17,8 +17,6 @@ description: "How to use 衣装 which means 'costume; outfit; clothing (for perf
 ogImage: "/assets/images/vocab/ishou.png"
 ---
 
-![衣装 OG Image](/assets/images/vocab/ishou.png)
-
 ## Term  
 - <ruby>衣装<rt>いしょう</rt></ruby>
 - ishou
@@ -34,6 +32,14 @@ ogImage: "/assets/images/vocab/ishou.png"
 ## Kanji Breakdown  
 - <ruby>衣<rt>い</rt></ruby> – clothing; garment  
 - <ruby>装<rt>しょう</rt></ruby> – attire; dress; adorn
+
+---
+
+## Usage Notes
+
+- Used for stage, performance, and ceremonial clothing rather than everyday wear.  
+- Can refer to elaborate traditional costumes or modern performance outfits.  
+- Often appears in contexts like theater, cosplay, idol performances, and fashion shows.
 
 ---
 
@@ -63,14 +69,6 @@ Sono <span class="text-skin-accent">ishou</span> doko de katta no?
 「この<span class="text-skin-accent">衣装</span>を着た時、私は無敵になる！」  
 “Kono <span class="text-skin-accent">ishou</span> o kita toki, watashi wa muteki ni naru!”  
 *(“When I wear this <span class="text-skin-accent">costume</span>, I become invincible!”)*
-
----
-
-## Usage Notes
-
-- Used for stage, performance, and ceremonial clothing rather than everyday wear.  
-- Can refer to elaborate traditional costumes or modern performance outfits.  
-- Often appears in contexts like theater, cosplay, idol performances, and fashion shows.
 
 ---
 

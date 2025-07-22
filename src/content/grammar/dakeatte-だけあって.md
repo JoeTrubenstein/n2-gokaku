@@ -15,8 +15,6 @@ description: "How to use だけあって which means 'as expected of; being wort
 ogImage: "/assets/images/grammar/dakeatte-だけあって.png"
 ---
 
-![だけあって OG Image](/assets/images/vocab/dakeatte-だけあって.png)
-
 ## Term  
 - <ruby>だけあって<rt>だけあって</rt></ruby>
 - dakeatte
@@ -31,6 +29,14 @@ ogImage: "/assets/images/grammar/dakeatte-だけあって.png"
 - Verb (casual form) + だけあって  
 - i-adjective + だけあって  
 - na-adjective + な + だけあって
+
+---
+
+## Usage Notes
+
+- Used to express admiration or approval, implying the result is natural because of a certain status or characteristic.  
+- Often used positively, but can also express critical nuance if the outcome is negative but expected.  
+- Similar to “as one would expect from ~” in English.
 
 ---
 
@@ -60,14 +66,6 @@ Kono mise, ninki ten <span class="text-skin-accent">dakeatte</span>, itsumo kond
 「さすが勇者<span class="text-skin-accent">だけあって</span>、こんな攻撃にも耐えられるとは。」  
 “Sasuga yuusha <span class="text-skin-accent">dakeatte</span>, konna kougeki ni mo taerareru to wa.”  
 *(“As expected of a hero, being able to withstand an attack like that.”)*
-
----
-
-## Usage Notes
-
-- Used to express admiration or approval, implying the result is natural because of a certain status or characteristic.  
-- Often used positively, but can also express critical nuance if the outcome is negative but expected.  
-- Similar to “as one would expect from ~” in English.
 
 ---
 

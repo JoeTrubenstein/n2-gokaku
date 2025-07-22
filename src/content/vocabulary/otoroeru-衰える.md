@@ -16,9 +16,6 @@ draft: false
 description: "How to use 衰える which means 'to decline; to weaken; to deteriorate' in preparation for the JLPT N2"
 ogImage: "/assets/images/vocab/otoroeru.png"
 ---
-
-![衰える OG Image](/assets/images/vocab/otoroeru.png)
-
 ## Term  
 - <ruby>衰<rt>おとろ</rt></ruby>える
 - otoroeru
@@ -33,6 +30,14 @@ ogImage: "/assets/images/vocab/otoroeru.png"
 
 ## Kanji Breakdown  
 - <ruby>衰<rt>おとろ</rt></ruby> – decline; wither; weaken
+
+---
+
+## Usage Notes
+
+- Often used for physical, mental, or economic weakening or decline.  
+- Common in discussions about health, aging, and market performance.  
+- Te-form 衰えて is used for progressive or descriptive contexts.
 
 ---
 
@@ -74,14 +79,6 @@ Undou busoku da to karada ga sugu <span class="text-skin-accent">otoroeru</span>
 「俺の力が<span class="text-skin-accent">衰える</span>前に、必ず倒す！」  
 “Ore no chikara ga <span class="text-skin-accent">otoroeru</span> mae ni, kanarazu taosu!”  
 *(“I will defeat them before my strength <span class="text-skin-accent">deteriorates</span>!”)*
-
----
-
-## Usage Notes
-
-- Often used for physical, mental, or economic weakening or decline.  
-- Common in discussions about health, aging, and market performance.  
-- Te-form 衰えて is used for progressive or descriptive contexts.
 
 ---
 

@@ -15,8 +15,6 @@ description: "How to use どころか which means 'far from; not only... but als
 ogImage: "/assets/images/grammar/dokoroka-どころか.png"
 ---
 
-![どころか OG Image](/assets/images/vocab/dokoroka-どころか.png)
-
 ## Term  
 - <ruby>どころか<rt>どころか</rt></ruby>
 - dokoroka
@@ -31,6 +29,14 @@ ogImage: "/assets/images/grammar/dokoroka-どころか.png"
 - [Verb (casual form) + どころか]  
 - [i-adjective + どころか]  
 - [na-adjective + どころか]
+
+---
+
+## Usage Notes
+
+- Emphasizes a contrast where the expected positive is actually negative, or vice versa.  
+- Often used to correct or contradict an assumption strongly.  
+- Common in spoken, written, and dramatic contexts to add emphasis.
 
 ---
 
@@ -60,14 +66,6 @@ Netara naoru <span class="text-skin-accent">dokoroka</span>, motto hidoku natta 
 「助ける<span class="text-skin-accent">どころか</span>、お前が足手まといだ。」  
 “Tasukeru <span class="text-skin-accent">dokoroka</span>, omae ga ashidematoi da.”  
 *(“You’re not helping, <span class="text-skin-accent">on the contrary</span>, you’re just getting in the way.”)*
-
----
-
-## Usage Notes
-
-- Emphasizes a contrast where the expected positive is actually negative, or vice versa.  
-- Often used to correct or contradict an assumption strongly.  
-- Common in spoken, written, and dramatic contexts to add emphasis.
 
 ---
 

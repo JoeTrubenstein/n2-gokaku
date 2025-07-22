@@ -17,8 +17,6 @@ description: "How to use 詳細 which means 'details; particulars; specifics' in
 ogImage: "/assets/images/vocab/shousai.png"
 ---
 
-![詳細 OG Image](/assets/images/vocab/shousai.png)
-
 ## Term  
 - <ruby>詳細<rt>しょうさい</rt></ruby>
 - shousai
@@ -34,6 +32,13 @@ ogImage: "/assets/images/vocab/shousai.png"
 ## Kanji Breakdown  
 - <ruby>詳<rt>しょう</rt></ruby> – detailed; full  
 - <ruby>細<rt>さい</rt></ruby> – fine; minute
+
+---
+
+## Usage Notes
+
+- Used in **business, academic, and daily conversation** when referring to **specific aspects or particulars** of something.  
+- Often paired with **説明 (explanation)** or **報告 (report)**, as in 詳細説明 (“detailed explanation”).
 
 ---
 
@@ -63,13 +68,6 @@ Sono <span class="text-skin-accent">shousai</span> tte dareka kara kiita no?
 「作戦の<span class="text-skin-accent">詳細</span>を教えろ。時間がない。」  
 “Sakusen no <span class="text-skin-accent">shousai</span> o oshiero. Jikan ga nai.”  
 *(“Tell me the <span class="text-skin-accent">details</span> of the operation. We don’t have time.”)*
-
----
-
-## Usage Notes
-
-- Used in **business, academic, and daily conversation** when referring to **specific aspects or particulars** of something.  
-- Often paired with **説明 (explanation)** or **報告 (report)**, as in 詳細説明 (“detailed explanation”).
 
 ---
 

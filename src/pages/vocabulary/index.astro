@@ -11,7 +11,7 @@ const allVocab = await getCollection("vocabulary", (e) => !e.data.draft);
 // sort by the vocabulary term
 allVocab.sort((a, b) => a.data.term.localeCompare(b.data.term));
 
-const perPage = 5;
+const perPage = 10;
 const pageVocab = allVocab.slice(0, perPage);
 const pageCount = Math.ceil(allVocab.length / perPage);
 ---

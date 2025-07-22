@@ -17,8 +17,6 @@ description: "How to use 深刻 which means 'serious; grave; severe' in preparat
 ogImage: "/assets/images/vocab/shinkoku.png"
 ---
 
-![深刻 OG Image](/assets/images/vocab/shinkoku.png)
-
 ## Term  
 - <ruby>深刻<rt>しんこく</rt></ruby>
 - shinkoku
@@ -34,6 +32,14 @@ ogImage: "/assets/images/vocab/shinkoku.png"
 ## Kanji Breakdown  
 - <ruby>深<rt>しん</rt></ruby> – deep; profound  
 - <ruby>刻<rt>こく</rt></ruby> – engrave; carve; time
+
+---
+
+## Usage Notes
+
+- Used for situations with heavy or severe consequences.  
+- Often paired with 問題 (problem), 影響 (impact), or 状況 (situation).  
+- Carries a formal or impactful nuance compared to synonyms like 重大.
 
 ---
 
@@ -63,14 +69,6 @@ Sonna ni <span class="text-skin-accent">shinkoku</span> ni kangaenakute ii yo.
 「これは…想像以上に<span class="text-skin-accent">深刻</span>な事態だ。」  
 “Kore wa… souzou ijou ni <span class="text-skin-accent">shinkoku</span> na jitai da.”  
 *(“This is… a more <span class="text-skin-accent">serious</span> situation than I imagined.”)*
-
----
-
-## Usage Notes
-
-- Used for situations with heavy or severe consequences.  
-- Often paired with 問題 (problem), 影響 (impact), or 状況 (situation).  
-- Carries a formal or impactful nuance compared to synonyms like 重大.
 
 ---
 

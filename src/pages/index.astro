@@ -251,24 +251,29 @@ const recentPosts = sortedPosts.filter(({ data }) => !data.featured);
     <section id="newsletter" class="mb-8 bg-skin-accent py-12">
       <div class="mx-auto max-w-7xl text-center">
         <h2 class="mb-4 text-3xl font-bold text-white">
-          Join the N2 Gokaku Newsletter
+          🍱 N2 Gokaku, To Go
         </h2>
-        <p class="mb-6 text-lg text-skin-inverted">
-          Weekly N2 tips, study memes, and Tokyo salaryman survival hacks.
+        <p class="mb-6 text-lg text-white">
+          Your weekly bento of JLPT N2 Japanese. Simple, satisfying, and perfectly portioned for a quick study break.
         </p>
         <form
           class="flex flex-col items-center justify-center gap-4 sm:flex-row"
+          action="https://buttondown.com/api/emails/embed-subscribe/n2gokaku"
+          method="POST"
         >
+          <input type="hidden" name="embed" value="1" />
           <input
             type="email"
+            name="email"   
             placeholder="Enter your email"
-            class="w-full rounded px-4 py-3 focus:outline-none sm:w-auto"
+            id="user-mail"
+            class="w-full rounded px-4 py-3 focus:outline-none sm:w-auto text-d"
           />
           <button
             type="submit"
             class="rounded bg-white px-6 py-3 font-semibold text-skin-accent hover:opacity-90"
           >
-            Let’s Gokaku!
+            Subscribe
           </button>
         </form>
       </div>
@@ -315,4 +320,9 @@ const recentPosts = sortedPosts.filter(({ data }) => !data.featured);
   .all-posts-btn-wrapper {
     @apply my-8 text-center;
   }
+
+  #user-mail {
+    color: #282728;
+  }
+
 </style>
