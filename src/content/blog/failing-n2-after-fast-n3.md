@@ -11,13 +11,13 @@ tags:
   - motivation
   - productivity
 description: I passed the JLPT N3 quickly, only to fail the N2 soon after. Here’s what I learned about pacing, confidence, and sustainable Japanese study.
-ogImage: "/assets/images/kanji-hero.png"
+ogImage: "/assets/images/cacto-fail.png"
 alt: "Disappointed student studying Japanese JLPT N2"
 ---
 
 # Failing the N2 After Getting N3 Too Fast
 
-![failing-n2](/assets/images/kanji-hero.png)
+![failing-n2](/assets/images/cacto-fail.png)
 
 I still remember the rush of passing the JLPT N3. I had studied intensively for a few months, focused almost entirely on N3 grammar, vocabulary, and reading drills. When I saw my passing score, I felt unstoppable. That confidence led me to book the N2 for the very next test season – and that’s where reality hit me hard.
 
@@ -64,4 +64,4 @@ If you’re feeling confident after passing N3 quickly, that’s great – celeb
 
 ---
 
-> [Blog](/blog/) Return to read more reflections on Japanese learning, productivity, and sustainable language progress.
+> Return to the [Blog](/blog/)

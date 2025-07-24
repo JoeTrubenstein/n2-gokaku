@@ -248,12 +248,12 @@ const recentPosts = sortedPosts.filter(({ data }) => !data.featured);
     }
 
     <!-- Newsletter Signup -->
-    <section id="newsletter" class="mb-8 bg-skin-accent py-12">
-      <div class="mx-auto max-w-7xl text-center">
-        <h2 class="mb-4 text-3xl font-bold text-white">
+    <section id="newsletter" class="mb-8 bg-skin-accent dark:bg-[#e5e7eb] py-12 mx-auto max-w-4xl rounded-xl">
+      <div class="text-center">
+        <h2 class="mb-4 text-3xl font-bold text-white dark:text-skin-accent">
           🍱 N2 Gokaku, To Go
         </h2>
-        <p class="mb-6 text-lg text-white">
+        <p class="mb-6 text-lg text-white dark:text-skin-accent">
           Your weekly bento of JLPT N2 Japanese. Simple, satisfying, and perfectly portioned for a quick study break.
         </p>
         <form
@@ -271,7 +271,7 @@ const recentPosts = sortedPosts.filter(({ data }) => !data.featured);
           />
           <button
             type="submit"
-            class="rounded bg-white px-6 py-3 font-semibold text-skin-accent hover:opacity-90"
+            class="rounded bg-white dark:bg-skin-accent dark:text-white px-6 py-3 font-semibold text-skin-accent hover:opacity-90"
           >
             Subscribe
           </button>

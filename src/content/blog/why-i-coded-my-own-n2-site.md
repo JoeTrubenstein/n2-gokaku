@@ -11,13 +11,13 @@ tags:
   - coding
   - productivity
 description: Discover why I built my own JLPT N2 study website from scratch – the motivations, challenges, and benefits of creating a personal language learning platform.
-ogImage: "/assets/images/kanji-hero.png"
+ogImage: "/assets/images/cacto-code.png"
 alt: "Coding a Japanese JLPT N2 study website"
 ---
 
 # Why I Decided to Code My Own JLPT N2 Website
 
-![coding-n2](/assets/images/kanji-hero.png)
+![coding-n2](/assets/images/cacto-code.png)
 
 Learning Japanese is already a challenge, but studying for the **JLPT N2** adds a whole new level of intensity. As an intermediate learner aiming to pass the N2, I often found myself frustrated with the scattered nature of existing resources. That’s why I decided to code my own website dedicated entirely to JLPT N2 preparation.
 

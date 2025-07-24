@@ -1,0 +1,47 @@
+---
+import { SITE } from "@config";
+import Layout from "@layouts/Layout.astro";
+import Header from "@components/Header.astro";
+import Footer from "@components/Footer.astro";
+import Breadcrumbs from "@components/Breadcrumbs.astro";
+---
+
+<Layout title={`About | ${SITE.title}`}>
+  <Header />
+
+  <Breadcrumbs
+    items={[
+      { text: "Home", href: "/" },
+      { text: "Newsletter", href: "/newsletter/" },
+    ]}
+  />
+
+  <main id="main-content" class="py-12">
+    <div class="lg:px-8 mx-auto max-w-4xl px-4 sm:px-6">
+      <h1 class="mb-6 text-4xl font-bold">{SITE.title} Newsletter</h1>
+
+      <!-- <img
+        src="/assets/images/about-hero.png"
+        alt="Study Japanese illustration"
+        class="mb-8 w-full"
+      /> -->
+
+      <div class="mb-8 space-y-4 text-lg">
+      <div class="text-lg mb-8">
+        <p>
+          <strong>Coming soon:</strong>
+          Your weekly bento of JLPT N2 Japanese. Simple, satisfying, and perfectly portioned for a quick study break.
+        </p>
+      </div>
+
+      <div class="flex items-center justify-center h-48 rounded">
+        <span class="text-2xl font-semibold">
+          Coming Soon…
+        </span>
+      </div>
+      </div>
+    </div>
+  </main>
+
+  <Footer />
+</Layout>

@@ -20,7 +20,7 @@ const { currentPage, totalPages, paginatedPosts, tag, tagName } = Astro.props;
 ---
 
 <Layout title={`Tag: ${tagName} | ${SITE.title}`}>
-  <Header activeNav="tags" />
+  <Header />
   <Main
     pageTitle={[`Tag:`, `${tagName}`]}
     titleTransition={tag}
@@ -36,7 +36,7 @@ const { currentPage, totalPages, paginatedPosts, tag, tagName } = Astro.props;
         paginatedPosts.map(({ data, slug, collection }) =>
           collection === "blog" ? (
             <div>
-              <Card href={`/cars/${slug}/`} frontmatter={data} />
+              <Card href={`/blog/${slug}/`} frontmatter={data} />
             </div>
           ) : (
             <div>
