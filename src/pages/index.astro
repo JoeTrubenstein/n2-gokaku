@@ -1,5 +1,7 @@
 ---
 import { getCollection } from "astro:content";
+import { getLatestPosts } from "../lib/ghost";
+
 import Layout from "@layouts/Layout.astro";
 import Hero from "@components/Hero.astro";
 import Header from "@components/Header.astro";
@@ -38,7 +40,7 @@ const recentPosts = sortedPosts.filter(({ data }) => !data.featured);
             </div>
             <h3 class="mb-2 text-xl font-semibold">Vocabulary</h3>
             <img
-              src="/assets/images/cacto-vocab-square.png"
+              src="assets/images/cacto-vocab-square.png"
               alt="Vocabulary Study"
               class="mb-2 h-60 w-full rounded object-contain"
             />
@@ -217,7 +219,6 @@ const recentPosts = sortedPosts.filter(({ data }) => !data.featured);
       </div>
     </section> -->
 
-    <Hr />
     {
       recentPosts.length > 0 && (
         <>
@@ -241,41 +242,30 @@ const recentPosts = sortedPosts.filter(({ data }) => !data.featured);
                 </LinkButton>
               </div>
             </div>
-            <Hr />
           </section>
+          <Hr />
         </>
       )
     }
 
     <!-- Newsletter Signup -->
-    <section id="newsletter" class="mb-8 bg-skin-accent dark:bg-[#e5e7eb] py-12 mx-auto max-w-4xl rounded-xl">
-      <div class="text-center">
-        <h2 class="mb-4 text-3xl font-bold text-white dark:text-skin-accent">
-          🍱 N2 Gokaku, To Go
-        </h2>
-        <p class="mb-6 text-lg text-white dark:text-skin-accent">
-          Your weekly bento of JLPT N2 Japanese. Simple, satisfying, and perfectly portioned for a quick study break.
-        </p>
-        <form
-          class="flex flex-col items-center justify-center gap-4 sm:flex-row"
-          action="https://buttondown.com/api/emails/embed-subscribe/n2gokaku"
-          method="POST"
+    <section id="newsletter" class="my-8">
+      <div class="mx-auto max-w-4xl rounded-xl">
+        <h3 class="mb-4 text-center text-2xl font-semibold">
+          N2 Gokaku Newsletter
+        </h3>
+        <p class="text-center mb-6 flex-grow text-lg">Your weekly bento of N2 Japanese. <br/>Simple, satisfying, and perfectly portioned for a quick study break.</p>
+        <div
+          style="min-height: 58px;max-width: 440px;margin: 0 auto;width: 100%"
         >
-          <input type="hidden" name="embed" value="1" />
-          <input
-            type="email"
-            name="email"   
-            placeholder="Enter your email"
-            id="user-mail"
-            class="w-full rounded px-4 py-3 focus:outline-none sm:w-auto text-d"
-          />
-          <button
-            type="submit"
-            class="rounded bg-white dark:bg-skin-accent dark:text-white px-6 py-3 font-semibold text-skin-accent hover:opacity-90"
-          >
-            Subscribe
-          </button>
-        </form>
+          <script
+            src="https://cdn.jsdelivr.net/ghost/signup-form@~0.2/umd/signup-form.min.js"
+            data-button-color="#3B82F6"
+            data-button-text-color="ffffff"
+            data-site="https://cms.n2gokaku.com/"
+            data-locale="en"
+            async></script>
+        </div>
       </div>
     </section>
   </main>
@@ -324,5 +314,4 @@ const recentPosts = sortedPosts.filter(({ data }) => !data.featured);
   #user-mail {
     color: #282728;
   }
-
 </style>

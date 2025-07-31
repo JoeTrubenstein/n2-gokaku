@@ -24,12 +24,12 @@ export default function Card({ href, frontmatter, secHeading = true }: Props) {
         className="inline-block text-lg font-medium text-skin-accent decoration-dashed underline-offset-4 focus-visible:no-underline focus-visible:underline-offset-0"
       >
         <div className="aspect-h-1 aspect-w-1 lg:aspect-none w-full overflow-hidden rounded-md bg-gray-200 group-hover:opacity-75">
-          <img
+          {/* <img
             src={typeof ogImage === "string" ? ogImage : (ogImage?.src ?? "")}
             alt={alt ?? ""}
             decoding="async"
             className="lg:h-full lg:w-full object-cente h-full w-full max-w-lg object-cover"
-          />
+          /> */}
         </div>
         <h2 {...headerProps}>{title}</h2>
       </a>
