@@ -25,138 +25,44 @@ const recentPosts = sortedPosts.filter(({ data }) => !data.featured);
     <Hero />
 
     <Hr />
-    <section id="quick-start" class="py-12">
-      <div class="mx-auto max-w-7xl">
-        <h2 class="mb-4 text-3xl font-bold">Quick Start</h2>
 
-        <!-- First row: Vocabulary, Grammar, Reading -->
-        <div
-          class="xl:gap-x-8 mt-6 grid grid-cols-1 gap-x-6 gap-y-6 sm:grid-cols-3"
-        >
-          <!-- Vocabulary -->
-          <div class="flex flex-col overflow-hidden rounded">
-            <div class="mb-2 flex h-12 w-12 items-center justify-center">
-              <h3 class="text-2xl font-semibold">語彙</h3>
-            </div>
-            <h3 class="mb-2 text-xl font-semibold">Vocabulary</h3>
-            <img
-              src="assets/images/cacto-vocab-square.png"
-              alt="Vocabulary Study"
-              class="mb-2 h-60 w-full rounded object-contain"
-            />
-
-            <p class="mb-2 flex-grow text-lg">
-              Build your business-level word bank with essential N2 vocabulary.
-            </p>
-            <a
-              href="/vocabulary/"
-              class="mt-auto font-medium text-skin-accent hover:underline"
-            >
-              Explore Vocabulary →
-            </a>
-          </div>
-
-          <!-- Grammar -->
-          <div class="flex flex-col overflow-hidden rounded">
-            <div class="mb-2 flex h-12 w-12 items-center justify-center">
-              <h3 class="text-2xl font-semibold">文法</h3>
-            </div>
-
-            <h3 class="mb-2 text-xl font-semibold">Grammar</h3>
-
-            <img
-              src="/assets/images/cacto-grammar-square.png"
-              alt="Grammar Study"
-              class="mb-2 h-60 w-full rounded object-contain"
-            />
-            <p class="mb-2 flex-grow text-lg">
-              Conquer the must-know N2 grammar structures for confident
-              communication.
-            </p>
-            <a
-              href="/grammar/"
-              class="mt-auto font-medium text-skin-accent hover:underline"
-            >
-              Explore Grammar →
-            </a>
-          </div>
-
-          <!-- Reading -->
-          <div class="flex flex-col overflow-hidden rounded">
-            <div class="mb-2 flex h-12 w-12 items-center justify-center">
-              <h3 class="text-2xl font-semibold">読解</h3>
-            </div>
-            <h3 class="mb-2 text-xl font-semibold">Reading</h3>
-            <img
-              src="/assets/images/cacto-reading-square.png"
-              alt="Reading Practice"
-              class="mb-2 h-60 w-full rounded object-contain"
-            />
-            <p class="mb-2 flex-grow text-lg">
-              Practice with authentic N2 passages to boost your comprehension
-              speed.
-            </p>
-            <a
-              href="/reading/"
-              class="mt-auto font-medium text-skin-accent hover:underline"
-            >
-              Explore Reading →
-            </a>
-          </div>
-        </div>
-
-        <!-- Second row: Listening, Products -->
-        <div
-          class="xl:gap-x-8 mt-8 grid grid-cols-1 gap-x-6 gap-y-6 sm:grid-cols-2"
-        >
-          <!-- Listening -->
-          <div class="flex flex-col overflow-hidden rounded">
-            <div class="mb-2 flex h-12 w-12 items-center justify-center">
-              <h3 class="text-2xl font-semibold">聴解</h3>
-            </div>
-            <h3 class="mb-2 text-xl font-semibold">Listening</h3>
-            <img
-              src="/assets/images/cacto-listening-square.png"
-              alt="Listening Practice"
-              class="mb-2 h-60 w-full rounded object-contain object-bottom"
-            />
-            <p class="mb-2 flex-grow text-lg">
-              Train your ears on authentic N2 audio for real-world
-              understanding.
-            </p>
-            <a
-              href="/listening/"
-              class="mt-auto font-medium text-skin-accent hover:underline"
-            >
-              Explore Listening →
-            </a>
-          </div>
-
-          <!-- Products -->
-          <div class="flex flex-col overflow-hidden rounded">
-            <div class="mb-2 flex h-12 w-12 items-center justify-center">
-              <h3 class="text-2xl font-semibold">製品</h3>
-            </div>
-            <h3 class="mb-2 text-xl font-semibold">Products</h3>
-            <img
-              src="/assets/images/cacto-products-square.png"
-              alt="JLPT N2 Products"
-              class="mb-2 h-60 w-full rounded object-contain"
-            />
-            <p class="mb-2 flex-grow text-lg">
-              Premium N2 study tools and N2-inspired merch to level-up your
-              learning.
-            </p>
-            <a
-              href="/products/"
-              class="mt-auto font-medium text-skin-accent hover:underline"
-            >
-              Explore Products →
-            </a>
-          </div>
-        </div>
+<section id="quick-start" class="py-12">
+  <div class="mx-auto max-w-4xl">
+    <h2 class="mb-4 text-3xl font-bold">Quick Start</h2>
+    <div class="space-y-6 text-lg text-skin-base">
+      <div>
+        <strong class="text-xl">語彙 (Vocabulary):</strong><br />
+        Build your business-level word bank with essential N2 vocabulary.  <br />
+        <a href="/vocabulary/" class="text-skin-accent hover:underline">Explore Vocabulary →</a>
       </div>
-    </section>
+
+      <div>
+        <strong class="text-xl">文法 (Grammar):</strong><br />
+        Conquer the must-know N2 grammar structures for confident communication.  <br />
+        <a href="/grammar/" class="text-skin-accent hover:underline">Explore Grammar →</a>
+      </div>
+
+      <div>
+        <strong class="text-xl">読解 (Reading):</strong><br />
+        Practice with authentic N2 passages to boost your comprehension speed.  <br />
+        <a href="/reading/" class="text-skin-accent hover:underline">Explore Reading →</a>
+      </div>
+
+      <div>
+        <strong class="text-xl">聴解 (Listening):</strong><br />
+        Train your ears on authentic N2 audio for real-world understanding.  <br />
+        <a href="/listening/" class="text-skin-accent hover:underline">Explore Listening →</a>
+      </div>
+
+      <div>
+        <strong class="text-xl">製品 (Products):</strong><br />
+        Premium N2 study tools and N2-inspired merch to level-up your learning.  <br />
+        <a href="/products/" class="text-skin-accent hover:underline">Explore Products →</a>
+      </div>
+    </div>
+  </div>
+</section>
+
 
     <Hr />
 
@@ -225,7 +131,7 @@ const recentPosts = sortedPosts.filter(({ data }) => !data.featured);
           <section id="recent-posts" class="py-12">
             <div class="mx-auto max-w-7xl">
               <h2 class="text-3xl font-bold">Recent Blog Posts</h2>
-              <div class="lg:grid-cols-3 xl:gap-x-8 mt-6 grid grid-cols-1 gap-x-6 gap-y-10 sm:grid-cols-2">
+              <div>
                 {recentPosts.map(
                   ({ data, slug }, index) =>
                     index < 2 && (
