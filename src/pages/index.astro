@@ -1,16 +1,12 @@
 ---
 import { getCollection } from "astro:content";
-import { getLatestPosts } from "../lib/ghost";
-
 import Layout from "@layouts/Layout.astro";
 import Hero from "@components/Hero.astro";
 import Header from "@components/Header.astro";
 import Footer from "@components/Footer.astro";
 import LinkButton from "@components/LinkButton.astro";
 import Hr from "@components/Hr.astro";
-
 import Card from "../components/Card";
-
 import getSortedPosts from "@utils/getSortedPosts";
 
 const posts = await getCollection("blog");
@@ -23,9 +19,7 @@ const recentPosts = sortedPosts.filter(({ data }) => !data.featured);
   <Header />
   <main id="main-content">
     <Hero />
-
     <Hr />
-
     <section id="quick-start" class="py-12">
       <div class="mx-auto max-w-4xl">
         <h2 class="mb-4 text-2xl font-semibold tracking-wide">Quick Start</h2>
@@ -33,51 +27,48 @@ const recentPosts = sortedPosts.filter(({ data }) => !data.featured);
           <div>
             <a
               href="/vocabulary/"
-              class="inline-block text-lg font-medium text-skin-accent decoration-dashed underline-offset-4 focus-visible:no-underline focus-visible:underline-offset-0 hover:underline"
+              class="inline-block text-lg font-medium text-skin-accent decoration-dashed underline-offset-4 hover:underline focus-visible:no-underline focus-visible:underline-offset-0"
             >
               語彙 (Vocabulary)
-            </a><br />
-            Build your business-level word bank with essential N2 vocabulary. <br
-            />
+            </a>
+            <br />
+            Build your business-level word bank with essential N2 vocabulary.
+            <br />
           </div>
-
           <div>
             <a
               href="/grammar/"
-              class="inline-block text-lg font-medium text-skin-accent decoration-dashed underline-offset-4 focus-visible:no-underline focus-visible:underline-offset-0 hover:underline"
+              class="inline-block text-lg font-medium text-skin-accent decoration-dashed underline-offset-4 hover:underline focus-visible:no-underline focus-visible:underline-offset-0"
             >
               文法 (Grammar)
             </a><br />
             Conquer the must-know N2 grammar structures for confident communication.
             <br />
           </div>
-
           <div>
             <a
               href="/reading/"
-              class="inline-block text-lg font-medium text-skin-accent decoration-dashed underline-offset-4 focus-visible:no-underline focus-visible:underline-offset-0 hover:underline"
+              class="inline-block text-lg font-medium text-skin-accent decoration-dashed underline-offset-4 hover:underline focus-visible:no-underline focus-visible:underline-offset-0"
             >
               読解 (Reading)
             </a><br />
             Practice with authentic N2 passages to boost your comprehension speed.
             <br />
           </div>
-
           <div>
-           <a
+            <a
               href="/listening/"
-              class="inline-block text-lg font-medium text-skin-accent decoration-dashed underline-offset-4 focus-visible:no-underline focus-visible:underline-offset-0 hover:underline"
+              class="inline-block text-lg font-medium text-skin-accent decoration-dashed underline-offset-4 hover:underline focus-visible:no-underline focus-visible:underline-offset-0"
             >
               聴解 (Listening)
             </a><br />
             Train your ears on authentic N2 audio for real-world understanding. <br
             />
           </div>
-
           <div>
-                 <a
+            <a
               href="/products/"
-              class="inline-block text-lg font-medium text-skin-accent decoration-dashed underline-offset-4 focus-visible:no-underline focus-visible:underline-offset-0 hover:underline"
+              class="inline-block text-lg font-medium text-skin-accent decoration-dashed underline-offset-4 hover:underline focus-visible:no-underline focus-visible:underline-offset-0"
             >
               製品 (Products)
             </a><br />
@@ -87,68 +78,7 @@ const recentPosts = sortedPosts.filter(({ data }) => !data.featured);
         </div>
       </div>
     </section>
-
     <Hr />
-
-    <!--  -->
-
-    <!-- <section id="products" class="bg-skin-background-alt py-12">
-      <div class="mx-auto max-w-7xl">
-        <h2 class="text-3xl font-bold">Featured Products</h2>
-
-        <div
-          class="xl:gap-x-8 mt-6 grid grid-cols-1 gap-x-6 gap-y-10 sm:grid-cols-3"
-        >
-          <div class="flex flex-col rounded bg-white">
-
-          <div class="mb-4 h-52 w-full rounded bg-skin-accent"></div>
-            <h3 class="mb-2 text-xl font-semibold">Notion Templates</h3>
-            <p class="mb-4 flex-grow text-gray-700">
-              Everything you need to master N2 reading comprehension, including
-              target passages, vocab lists, and answer keys.
-            </p>
-            <a
-              href="/listening/"
-              class="mt-auto font-medium text-skin-accent hover:underline"
-            >
-              Get Notion Templates →
-            </a>
-          </div>
-
-          <div class="flex flex-col rounded bg-white">
-            <div class="mb-4 h-52 w-full rounded bg-skin-accent"></div>
-            <h3 class="mb-2 text-xl font-semibold">Books</h3>
-            <p class="mb-4 flex-grow text-gray-700">
-              Drill the most challenging N2 kanji with stroke order guides,
-              mnemonic hints, and quiz sheets.
-            </p>
-            <a
-              href="/listening/"
-              class="mt-auto font-medium text-skin-accent hover:underline"
-            >
-              Get N2 Books →
-            </a>
-          </div>
-
-          <div class="flex flex-col rounded bg-white">
-
-            <div class="mb-4 h-52 w-full rounded bg-skin-accent"></div>
-            <h3 class="mb-2 text-xl font-semibold">Merch and Swag</h3>
-            <p class="mb-4 flex-grow text-gray-700">
-              Quick-reference guide to the top 50 N2 grammar points, with
-              example sentences and practice exercises.
-            </p>
-            <a
-              href="/listening/"
-              class="mt-auto font-medium text-skin-accent hover:underline"
-            >
-              Get N2 Merch and Swag →
-            </a>
-          </div>
-        </div>
-      </div>
-    </section> -->
-
     {
       recentPosts.length > 0 && (
         <>
@@ -191,18 +121,22 @@ const recentPosts = sortedPosts.filter(({ data }) => !data.featured);
         <div
           style="min-height: 58px;max-width: 440px;margin: 0 auto;width: 100%"
         >
+
+        <div class="gh-signup-form">
           <script
             src="https://cdn.jsdelivr.net/ghost/signup-form@~0.2/umd/signup-form.min.js"
-            data-button-color="#3B82F6"
-            data-button-text-color="ffffff"
+            data-button-color="#1B998B"
+            data-button-text-color="#ffffff"
             data-site="https://cms.n2gokaku.com/"
             data-locale="en"
-            async></script>
+            async>
+          </script>
+        </div>
+
         </div>
       </div>
     </section>
   </main>
-
   <Hr />
   <Footer />
 </Layout>
@@ -247,4 +181,6 @@ const recentPosts = sortedPosts.filter(({ data }) => !data.featured);
   #user-mail {
     color: #282728;
   }
+
+
 </style>
