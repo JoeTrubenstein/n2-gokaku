@@ -1,0 +1,43 @@
+---
+import type { CollectionEntry } from "astro:content";
+import Layout from "@layouts/Layout.astro";
+import Main from "@layouts/Main.astro";
+import Header from "@components/Header.astro";
+import Footer from "@components/Footer.astro";
+import Pagination from "@components/Pagination.astro";
+import Card from "@components/Card";
+import { SITE } from "@config";
+
+export interface Props {
+  currentPage: number;
+  totalPages: number;
+  paginatedPosts: CollectionEntry<"blog">[];
+}
+
+const { currentPage, totalPages, paginatedPosts } = Astro.props;
+---
+
+<Layout title={`Cars | ${SITE.title}`}>
+  <Header />
+  <Main pageTitle="Cars" pageDesc="Wholesale (Non-Auction Cars)">
+      <div class="lg:max-w-7xl mx-auto">
+        <p>These cars are third-party stock at local dealers in Japan. I can broker the sale and export of any one of them.</p>
+        <div class="xl:gap-x-8 mt-6 grid sm:grid-cols-3 grid-cols-1 gap-x-6 gap-y-10">
+            {
+              paginatedPosts.map(({ data, slug }) => (
+                <Card href={`/blog/${slug}/`} frontmatter={data} />
+              ))
+            }
+        </div>
+      </div>
+  </Main>
+
+  <Pagination
+    {currentPage}
+    {totalPages}
+    prevUrl={`/blog/${currentPage - 1 !== 1 ? "/" + (currentPage - 1) : ""}/`}
+    nextUrl={`/blog/${currentPage + 1}/`}
+  />
+
+  <Footer noMarginTop={totalPages > 1} />
+</Layout>
