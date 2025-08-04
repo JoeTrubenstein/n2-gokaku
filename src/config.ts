@@ -4,9 +4,9 @@ export const SITE: Site = {
   website: "https://N2Gokaku.com/", // replace this with your deployed domain
   author: "Joe Trubenstein",
   profile: "https://N2Gokaku,com/",
-  desc: "Enjoying vehicles from the Japanese Domestic Market",
+  desc: "Master The JLPT N2 with confidence.",
   title: "N2 Gokaku",
-  ogImage: "https://res.cloudinary.com/indridcold/image/upload/v1725798081/JDM/cs2z5qoza036hoprnxht.png",
+  ogImage: "/assets/images/cacto_hero_banner.webp",
   lightAndDarkMode: true,
   postPerIndex: 3,
   postPerPage: 9,
