@@ -26,7 +26,9 @@ const pageGrammar = allGrammar.slice(start, start + perPage);
 const pageCount = Math.ceil(allGrammar.length / perPage);
 ---
 
-<Layout title={`Grammar — Page ${page} | ${SITE.title}`}>  
+<Layout 
+title={`Grammar — Page ${page} | ${SITE.title}`}
+>  
   <Header activeNav="grammar" />
 
   <Breadcrumbs

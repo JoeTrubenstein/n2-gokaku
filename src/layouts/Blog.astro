@@ -11,10 +11,10 @@ import { SITE } from "@config";
 export interface Props {
   currentPage: number;
   totalPages: number;
-  Posts: CollectionEntry<"blog">[];
+  posts: CollectionEntry<"blog">[];
 }
 
-const { currentPage, totalPages, Posts } = Astro.props as Props;
+const { currentPage, totalPages, posts } = Astro.props as Props;
 ---
 
 <Layout title={`Blog | ${SITE.title}`}>
@@ -23,7 +23,7 @@ const { currentPage, totalPages, Posts } = Astro.props as Props;
   <Main pageTitle="Blog" pageDesc="N2 Gokaku Blog">
     <div class="lg:max-w-7xl mx-auto">
       <div class="grid grid-cols-1 sm:grid-cols-2 gap-x-6 gap-y-10 xl:gap-x-8 mt-6">
-        {Posts.map(({ data, slug }) => (
+        {posts.map(({ data, slug }) => (
           <Card href={`/blog/${slug}/`} frontmatter={data} />
         ))}
       </div>

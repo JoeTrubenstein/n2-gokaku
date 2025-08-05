@@ -19,11 +19,13 @@ export async function getStaticPaths() {
 }
 
 const { entry } = Astro.props as Props;
-const { title, term } = entry.data;
+const { title, term, description } = entry.data;
 const { Content } = await entry.render();
 ---
 
-<Layout title={`${term} | ${SITE.title}`}>  
+<Layout title={`${term} | ${SITE.title}`}
+description={description}
+>  
   <Header activeNav="grammar" />
 
   <Breadcrumbs
