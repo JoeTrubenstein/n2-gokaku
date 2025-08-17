@@ -7,9 +7,9 @@ import Breadcrumbs from "@components/Breadcrumbs.astro";
 import { getCollection, type CollectionEntry } from "astro:content";
 
 // load all vocabulary entries
-const allVocab = await getCollection("vocabulary", (e) => !e.data.draft);
+const allVocab = await getCollection("vocabulary", e => !e.data.draft);
 // sort by the vocabulary term
-allVocab.sort((a, b) => a.data.term.localeCompare(b.data.term));
+allVocab.sort((a, b) => a.data.headword.localeCompare(b.data.headword));
 
 const perPage = 10;
 const pageVocab = allVocab.slice(0, perPage);
@@ -27,72 +27,84 @@ const pageCount = Math.ceil(allVocab.length / perPage);
   />
 
   <main id="main-content" class="py-12">
-    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-      <h1 class="text-4xl font-bold mb-6">JLPT N2 Vocabulary List</h1>
+    <div class="lg:px-8 mx-auto max-w-4xl px-4 sm:px-6">
+      <h1 class="mb-6 text-4xl font-bold">JLPT N2 Vocabulary List</h1>
 
       <!-- <img
         src="/assets/images/cacto-vocab-square.png"
         alt="N2 Vocabulary study illustration"
         class="h-64 mb-8 mx-auto"
       /> -->
-      <div class="text-lg mb-8">
+      <div class="mb-8 text-lg">
         <p>
           <strong>How to use this list:</strong>
-          This table shows 100 commonly enountered JLPT N2 vocabulary words in one place. Each entry includes
-          the word, its reading, and English meanings. Click any term to see detailed breakdowns,
-          example sentences, kanji analysis, and usage notes to deepen your understanding.
+          Click any term to see detailed breakdowns, example sentences, kanji analysis,
+          and usage notes to deepen your understanding.
         </p>
       </div>
-      <div class="overflow-x-auto">
-        <table class="min-w-full table-fixed bg-skin-background divide-y divide-skin-muted">
-          <colgroup>
-            <col />                <!-- Vocabulary: auto -->
-            <col />   <!-- Reading: fixed 12rem (192px) -->
-            <col />                <!-- Meaning: auto -->
-          </colgroup>
-          <thead class="bg-skin-card-muted">
-            <tr>
-              <th class="px-2 py-3 text-left text-sm font-semibold text-skin-base">
-                Vocabulary
-              </th>
-              <th class="px-6 py-3 text-left text-sm font-semibold text-skin-base">
-                Reading
-              </th>
-              <th class="px-6 py-3 text-left text-sm font-semibold text-skin-base">
-                Meaning
-              </th>
-            </tr>
-          </thead>
-          <tbody class="divide-y divide-skin-muted">
-            {pageVocab.map((entry: CollectionEntry<"vocabulary">) => (
-              <tr class="hover:bg-skin-card-muted">
-                <td class="px-6 py-4 text-left">
-                  <a
-                    href={`/vocabulary/${entry.slug}/`}
-                    class="text-lg font-medium text-skin-accent hover:underline"
-                  >
-                    {entry.data.term}
-                  </a>
-                </td>
-                <td class="px-6 py-4 text-skin-base text-left whitespace-nowrap">
-                  {entry.data.reading}
-                </td>
-                <td class="px-6 py-4 text-skin-base text-left truncate">
-                  {entry.data.meaning.join(', ')}
-                </td>
-              </tr>
-            ))}
-          </tbody>
-        </table>
+
+      
+  <div class="grid gap-4 sm:grid-cols-3">
+  {pageVocab.map((entry: CollectionEntry<"vocabulary">) => (
+    <div class="rounded-lg border border-skin-muted bg-skin-background p-4 transition">
+      <a
+        href={`/vocabulary/${entry.slug}/`}
+        class="text-lg font-medium text-skin-accent hover:underline"
+      >
+        {entry.data.headword}
+      </a>
+
+      <div class="mt-1 text-sm text-skin-base">
+        {entry.data.reading}
       </div>
 
-      {pageCount > 1 && (
-        <nav class="mt-6 flex justify-end space-x-4 text-skin-accent">
-          <a href="/vocabulary/2/" class="hover:underline">Next →</a>
-        </nav>
+      <div class="mt-2 text-skin-base text-sm line-clamp-2">
+        {entry.data.meaning.join(", ")}
+      </div>
+
+      {entry.data.tags?.length > 0 && (
+        <div class="mt-3 flex flex-wrap gap-2">
+          {entry.data.tags.map((t: string) => {
+            const slug = t
+              .trim()
+              .replace(/\s+/g, "-")
+              .replace(/[^\p{Letter}\p{Number}-]/gu, "");
+            return (
+              <a
+                href={`/tags/${slug}/`}
+                class="text-xs text-skin-accent hover:underline"
+              >
+                #{t}
+              </a>
+            );
+          })}
+        </div>
       )}
+    </div>
+  ))}
+</div>
+
+
+      {
+        pageCount > 1 && (
+          <nav class="mt-6 flex justify-end space-x-4 text-skin-accent">
+            <a href="/vocabulary/2/" class="hover:underline">
+              Next →
+            </a>
+          </nav>
+        )
+      }
     </div>
   </main>
 
   <Footer />
 </Layout>
+
+<style>
+  a {
+    @apply relative hover:underline hover:decoration-dashed hover:-top-0.5 hover:text-skin-accent focus-visible:p-1;
+  }
+  a svg {
+    @apply -mr-5 h-6 w-6 scale-95 text-skin-base opacity-80 group-hover:fill-skin-accent;
+  }
+</style>

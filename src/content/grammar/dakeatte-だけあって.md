@@ -1,21 +1,13 @@
 ---
-term: "だけあって"
-slug: "dakeatte-だけあって"
-reading: "だけあって"
-meaning:
-  - "as expected of"
-  - "being worthy of"
-  - "because (someone/something) is"
-level: "N2"
-tags:
-  - grammar
-  - N2
+pattern: 〜だけあって
+connection: 名詞 + だけあって
+meaning: ["as expected of ~", "no wonder; befitting"]
+tags: [評価, 理由, フォーマル, 褒める]
+description: "Used when the result matches expectations."
 draft: false
-description: "How to use だけあって which means 'as expected of; being worthy of; because (someone/something) is' in preparation for the JLPT N2"
-ogImage: "/assets/images/grammar/dakeatte-だけあって.png"
 ---
 
-## Term  
+## Pattern  
 - <ruby>だけあって<rt>だけあって</rt></ruby>
 - dakeatte
 

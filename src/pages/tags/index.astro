@@ -1,35 +1,65 @@
 ---
-import { getCollection } from "astro:content";
+import { SITE } from "@config";
+import Layout from "@layouts/Layout.astro";
 import Header from "@components/Header.astro";
 import Footer from "@components/Footer.astro";
-import Layout from "@layouts/Layout.astro";
-import Main from "@layouts/Main.astro";
-import Tag from "@components/Tag.astro";
-import getUniqueTags from "@utils/getUniqueTags";
-import { SITE } from "@config";
-import getArticleTags from "@utils/getArticleTags";
+import Breadcrumbs from "@components/Breadcrumbs.astro";
 
-const posts = await getCollection("blog");
-const articles = await getCollection("articles");
+// util that aggregates tags across blog/vocabulary/grammar
+import getAllTags from "@utils/getAllTags";
 
-let tags = getUniqueTags(posts)
-let artTags = getArticleTags(articles);
-let alltags =tags.concat(artTags)
-
-// This is kind of silly - I'm combining two sets of tags, and then filtering the duplicates
-
-const newtags = alltags.filter((obj, index) => {
-    return index === alltags.findIndex(o => obj.tag === o.tag);
-});
-
+const tags = await getAllTags(); // [{ tag: 'verb', tagName: 'verb', count: 12 }, ...]
+// optional: sort by name or frequency
+tags.sort((a, b) => a.tagName.localeCompare(b.tagName, "en"));
+// if you prefer by count desc, use:
+// tags.sort((a, b) => b.count - a.count);
 ---
 
 <Layout title={`Tags | ${SITE.title}`}>
-  <Header activeNav="tags" />
-  <Main pageTitle="Tags" pageDesc="All the tags used in posts.">
-    <ul>
-      {newtags.map(({ tag }) => <Tag {tag} size="lg" />)}
-    </ul>
-  </Main>
+  <Header />
+
+  <Breadcrumbs
+    items={[
+      { text: "Home", href: "/" },
+      { text: "Tags", href: "/tags/" },
+    ]}
+  />
+
+  <main id="main-content" class="py-12">
+    <div class="lg:px-8 mx-auto max-w-4xl px-4 sm:px-6">
+      <h1 class="mb-6 text-4xl font-bold">Tags</h1>
+      <p class="mb-8 text-lg">
+        Browse everything on the site by tag — blog posts, grammar patterns, and vocabulary entries.
+      </p>
+
+      {tags.length === 0 ? (
+        <p class="text-skin-muted">No tags yet.</p>
+      ) : (
+        <ul class="flex flex-wrap gap-3">
+          {tags.map(({ tag, tagName, count }) => (
+            <li>
+              <a
+                href={`/tags/${tag}/`}
+                class="inline-flex items-center gap-2 rounded-full border px-3 py-1 text-skin-accent hover:underline"
+              >
+                <span>#{tagName}</span>
+                <span class="text-skin-muted text-sm">({count})</span>
+              </a>
+            </li>
+          ))}
+        </ul>
+      )}
+    </div>
+  </main>
+
   <Footer />
 </Layout>
+
+<style>
+  a {
+    @apply relative underline decoration-dashed hover:-top-0.5 hover:text-skin-accent focus-visible:p-1;
+  }
+  a svg {
+    @apply -mr-5 h-6 w-6 scale-95 text-skin-base opacity-80 group-hover:fill-skin-accent;
+  }
+</style>

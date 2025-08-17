@@ -19,12 +19,12 @@ export async function getStaticPaths() {
 }
 
 const { entry } = Astro.props;
-const { term, reading, meaning, description } = entry.data;
+const { headword, reading, meaning, description } = entry.data;
 const { Content } = await entry.render();
 ---
 
 <Layout 
-title={`${term} | ${SITE.title}`}
+title={`${headword} | ${SITE.title}`}
 description={description}
 >
   <Header activeNav="vocabulary" />
@@ -33,13 +33,13 @@ description={description}
     items={[
       { text: "Home", href: "/" },
       { text: "Vocabulary", href: "/vocabulary/" },
-      { text: term, href: `/vocabulary/${entry.slug}/` },
+      { text: headword, href: `/vocabulary/${entry.slug}/` },
     ]}
   />
 
   <main id="main-content" class="py-12">
     <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-      <h1 class="text-4xl font-bold mb-8">{term}</h1>
+      <h1 class="text-4xl font-bold mb-8">{headword}</h1>
       <div class="mb-6 text-lg">
         <p>
           <strong>Reading:</strong> {reading} &nbsp;|&nbsp;

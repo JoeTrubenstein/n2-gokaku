@@ -6,18 +6,18 @@ import Footer from "@components/Footer.astro";
 import Breadcrumbs from "@components/Breadcrumbs.astro";
 import { getCollection, type CollectionEntry } from "astro:content";
 
-// 1) Fetch and filter out drafts
-const allGrammar = await getCollection("grammar", (e) => !e.data.draft);
+// load all grammar entries (exclude drafts)
+const allGrammar = await getCollection("grammar", e => !e.data.draft);
 
-// 2) Sort alphabetically by title
+// sort by the grammar pattern
 allGrammar.sort((a, b) =>
-  a.data.term.localeCompare(b.data.term)
+  (a.data.pattern ?? a.slug).localeCompare(b.data.pattern ?? b.slug)
 );
 
-// 3) Pagination settings
+// pagination
 const perPage = 10;
 const pageGrammar = allGrammar.slice(0, perPage);
-const pageCount   = Math.ceil(allGrammar.length / perPage);
+const pageCount = Math.ceil(allGrammar.length / perPage);
 ---
 
 <Layout title={`Grammar | ${SITE.title}`}>
@@ -25,78 +25,84 @@ const pageCount   = Math.ceil(allGrammar.length / perPage);
 
   <Breadcrumbs
     items={[
-      { text: "Home",    href: "/"          },
-      { text: "Grammar", href: "/grammar/"  },
+      { text: "Home", href: "/" },
+      { text: "Grammar", href: "/grammar/" },
     ]}
   />
 
   <main id="main-content" class="py-12">
-    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-      
-      <h1 class="text-4xl font-bold mb-6">
-        JLPT N2 Grammar Points
-      </h1>
+    <div class="lg:px-8 mx-auto max-w-4xl px-4 sm:px-6">
+      <h1 class="mb-6 text-4xl font-bold">JLPT N2 Grammar List</h1>
 
-      <!-- <img
-        src="/assets/images/cacto-grammar-square.png"
-        alt="N2 Grammar study illustration"
-        class="h-64 mb-8 mx-auto"
-      /> -->
-
-      <div class="text-lg mb-8">
+      <div class="mb-8 text-lg">
         <p>
           <strong>How to use this list:</strong>
-          Click any grammar point to see explanations, example sentences, and usage tips!
+          This table shows common JLPT N2 grammar points. Click any pattern to see
+          usage, example sentences, and pitfalls to avoid.
         </p>
       </div>
 
+  <div class="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+  {pageGrammar.map((entry: CollectionEntry<"grammar">) => (
+    <div class="rounded-lg border border-skin-muted bg-skin-background p-4 shadow-sm hover:shadow-md transition">
+      <a
+        href={`/grammar/${entry.slug}/`}
+        class="text-lg font-medium text-skin-accent hover:underline"
+      >
+        {entry.data.pattern ?? entry.slug}
+      </a>
 
-<div class="overflow-x-auto">
-  <table class="table-fixed w-full bg-skin-background divide-y divide-skin-muted">
-    <colgroup>
-      <col style="width:30%" />
-      <col style="width:70%" />
-    </colgroup>
-    <thead class="bg-skin-card-muted">
-      <tr>
-        <th class="px-6 py-3 text-left text-sm font-semibold text-skin-base">
-          Point
-        </th>
-        <th class="px-6 py-3 text-left text-sm font-semibold text-skin-base">
-          Meaning
-        </th>
-      </tr>
-    </thead>
-    <tbody class="divide-y divide-skin-muted">
-      {pageGrammar.map((entry: CollectionEntry<"grammar">) => (
-        <tr class="hover:bg-skin-card-muted">
-          <td class="px-6 py-4">
-            <a
-              href={`/grammar/${entry.slug}/`}
-              class="text-lg font-medium text-skin-accent hover:underline"
-            >
-              {entry.data.term}
-            </a>
-          </td>
-          <td class="px-6 py-4 text-skin-base truncate">
-            {entry.data.meaning.join(', ')}
-          </td>
-        </tr>
-      ))}
-    </tbody>
-  </table>
+      <div class="mt-2 text-skin-base text-sm line-clamp-2">
+        {Array.isArray(entry.data.meaning)
+          ? entry.data.meaning.join(", ")
+          : ((entry.data.meaning as any) ?? "—")}
+      </div>
+
+      {Array.isArray(entry.data.tags) && entry.data.tags.length > 0 && (
+        <div class="mt-3 flex flex-wrap gap-2">
+          {entry.data.tags.map((t: string) => {
+            const slug = t
+              .trim()
+              .replace(/\s+/g, "-")
+              .replace(/[^\p{Letter}\p{Number}-]/gu, "");
+            return (
+              <a
+                href={`/tags/${slug}/`}
+                class="text-xs text-skin-accent hover:underline"
+              >
+                #{t}
+              </a>
+            );
+          })}
+        </div>
+      )}
+    </div>
+  ))}
 </div>
 
 
-      {pageCount > 1 && (
-        <nav class="mt-6 flex justify-end space-x-4 text-skin-accent">
-          <a href="/grammar/2" class="hover:underline">
-            Next →
-          </a>
-        </nav>
-      )}
+
+
+      {
+        pageCount > 1 && (
+          <nav class="mt-6 flex justify-end space-x-4 text-skin-accent">
+            <a href="/grammar/2/" class="hover:underline">
+              Next →
+            </a>
+          </nav>
+        )
+      }
     </div>
   </main>
 
   <Footer />
 </Layout>
+
+<style>
+  a {
+    @apply relative hover:underline hover:decoration-dashed hover:-top-0.5 hover:text-skin-accent focus-visible:p-1;
+  }
+  a svg {
+    @apply -mr-5 h-6 w-6 scale-95 text-skin-base opacity-80 group-hover:fill-skin-accent;
+  }
+</style>

@@ -1,18 +1,9 @@
 ---
-author: joseph
-pubDatetime: 2025-07-10T08:30:00.000Z
-title: Why I Decided to Code My Own JLPT N2 Website
-slug: why-i-coded-my-own-n2-site
-featured: false
+title: "Why I coded my own N2 site"
+description: "What I built, why, and how it changed my workflow."
+tags: [devlog, meta, test]
+pubDatetime: 2025-08-01
 draft: false
-tags:
-  - blog
-  - jlpt
-  - coding
-  - productivity
-description: Discover why I built my own JLPT N2 study website from scratch – the motivations, challenges, and benefits of creating a personal language learning platform.
-ogImage: "/assets/images/cacto-code.png"
-alt: "Coding a Japanese JLPT N2 study website"
 ---
 
 # Why I Decided to Code My Own JLPT N2 Website
