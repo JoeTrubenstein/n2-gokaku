@@ -54,11 +54,11 @@ const pageCount = Math.ceil(allVocab.length / perPage);
         {entry.data.headword}
       </a>
 
-      <div class="mt-1 text-sm text-skin-base">
+      <div class="mt-1 text-md text-skin-base">
         {entry.data.reading}
       </div>
 
-      <div class="mt-2 text-skin-base text-sm line-clamp-2">
+      <div class="mt-2 text-skin-base text-md line-clamp-2">
         {entry.data.meaning.join(", ")}
       </div>
 
@@ -72,7 +72,7 @@ const pageCount = Math.ceil(allVocab.length / perPage);
             return (
               <a
                 href={`/tags/${slug}/`}
-                class="text-xs text-skin-accent hover:underline"
+                class="text-md text-skin-accent hover:underline"
               >
                 #{t}
               </a>

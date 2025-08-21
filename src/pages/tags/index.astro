@@ -40,7 +40,7 @@ tags.sort((a, b) => a.tagName.localeCompare(b.tagName, "en"));
             <li>
               <a
                 href={`/tags/${tag}/`}
-                class="inline-flex items-center gap-2 rounded-full border px-3 py-1 text-skin-accent hover:underline"
+                class="inline-flex items-center gap-2 rounded-lg border px-3 py-1 text-skin-accent hover:underline"
               >
                 <span>#{tagName}</span>
                 <span class="text-skin-muted text-sm">({count})</span>
@@ -57,7 +57,7 @@ tags.sort((a, b) => a.tagName.localeCompare(b.tagName, "en"));
 
 <style>
   a {
-    @apply relative underline decoration-dashed hover:-top-0.5 hover:text-skin-accent focus-visible:p-1;
+    @apply relative hover:underline decoration-dashed hover:-top-0.5 hover:text-skin-accent focus-visible:p-1;
   }
   a svg {
     @apply -mr-5 h-6 w-6 scale-95 text-skin-base opacity-80 group-hover:fill-skin-accent;
